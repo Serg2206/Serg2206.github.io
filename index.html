@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSV Prof — Дистанционное консультирование</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#library">Библиотека</a></li>
+            <li><a href="#internship">Стажировка</a></li>
+            <li><a href="#consultation">Консультация</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Шапка -->
+    <header>
+        <h1>Дистанционное консультирование</h1>
+        <p>Современные решения для сложных вопросов хирургии</p>
+    </header>
+
+    <!-- О нас -->
+    <section class="section about-section" id="about">
+        <h2>О нас</h2>
+        <p>SSV Prof предоставляет профессиональные решения для специалистов и пациентов, включая дистанционное консультирование по вопросам хирургии и медицины.</p>
+    </section>
+
+    <!-- Дистанционное консультирование -->
+    <section class="section consultation-section" id="consultation">
+        <h2>Дистанционное консультирование</h2>
+        <p>Мы предлагаем возможность онлайн-консультаций по следующим направлениям:</p>
+        <ul>
+            <li><strong>Неотложная и плановая хирургия:</strong> помощь в сложных клинических случаях.</li>
+            <li><strong>Онкохирургия:</strong> вопросы диагностики, оперативного лечения и химиотерапии (предоперационной и послеоперационной).</li>
+            <li><strong>Лапароскопическая хирургия:</strong> современные минимально инвазивные подходы.</li>
+        </ul>
+
+        <p><strong>Контроль:</strong> Мы обеспечиваем клинический и инструментальный послеоперационный контроль, включая:</p>
+        <ul>
+            <li>Клинический осмотр.</li>
+            <li>Лапароскопический и эндоскопический контроль.</li>
+            <li>Контроль с использованием КТ, УЗИ.</li>
+            <li>Лабораторно-иммунологический контроль.</li>
+        </ul>
+
+        <button onclick="toggleConsultationForm()">Записаться на консультацию</button>
+        <form id="consultation-form" style="display:none;">
+            <h3>Форма записи на дистанционную консультацию</h3>
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="topic">Тема консультации:</label>
+            <select id="topic" name="topic" required>
+                <option value="emergency-surgery">Неотложная хирургия</option>
+                <option value="oncology">Онкохирургия</option>
+                <option value="laparoscopy">Лапароскопическая хирургия</option>
+            </select>
+            <label for="message">Краткое описание:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section contact-section" id="contacts">
+        <h2>Контакты</h2>
+        <p><strong>Email:</strong> <a href="mailto:ssvnauka@gmail.com">ssvnauka@gmail.com</a></p>
+        <p><strong>Адрес:</strong> въезд Балакирева 1, г. Харьков, Украина</p>
+        <p><strong>Телефон:</strong> <a href="tel:+380675707949">+380675707949</a></p>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2023 SSV Prof. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
