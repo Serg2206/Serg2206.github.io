@@ -1,0 +1,63 @@
+name: 'Close Stale Issues and PRs'
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          # Stale issues
+          days-before-issue-stale: 30
+          days-before-issue-close: 7
+          stale-issue-label: 'stale'
+          stale-issue-message: |
+            👋 Этот issue был автоматически помечен как устаревший из-за отсутствия активности в течение 30 дней.
+            Он будет закрыт через 7 дней, если не будет дополнительной активности.
+            
+            ---
+            
+            👋 This issue has been automatically marked as stale due to inactivity for 30 days.
+            It will be closed in 7 days if there is no additional activity.
+          close-issue-message: |
+            🔒 Этот issue был автоматически закрыт из-за отсутствия активности.
+            Если проблема всё ещё актуальна, пожалуйста, создайте новый issue.
+            
+            ---
+            
+            🔒 This issue has been automatically closed due to inactivity.
+            If the issue is still relevant, please create a new issue.
+          
+          # Stale PRs
+          days-before-pr-stale: 14
+          days-before-pr-close: 7
+          stale-pr-label: 'stale'
+          stale-pr-message: |
+            👋 Этот PR был автоматически помечен как устаревший из-за отсутствия активности в течение 14 дней.
+            Он будет закрыт через 7 дней, если не будет дополнительной активности.
+            
+            ---
+            
+            👋 This PR has been automatically marked as stale due to inactivity for 14 days.
+            It will be closed in 7 days if there is no additional activity.
+          close-pr-message: |
+            🔒 Этот PR был автоматически закрыт из-за отсутствия активности.
+            Пожалуйста, создайте новый PR, если изменения всё ещё актуальны.
+            
+            ---
+            
+            🔒 This PR has been automatically closed due to inactivity.
+            Please create a new PR if the changes are still relevant.
+          
+          # Exemptions
+          exempt-issue-labels: 'pinned,security,priority: high'
+          exempt-pr-labels: 'pinned,security,work in progress'
+          exempt-all-milestones: true
