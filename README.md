@@ -1,3 +1,15 @@
+<div align="center">
+
+![GitHub deployments](https://img.shields.io/github/deployments/Serg2206/Serg2206.github.io/github-pages?label=Deployment&logo=github)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Serg2206/Serg2206.github.io/deploy.yml?branch=main&label=Build&logo=github-actions)
+![GitHub License](https://img.shields.io/github/license/Serg2206/Serg2206.github.io?label=License)
+![GitHub last commit](https://img.shields.io/github/last-commit/Serg2206/Serg2206.github.io?label=Last%20Commit)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fserg2206.github.io&label=Website)
+
+</div>
+
+---
+
 # SSV Prof — Научно-медицинская платформа
 
 **SSV Prof** — это современная научно-медицинская платформа, объединяющая инновации, технологии и многолетний опыт для поддержки специалистов в области хирургии, медицины и науки.
