@@ -1,0 +1,28 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Documents
+*.md text
+*.txt text
+*.csv text
+
+# Scripts
+*.sh text eol=lf
+*.js text
+*.py text
+
+# Web files
+*.html text
+*.css text
+*.scss text
+
+# Configuration files
+*.json text
+*.yml text
+*.yaml text
+*.toml text
+
+# Exclude from language statistics
+*.html linguist-vendored
+docs/** linguist-documentation
+assets/** linguist-vendored
