@@ -1,0 +1,25 @@
+# CODEOWNERS file for SSV Prof Platform
+# 
+# These owners will be the default owners for everything in the repo.
+# Unless a later match takes precedence, @Serg2206 will be requested for
+# review when someone opens a pull request.
+
+# Default owner for everything in the repo
+* @Serg2206
+
+# Documentation files
+*.md @Serg2206
+docs/** @Serg2206
+
+# GitHub Actions workflows
+.github/workflows/** @Serg2206
+
+# Configuration files
+*.yml @Serg2206
+*.yaml @Serg2206
+*.json @Serg2206
+
+# Scripts
+*.js @Serg2206
+*.sh @Serg2206
+*.py @Serg2206
