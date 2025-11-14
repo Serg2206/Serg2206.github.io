@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Serg2206"
+    given-names: "Sergey"
+title: "SSV Prof Platform - Scientific Medical Review and Literature Analysis Platform"
+version: 1.0.0
+date-released: 2025-01-05
+url: "https://github.com/Serg2206/Serg2206.github.io"
+repository-code: "https://github.com/Serg2206/Serg2206.github.io"
+license: MIT
+keywords:
+  - scientific-research
+  - medical-research
+  - literature-review
+  - healthcare
+  - automation
+  - github-pages
