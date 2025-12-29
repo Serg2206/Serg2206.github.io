@@ -2,34 +2,36 @@ name: Check Links
 
 on:
   schedule:
-    # Запускать еженедельно по понедельникам в 9:00 UTC
-    - cron: '0 9 * * 1'
-  workflow_dispatch:
-  pull_request:
+      # Запускать еженедельно по понедельникам в 9:00 UTC
+          - cron: '0 9 * * 1'
+            workflow_dispatch:
+              pull_request:
 
-  permissions:
-    contents: read
-    issues: write
+              permissions:
+                contents: read
+                  issues: write
 
-jobs:
-  link-checker:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
+                  jobs:
+                    link-checker:
+                        runs-on: ubuntu-latest
+                            steps:
+                                  - name: Checkout
+                                          uses: actions/checkout@v6
 
-      - name: Link Checker
-        uses: lycheeverse/lychee-action@v1
-        with:
-          args: --verbose --no-progress './**/*.md' './**/*.html'
-          fail: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN 
-      - name: Create Issue on Failure
-        if: failure()
-        uses: peter-evans/create-issue-from-file@v6
-        with: }}
-            token: ${{ secrets.GITHUB_TOKEN }}
-          title: 'Обнаружены битые ссылки'
-          content-filepath: ./lychee/out.md
-          labels: bug, documentation
+                                                - name: Link Checker
+                                                        uses: lycheeverse/lychee-action@v1
+                                                                with:
+                                                                          args: --verbose --no-progress './**/*.md' './**/*.html'
+                                                                                    fail: true
+                                                                                            env:
+                                                                                                      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                                                                                                      
+                                                                                                            - name: Create Issue From File
+                                                                                                                    if: failure()
+                                                                                                                            uses: peter-evans/create-issue-from-file@v5
+                                                                                                                                    with:
+                                                                                                                                              title: 'Обнаружены битые ссылки'
+                                                                                                                                                        content-filepath: ./lychee/out.md
+                                                                                                                                                                  labels: |
+                                                                                                                                                                              bug
+                                                                                                                                                                                          documentation
