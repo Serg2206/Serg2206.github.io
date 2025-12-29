@@ -30,7 +30,7 @@ jobs:
         if: failure()
         uses: peter-evans/create-issue-from-file@v6
         with:
-                repo-token: ${{ secrets.GITHUB_TOKEN }}
+            repo-token: ${{ secrets.GITHUB_TOKEN }}
           title: 'Обнаружены битые ссылки'
           content-filepath: ./lychee/out.md
           labels: bug, documentation
