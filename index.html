@@ -1,102 +1,185 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SSV Prof - Научно-медицинская платформа для систематических обзоров и анализа литературы">
-    <meta name="keywords" content="медицинские исследования, систематические обзоры, научная литература, healthcare">
-    <title>SSV Prof - Платформа научно-медицинских исследований</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prof. Sergey V. Sushkov — Surgeon-Scientist & Educator</title>
+<meta name="description" content="Prof. Sergey V. Sushkov — surgery professor, researcher, laparoscopy pioneer and AI-in-surgery author. Fellowships, consulting and selected publications.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0b0d13; color: #e7e9ee; line-height: 1.6;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 48px 24px; }
+  header { margin-bottom: 36px; }
+  h1 { font-size: 36px; font-weight: 800; margin-bottom: 6px; }
+  .subtitle { color: #a6b0c0; font-size: 18px; }
+  .contact { margin-top: 10px; font-size: 14px; color: #cfd3dd; }
+  .contact a { color: #6ee7b7; text-decoration: none; }
+  section { margin: 36px 0; }
+  h2 { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #6ee7b7; }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .card { background: #141722; border: 1px solid #1f2433; border-radius: 14px; padding: 18px; }
+  .card h3 { font-size: 15px; margin-bottom: 6px; }
+  .meta { color: #a6b0c0; font-size: 13px; }
+  ul { padding-left: 18px; color: #cfd3dd; }
+  li { margin: 6px 0; }
+  .badge { display: inline-block; background: #1f2433; border: 1px solid #2a3142; border-radius: 999px; padding: 4px 10px; font-size: 12px; color: #cfd3dd; margin: 2px 4px 2px 0; }
+  a.btn { display: inline-block; padding: 10px 14px; background: #4f46e5; color: #fff; text-decoration: none; border-radius: 10px; font-weight: 700; border: 0; }
+  a.btn:hover { background: #4338ca; }
+  footer { margin-top: 40px; font-size: 12px; color: #7a8194; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+</style>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <h1>SSV Prof</h1>
-                    <p class="tagline">Scientific Medical Platform</p>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home">Главная</a></li>
-                    <li><a href="#reviews">Обзоры</a></li>
-                    <li><a href="#research">Исследования</a></li>
-                    <li><a href="#about">О платформе</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<div class="container">
+  <header>
+    <h1>Prof. Sergey V. Sushkov, MD, PhD, DSc</h1>
+    <p class="subtitle">Surgeon-Scientist · Educator · Researcher</p>
+    <p class="contact">
+      Email: <a href="mailto:ssvnauka@gmail.com">ssvnauka@gmail.com</a> ·
+      Telegram: <a href="https://t.me/SSVproff">@SSVproff</a><br>
+      ORCID: 0000-0002-6951-9789 · Scopus: 55360196800 ·
+      <a href="https://github.com/Serg2206">GitHub</a>
+    </p>
+  </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h2>Добро пожаловать на платформу SSV Prof</h2>
-                <p class="lead">Профессиональная платформа для систематических обзоров и анализа научно-медицинской литературы</p>
-                <div class="cta-buttons">
-                    <a href="#reviews" class="btn btn-primary">Начать исследование</a>
-                    <a href="#about" class="btn btn-secondary">Узнать больше</a>
-                </div>
-            </div>
-        </section>
+  <section id="positions">
+    <h2>Key Roles</h2>
+    <div class="card">
+      <h3>Deputy Director for Research</h3>
+      <p class="meta">V.T. Zaitsev Institute of General and Emergency Surgery, NAMS Ukraine · 2004 – Present</p>
+    </div>
+    <div class="card" style="margin-top:10px">
+      <h3>Professor, Department of Surgery №1</h3>
+      <p class="meta">Kharkiv National Medical University · 2008 – Present</p>
+    </div>
+  </section>
 
-        <section id="features" class="features">
-            <div class="container">
-                <h2>Возможности платформы</h2>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3>📚 Систематические обзоры</h3>
-                        <p>Комплексный анализ научной литературы по медицинским темам</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>🔬 Научные исследования</h3>
-                        <p>Доступ к актуальным медицинским исследованиям и данным</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>📊 Анализ данных</h3>
-                        <p>Инструменты для статистического анализа и визуализации</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>🤝 Коллаборация</h3>
-                        <p>Совместная работа исследователей и специалистов</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="expertise">
+    <h2>Areas of Expertise</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Minimally Invasive Surgery</h3>
+        <p class="meta">Cholecystectomy, gastric resection, colectomy, splenectomy, hernioplasty.</p>
+      </div>
+      <div class="card">
+        <h3>Surgical Oncology & Abdominal Surgery</h3>
+        <p class="meta">Organ-preserving resections, adjacent-organ work, oncological strategy planning.</p>
+      </div>
+      <div class="card">
+        <h3>Emergency Surgery & Sepsis</h3>
+        <p class="meta">Perforations, acute pancreatitis, complicated hernias, peritonitis, biomarker-driven risk control.</p>
+      </div>
+      <div class="card">
+        <h3>AI & Translational Research</h3>
+        <p class="meta">Predictive models for postoperative complications and ML-based decision support.</p>
+      </div>
+    </div>
+  </section>
 
-        <section id="reviews" class="reviews">
-            <div class="container">
-                <h2>Последние систематические обзоры</h2>
-                <div class="review-list">
-                    <article class="review-card">
-                        <h3>Эффективность новых методов лечения</h3>
-                        <p class="meta">Опубликовано: Ноябрь 2025 | Автор: Исследовательская группа SSV</p>
-                        <p>Систематический обзор современных подходов к лечению...</p>
-                        <a href="content/reviews/review-001.html" class="read-more">Читать полностью →</a>
-                    </article>
-                </div>
-            </div>
-        </section>
+  <section id="highlight">
+    <h2>Selected Highlights</h2>
+    <div class="card">
+      <ul>
+        <li>Nearly 40 years of clinical and research experience in general, oncological, vascular and thoracic surgery.</li>
+        <li>Highest qualification category in multiple surgical specialties.</li>
+        <li>121 peer-reviewed publications, 18 patents, 5 monographs, 4 textbooks.</li>
+        <li>20+ PhD/DSc candidates supervised; 200+ surgeons trained at various levels.</li>
+        <li>Principal investigator on 15+ multicenter trials; 20+ years of GCP experience.</li>
+        <li>One of the regional pioneers of laparoscopic surgery (1995–1997).</li>
+      </ul>
+    </div>
+  </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2>О платформе SSV Prof</h2>
-                <p>SSV Prof - это профессиональная научно-медицинская платформа, созданная для облегчения процесса систематического обзора литературы и проведения исследований в области healthcare.</p>
-                <p>Наша миссия - предоставить исследователям и медицинским специалистам современные инструменты для качественного анализа научной информации.</p>
-            </div>
-        </section>
-    </main>
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>Doctor of Medical Sciences (DSc)</strong> — Surgery, 2007, Kharkiv</p>
+      <p><strong>Candidate of Medical Sciences (PhD)</strong> — Surgery, 1998, Kharkiv</p>
+      <p><strong>MD (General Medicine)</strong> — Kharkiv Medical Institute, 1986</p>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 SSV Prof Platform. Все права защищены.</p>
-            <p>
-                <a href="https://github.com/Serg2206/Serg2206.github.io">GitHub</a> | 
-                <a href="CONTRIBUTING.md">Contributing</a> | 
-                <a href="CODE_OF_CONDUCT.md">Code of Conduct</a>
-            </p>
-        </div>
-    </footer>
+  <section id="tags">
+    <h2>Topics</h2>
+    <div>
+      <span class="badge">Laparoscopic Surgery</span>
+      <span class="badge">Surgical Oncology</span>
+      <span class="badge">Emergency Surgery</span>
+      <span class="badge">Sepsis</span>
+      <span class="badge">AI in Surgery</span>
+      <span class="badge">Translational Research</span>
+      <span class="badge">Medical Education</span>
+    </div>
+  </section>
 
-    <script src="scripts/interactive.js"></script>
+  <section id="highlights-home">
+    <h2>Platform Overview</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>SSV Prof</h3>
+        <p class="meta">Scientific review platform and surgical analysis hub.</p>
+        <p style="margin-top:8px"><a href="https://early-nights-scream.loca.lt" style="color:#6ee7b7">Open platform</a></p>
+      </div>
+      <div class="card">
+        <h3>Prompt Packs</h3>
+        <p class="meta">Ready-to-use AI prompt packs used in research and content workflows.</p>
+        <p style="margin-top:8px"><a href="docs/buy.html" style="color:#6ee7b7">View packs</a></p>
+      </div>
+      <div class="card">
+        <h3>Publications & Research</h3>
+        <p class="meta">Selected papers and review templates.</p>
+        <p style="margin-top:8px"><a href="publications.html" style="color:#6ee7b7">Open publications</a></p>
+      </div>
+      <div class="card">
+        <h3>Programs &amp; Services</h3>
+        <p class="meta">Surgeon fellowships and research collaborations.</p>
+        <p style="margin-top:8px"><a href="programs.html" style="color:#6ee7b7">Open programs</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resources-home">
+    <h2>Resources</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Cases &amp; Outcomes</h3>
+        <p class="meta">Illustrative clinical cases with approach and results.</p>
+        <p style="margin-top:8px"><a href="cases.html" style="color:#6ee7b7">Open cases</a></p>
+      </div>
+      <div class="card">
+        <h3>Content Library</h3>
+        <p class="meta">Articles, videos, presentations and protocols.</p>
+        <p style="margin-top:8px"><a href="content.html" style="color:#6ee7b7">Open library</a></p>
+      </div>
+      <div class="card">
+        <h3>Platform</h3>
+        <p class="meta">Review platform overview and entry points.</p>
+        <p style="margin-top:8px"><a href="platform.html" style="color:#6ee7b7">Open platform</a></p>
+      </div>
+      <div class="card">
+        <h3>Reviews</h3>
+        <p class="meta">Active and upcoming systematic reviews.</p>
+        <p style="margin-top:8px"><a href="reviews.html" style="color:#6ee7b7">Open reviews</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <h2>Inquiries</h2>
+    <div class="card">
+      <p>For fellowship requests, case reviews or collaboration: email <a href="mailto:ssvnauka@gmail.com" style="color:#6ee7b7">ssvnauka@gmail.com</a> or Telegram <a href="https://t.me/SSVproff" style="color:#6ee7b7">@SSVproff</a>.</p>
+      <p style="margin-top:10px"><a class="btn" href="mailto:ssvnauka@gmail.com?subject=SSV Prof request">Contact</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="y"></span> Sergey V. Sushkov. Content reused from CV files under personal portfolio license; please contact for permissions.
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</div>
 </body>
 </html>

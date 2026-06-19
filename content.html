@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Library — Prof. Sergey V. Sushkov</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0b0d13; color: #e7e9ee; line-height: 1.6;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 48px 24px; }
+  h1 { font-size: 36px; font-weight: 800; margin-bottom: 6px; }
+  .subtitle { color: #a6b0c0; font-size: 18px; }
+  section { margin: 36px 0; }
+  h2 { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #6ee7b7; }
+  .card { background: #141722; border: 1px solid #1f2433; border-radius: 14px; padding: 18px; }
+  .card h3 { font-size: 15px; margin-bottom: 6px; }
+  .meta { color: #a6b0c0; font-size: 13px; margin-bottom: 6px; }
+  .tag {
+    display: inline-block; background: #1f2433; border: 1px solid #2a3142;
+    border-radius: 999px; padding: 3px 10px; font-size: 12px;
+    color: #cfd3dd; margin: 2px 4px 2px 0;
+  }
+  .filter { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 18px; }
+  .filter button {
+    background: #141722; color: #cfd3dd; border: 1px solid #1f2433; border-radius: 999px;
+    padding: 6px 12px; font-size: 13px; cursor: pointer;
+  }
+  .filter button.active { background: #1f2433; color: #e7e9ee; border-color: #6ee7b7; }
+  .resource { background: #141722; border: 1px solid #1f2433; border-radius: 14px; padding: 16px; margin: 10px 0; }
+  .resource h3 { font-size: 15px; margin-bottom: 4px; }
+  a.btn {
+    display: inline-block; padding: 10px 14px; background: #4f46e5; color: #fff;
+    text-decoration: none; border-radius: 10px; font-weight: 700; border: 0;
+  }
+  footer { margin-top: 40px; font-size: 12px; color: #7a8194; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Content Library</h1>
+    <p class="subtitle">Articles, videos, presentations and structured learning materials.</p>
+  </header>
+
+  <section id="filter">
+    <h2>Filter</h2>
+    <div class="filter" id="filter-bar">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="article">Articles</button>
+      <button data-filter="video">Videos</button>
+      <button data-filter="presentation">Presentations</button>
+      <button data-filter="protocol">Protocols</button>
+    </div>
+  </section>
+
+  <section id="articles">
+    <h2>Articles</h2>
+
+    <div class="resource" data-type="article">
+      <h3>Fifteen Pearls in Laparoscopic Bile-Duct Exploration</h3>
+      <p class="meta">Clinical article · 2024</p>
+      <div>
+        <span class="tag">laparoscopy</span>
+        <span class="tag">biliary</span>
+      </div>
+    </div>
+
+    <div class="resource" data-type="article">
+      <h3>Organ Preservation in Upper GI Surgery: When and How</h3>
+      <p class="meta">Review · 2023</p>
+      <div>
+        <span class="tag">oncology</span>
+        <span class="tag">upper-gi</span>
+      </div>
+    </div>
+
+    <div class="resource" data-type="article">
+      <h3>Biomarkers of Postoperative Sepsis: A Concept Paper</h3>
+      <p class="meta">Original research summary · 2022</p>
+      <div>
+        <span class="tag">emergency</span>
+        <span class="tag">sepsis</span>
+      </div>
+    </div>
+
+    <div class="resource" data-type="article">
+      <h3>Using Structured Clinical Data to Predict Complications</h3>
+      <p class="meta">AI-assisted surgical decision support · 2024</p>
+      <div>
+        <span class="tag">ai</span>
+        <span class="tag">translational</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>Videos</h2>
+
+    <div class="resource" data-type="video">
+      <h3>Laparoscopic Cholecystectomy in Difficult Gallbladder</h3>
+      <p class="meta">Operative video + narration · 2023</p>
+      <div>
+        <span class="tag">laparoscopy</span>
+        <span class="tag">biliary</span>
+      </div>
+    </div>
+
+    <div class="resource" data-type="video">
+      <h3>Fundamentals of Hemostasis in Advanced Laparoscopy</h3>
+      <p class="meta">Educational lecture · 2024</p>
+      <div>
+        <span class="tag">laparoscopy</span>
+        <span class="tag">education</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="presentations">
+    <h2>Presentations</h2>
+
+    <div class="resource" data-type="presentation">
+      <h3>Translational Research in Emergency Surgery: From Idea to Protocol</h3>
+      <p class="meta">Conference presentation · 2024</p>
+      <div>
+        <span class="tag">translational</span>
+        <span class="tag">research</span>
+      </div>
+    </div>
+
+    <div class="resource" data-type="presentation">
+      <h3>Twelve Lessons from a Laparoscopy Pioneer</h3>
+      <p class="meta">Plenary lecture · 2022</p>
+      <div>
+        <span class="tag">laparoscopy</span>
+        <span class="tag">education</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="protocols">
+    <h2>Protocols</h2>
+
+    <div class="resource" data-type="protocol">
+      <h3>Fast-track Protocol After Elective Colon Resection</h3>
+      <p class="meta">Structured pathway · Enhanced Recovery</p>
+      <div>
+        <span class="tag">protocol</span>
+        <span class="tag">laparoscopy</span>
+      </div>
+    </div>
+
+    <div class="resource" data-type="protocol">
+      <h3>Systematic Review Protocol Template</h3>
+      <p class="meta">Research methodology · PRISMA-aligned</p>
+      <div>
+        <span class="tag">protocol</span>
+        <span class="tag">research</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <h2>Get Access</h2>
+    <div class="card">
+      <p>Request PDFs, video access or collaboration on educational content.</p>
+      <p style="margin-top:10px">
+        <a class="btn" href="mailto:ssvnauka@gmail.com?subject=Content library request">Request Access</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="y"></span> Sergey V. Sushkov. All materials are shared under the stated license; contact for reuse permissions.
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const buttons = document.querySelectorAll('#filter-bar button');
+    const allResources = () => document.querySelectorAll('.resource');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        allResources().forEach(r => {
+          const type = r.getAttribute('data-type');
+          r.style.display = (filter === 'all' || type === filter) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</div>
+</body>
+</html>

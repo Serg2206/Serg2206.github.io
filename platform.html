@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Platform — SSV Prof</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0b0d13; color: #e7e9ee; line-height: 1.6;
+  }
+  .container { max-width: 980px; margin: 0 auto; padding: 48px 24px; }
+  h1 { font-size: 36px; font-weight: 800; margin-bottom: 6px; }
+  .subtitle { color: #a6b0c0; font-size: 18px; }
+  section { margin: 36px 0; }
+  h2 { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #6ee7b7; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { background: #141722; border: 1px solid #1f2433; border-radius: 14px; padding: 18px; }
+  .card h3 { font-size: 15px; margin-bottom: 6px; }
+  .meta { color: #a6b0c0; font-size: 13px; margin-bottom: 6px; }
+  ul { padding-left: 18px; color: #cfd3dd; }
+  li { margin: 6px 0; }
+  .badge { display: inline-block; background: #1f2433; border: 1px solid #2a3142; border-radius: 999px; padding: 4px 10px; font-size: 12px; color: #cfd3dd; margin: 2px 4px 2px 0; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+  a.btn { display: inline-block; padding: 10px 14px; background: #4f46e5; color: #fff; text-decoration: none; border-radius: 10px; font-weight: 700; border: 0; }
+  a.btn:hover { background: #4338ca; }
+  a.alt { display: inline-block; padding: 10px 14px; background: #1f2433; color: #e7e9ee; text-decoration: none; border-radius: 10px; font-weight: 700; border: 1px solid #2a3142; }
+  footer { margin-top: 40px; font-size: 12px; color: #7a8194; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>SSV Prof</h1>
+    <p class="subtitle">Scientific review platform for systematic analysis and surgical research support.</p>
+  </header>
+
+  <section id="pillars">
+    <h2>What this platform is for</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Systematic reviews</h3>
+        <p class="meta">Structured literature analysis in surgery and oncology.</p>
+      </div>
+      <div class="card">
+        <h3>Clinical cases</h3>
+        <p class="meta">De-identified cases with methodology and outcomes.</p>
+      </div>
+      <div class="card">
+        <h3>Education</h3>
+        <p class="meta">Courses, protocols and video-based debriefing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="links">
+    <h2>Open sections</h2>
+    <div class="cta-row">
+      <a class="btn" href="https://early-nights-scream.loca.lt" target="_blank" rel="noopener">Open Platform</a>
+      <a class="alt" href="https://ssvnauka.net" target="_blank" rel="noopener">Main Site</a>
+    </div>
+  </section>
+
+  <footer>SSV Prof · Kharkiv Surgical School ecosystem · contact: ssvnauka@gmail.com</footer>
+</div>
+</body>
+</html>

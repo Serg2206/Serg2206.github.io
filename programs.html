@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programs & Services — Prof. Sergey V. Sushkov</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0b0d13; color: #e7e9ee; line-height: 1.6;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 48px 24px; }
+  h1 { font-size: 36px; font-weight: 800; margin-bottom: 6px; }
+  .subtitle { color: #a6b0c0; font-size: 18px; }
+  section { margin: 36px 0; }
+  h2 { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #6ee7b7; }
+  .card {
+    background: #141722; border: 1px solid #1f2433; border-radius: 14px; padding: 18px;
+  }
+  ul { padding-left: 18px; color: #cfd3dd; }
+  li { margin: 6px 0; }
+  .price { font-size: 22px; font-weight: 700; color: #e7e9ee; }
+  .price span { color: #a6b0c0; font-size: 14px; font-weight: 600; }
+  .note { color: #a6b0c0; font-size: 13px; margin-top: 8px; }
+  a.btn {
+    display: inline-block; padding: 10px 14px; background: #4f46e5;
+    color: #fff; text-decoration: none; border-radius: 10px; font-weight: 700; border: 0;
+  }
+  a.btn:hover { background: #4338ca; }
+  a.alt {
+    display: inline-block; padding: 10px 14px; background: #1f2433; color: #e7e9ee;
+    text-decoration: none; border-radius: 10px; font-weight: 700; border: 1px solid #2a3142;
+  }
+  footer {
+    margin-top: 40px; font-size: 12px; color: #7a8194;
+    border-top: 1px solid #1f2433; padding-top: 14px;
+  }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Programs & Services</h1>
+    <p class="subtitle">Fellowships, advanced training and clinical consultation formats.</p>
+    <p>
+      Email: <a href="mailto:ssvnauka@gmail.com">ssvnauka@gmail.com</a> ·
+      Telegram: <a href="https://t.me/SSVproff">@SSVproff</a>
+    </p>
+  </header>
+
+  <section id="fellowships">
+    <h2>Surgical Specialist Fellowships</h2>
+    <div class="grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;">
+      <div class="card">
+        <h3>Abdominal General Surgery Track</h3>
+        <ul>
+          <li>Emergency and elective GI cases</li>
+          <li>Laparoscopic cholecystectomy, resection, hernioplasty</li>
+          <li>Simulator work + OR participation</li>
+        </ul>
+        <p class="price">Group / Individual <span>on request</span></p>
+      </div>
+      <div class="card">
+        <h3>Oncological Surgery Track</h3>
+        <ul>
+          <li>Organ-preserving resections and lymphadenectomy</li>
+          <li>Pre- and post-operative chemo-sync cases</li>
+          <li>Clinical discussion of oncological strategies</li>
+        </ul>
+        <p class="price">Group / Individual <span>on request</span></p>
+      </div>
+      <div class="card">
+        <h3>Advanced Laparoscopy Track</h3>
+        <ul>
+          <li>Complex colectomy, gastrectomy, splenectomy</li>
+          <li>Step-by-step video-based debriefing</li>
+          <li>Minimum 2-week intensive track</li>
+        </ul>
+        <p class="price">Individual only <span>on request</span></p>
+      </div>
+      <div class="card">
+        <h3>Research Methods & Meta-Analysis</h3>
+        <ul>
+          <li>Systematic review methodology</li>
+          <li>Protocol drafting and statistical support</li>
+          <li>From idea to submission-ready manuscript</li>
+        </ul>
+        <p class="price">Online or in-person <span>on request</span></p>
+      </div>
+    </div>
+    <p class="note">
+      Each program can be adapted for 1-on-1 or small-group formats. Typical cycle: 2–4 weeks of structured training + case-based discussion.
+    </p>
+  </section>
+
+  <section id="consulting">
+    <h2>Remote Medical Consulting</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Second opinion:</strong> complex emergency or planned abdominal/oncological cases</li>
+        <li><strong>Case review package:</strong> CT/endoscopy/lab set with written recommendation</li>
+        <li><strong>Post-op monitoring:</strong> postoperative control, dosing rationale, further strategy</li>
+      </ul>
+      <p class="price">Starts at $150 per review <span>$300 for full case package</span></p>
+      <p class="note">Do not use for acute emergencies. Call your local emergency service.</p>
+    </div>
+  </section>
+
+  <section id="cta">
+    <h2>Request Details</h2>
+    <div class="card">
+      <p>Tell me your specialty, goal and preferred schedule.</p>
+      <p>
+        <a class="btn" href="mailto:ssvnauka@gmail.com?subject=Program or consulting request">Email your request</a>
+        <a class="alt" href="https://t.me/SSVproff" target="_blank" style="margin-left: 8px;">Telegram @SSVproff</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="y"></span> Sergey V. Sushkov.
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</div>
+</body>
+</html>
