@@ -39,6 +39,21 @@
 
   <title data-i18n="meta.title">Профессор Сушков С.В. — Хирург-онколог | МЦ MARIA, Харьков</title>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MARIA Medical Center — Профессор Сушков С.В.",
+    "url": "https://ssvnauka.com",
+    "description": "Профессорская хирургия, онкология и гинекология в Харькове. Д-р мед. наук, профессор Сушков С.В. — 40+ лет опыта, 5000+ операций.",
+    "inLanguage": ["ru", "uk", "en"],
+    "publisher": {
+      "@type": "MedicalBusiness",
+      "name": "MARIA Medical Center"
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -164,6 +179,13 @@
             <p style="color: var(--text-light); margin-top: 8px;" data-i18n="doctor_profile.credentials">Д-р мед. наук, профессор | Хирург-онколог | Член EAES</p>
             <p style="margin-top: 16px;" data-i18n="doctor_profile.bio">Пионер лапароскопической хирургии в Харьковском регионе (1995–1997). Заместитель директора по научной работе Института общей и неотложной хирургии им. В.Т. Зайцева НАМН Украины. 121 публикация, 18 патентов, h-index 6.</p>
             <a href="about/" class="card__link" style="margin-top: 20px; display: inline-flex;" data-i18n="doctor_profile.cta">Подробнее о профессоре →</a>
+            <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+              <span class="text-small" style="color: var(--text-light);">Академические профили:</span>
+              <a href="https://orcid.org/0000-0002-6951-9789" target="_blank" rel="noopener" class="card__link" style="font-size: 0.875rem;" data-i18n="about_page.academic_orcid">ORCID</a>
+              <a href="https://www.scopus.com/authid/detail.uri?authorId=55360196800" target="_blank" rel="noopener" class="card__link" style="font-size: 0.875rem;" data-i18n="about_page.academic_scopus">Scopus</a>
+              <a href="#" target="_blank" rel="noopener" class="card__link" style="font-size: 0.875rem;" data-i18n="about_page.academic_scholar">Google Scholar</a>
+              <a href="#" target="_blank" rel="noopener" class="card__link" style="font-size: 0.875rem;" data-i18n="about_page.academic_researchgate">ResearchGate</a>
+            </div>
           </div>
           <div class="reveal reveal-delay-1">
             <img src="images/doctor-portrait.jpg" alt="Профессор Сушков С.В." style="border-radius: 16px; box-shadow: var(--shadow-lg); width: 100%; max-width: 400px; margin: 0 auto; display: block;" data-i18n-alt="doctor_profile.name">
@@ -256,7 +278,30 @@
         <p class="section-subtitle reveal" data-i18n="articles_preview.subtitle">Читайте экспертные материалы о здоровье, диагностике и лечении</p>
         <!-- Page worker: insert 3 article cards here -->
         <div class="grid-3" style="margin-bottom: 32px;">
-          <p class="text-small text-center" style="color: var(--text-light); grid-column: 1 / -1;">[Page worker: insert 3 article preview cards here]</p>
+          <a href="articles/laparoscopic-cholecystectomy.html" class="card reveal" style="text-decoration: none; color: inherit; display: block;">
+            <div style="aspect-ratio: 16/9; background: var(--gradient-hero); border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="articles_page.category_surgery">Хирургия</div>
+            <div style="padding: 20px;">
+              <h4 style="margin-bottom: 8px; font-size: 1.125rem;" data-i18n="articles_page.article_1_title">Лапароскопическая холецистэктомия в Харькове</h4>
+              <p class="text-small" style="color: var(--text-light); margin-bottom: 12px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" data-i18n="articles_page.article_1_excerpt">Современные методы удаления желчного пузыря с минимальными разрезами. Восстановление за 3–7 дней.</p>
+              <span class="text-small" style="color: var(--text-light);">15 марта 2025 · 5 мин</span>
+            </div>
+          </a>
+          <a href="articles/oncological-surgery.html" class="card reveal reveal-delay-1" style="text-decoration: none; color: inherit; display: block;">
+            <div style="aspect-ratio: 16/9; background: var(--gradient-hero); border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="articles_page.category_oncology">Онкология</div>
+            <div style="padding: 20px;">
+              <h4 style="margin-bottom: 8px; font-size: 1.125rem;" data-i18n="articles_page.article_2_title">Онкологическая хирургия в Харькове</h4>
+              <p class="text-small" style="color: var(--text-light); margin-bottom: 12px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" data-i18n="articles_page.article_2_excerpt">Лечение онкологических заболеваний: рак желудка, кишечника, молочной железы, женских органов.</p>
+              <span class="text-small" style="color: var(--text-light);">10 марта 2025 · 7 мин</span>
+            </div>
+          </a>
+          <a href="articles/gynecological-consultation.html" class="card reveal reveal-delay-2" style="text-decoration: none; color: inherit; display: block;">
+            <div style="aspect-ratio: 16/9; background: var(--gradient-hero); border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="articles_page.category_gynecology">Гинекология</div>
+            <div style="padding: 20px;">
+              <h4 style="margin-bottom: 8px; font-size: 1.125rem;" data-i18n="articles_page.article_3_title">Гинекологическая консультация в Харькове</h4>
+              <p class="text-small" style="color: var(--text-light); margin-bottom: 12px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;" data-i18n="articles_page.article_3_excerpt">Профилактика и лечение гинекологических заболеваний. Планирование беременности.</p>
+              <span class="text-small" style="color: var(--text-light);">5 марта 2025 · 4 мин</span>
+            </div>
+          </a>
         </div>
         <div class="text-center reveal">
           <a href="articles/" class="btn btn-secondary" data-i18n="articles_preview.cta">Все статьи →</a>
@@ -418,6 +463,12 @@
       "addressCountry": "UA"
     },
     "medicalSpecialty": ["Surgery", "Oncology", "Gynecology"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "bestRating": "5",
+      "reviewCount": "200"
+    },
     "founder": {
       "@type": "Person",
       "name": "Sushkov Sergey Valentinovich",
@@ -437,11 +488,56 @@
     "description": "MD 1986, PhD 1998, DSc 2007. Pioneer of laparoscopic surgery in Kharkiv region.",
     "alumniOf": "Kharkiv National Medical University",
     "memberOf": ["EAES", "Ukrainian Association of Surgeons"],
+    "sameAs": [
+      "https://orcid.org/0000-0002-6951-9789",
+      "https://www.scopus.com/authid/detail.uri?authorId=55360196800"
+    ],
     "knowsAbout": ["Surgery", "Oncology", "Laparoscopy", "Gynecology"],
     "workLocation": {
       "@type": "MedicalBusiness",
       "name": "MARIA Medical Center"
     }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Сколько стоит консультация профессора?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Консультация профессора Сушкова С.В. стоит 500 грн. Оплата производится в медицинском центре MARIA в Харькове. После онлайн-оплаты мы свяжемся с вами в течение 1 часа для согласования времени приёма."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Какие операции выполняет профессор Сушков?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Профессор Сушков С.В. специализируется на лапароскопической и малоинвазивной хирургии, онкохирургии (рак желудка, кишечника, молочной железы, женских органов), гинекологических операциях, включая миомэктомию с сохранением матки. Общий опыт — более 5000 операций."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Где находится медицинский центр MARIA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Медицинский центр MARIA расположен в Харькове, Украина. Точный адрес: ул. Сирохинская, Харьков, Харьковская область, 61000. Приём ведётся по предварительной записи."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как подготовиться к консультации?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Возьмите с собой паспорт, результаты предыдущих анализов и исследований (если есть), список принимаемых лекарств. Необходимость приходить натощак зависит от цели приёма — уточните при записи. Консультация длится обычно 30–45 минут."
+        }
+      }
+    ]
   }
   </script>
 
