@@ -33,6 +33,7 @@
     initSmoothScroll();
     initCookieBanner();
     initCurrentNavHighlight();
+    initForms();
   }
 
   /* -------------------------------
@@ -299,6 +300,74 @@
       btn.addEventListener('click', () => {
         localStorage.setItem(STORAGE_KEYS.COOKIE_CONSENT, 'true');
         banner.classList.remove('cookie-banner--visible');
+      });
+    }
+  }
+
+  /* -------------------------------
+     Form Handling (redirect to thank-you)
+     ------------------------------- */
+  function initForms() {
+    const appointmentForm = document.getElementById('appointmentForm');
+    const reviewForm = document.getElementById('reviewForm');
+
+    if (appointmentForm) {
+      appointmentForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Basic validation
+        const name = appointmentForm.querySelector('[name="name"]');
+        const phone = appointmentForm.querySelector('[name="phone"]');
+        if (!name || !name.value.trim()) {
+          alert(window.MARIA.t('appointment_page.error_name') || 'Введите имя');
+          name.focus();
+          return;
+        }
+        if (!phone || !phone.value.trim()) {
+          alert(window.MARIA.t('appointment_page.error_phone') || 'Введите телефон');
+          phone.focus();
+          return;
+        }
+        // Build mailto and open
+        const subject = 'Запись на приём — ' + (name.value || '');
+        const body = 'Имя: ' + (name.value || '') + ' ' + (appointmentForm.querySelector('[name="surname"]')?.value || '') + '\n' +
+                     'Телефон: ' + (phone.value || '') + '\n' +
+                     'Email: ' + (appointmentForm.querySelector('[name="email"]')?.value || '') + '\n' +
+                     'Тип приёма: ' + (appointmentForm.querySelector('[name="type"]')?.value || '') + '\n' +
+                     'Дата: ' + (appointmentForm.querySelector('[name="date"]')?.value || '') + '\n' +
+                     'Сообщение: ' + (appointmentForm.querySelector('[name="message"]')?.value || '');
+        window.location.href = 'mailto:ssvnauka@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        // Redirect to thank-you after short delay
+        setTimeout(function () {
+          window.location.href = '../thank-you.html';
+        }, 1500);
+      });
+    }
+
+    if (reviewForm) {
+      reviewForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = reviewForm.querySelector('[name="name"]');
+        const text = reviewForm.querySelector('[name="text"]');
+        if (!name || !name.value.trim()) {
+          alert(window.MARIA.t('reviews_page.error_name') || 'Введите имя');
+          name.focus();
+          return;
+        }
+        if (!text || !text.value.trim()) {
+          alert(window.MARIA.t('reviews_page.error_text') || 'Введите текст отзыва');
+          text.focus();
+          return;
+        }
+        const subject = 'Отзыв от ' + (name.value || '');
+        const body = 'Имя: ' + (name.value || '') + '\n' +
+                     'Email: ' + (reviewForm.querySelector('[name="email"]')?.value || '') + '\n' +
+                     'Оценка: ' + (reviewForm.querySelector('[name="rating"]:checked')?.value || '') + '\n' +
+                     'Услуга: ' + (reviewForm.querySelector('[name="service"]')?.value || '') + '\n' +
+                     'Отзыв: ' + (text.value || '');
+        window.location.href = 'mailto:ssvnauka@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        setTimeout(function () {
+          window.location.href = '../thank-you.html';
+        }, 1500);
       });
     }
   }
