@@ -322,5 +322,11 @@
     "open": "Open",
     "yes": "Yes",
     "no": "No"
+  },
+  "thank_you": {
+    "title": "Thank you for contacting us!",
+    "message": "We have received your message. Our administrator will contact you shortly to clarify details and schedule your appointment.",
+    "back_home": "Back to Home",
+    "back_appointment": "Book Again"
   }
 }
