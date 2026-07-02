@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /images/
 
-Sitemap: https://ssvnauka.com/sitemap.xml
+Sitemap: https://serg2206.github.io/sitemap.xml
