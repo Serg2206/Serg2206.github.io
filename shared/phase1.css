@@ -1,4 +1,4 @@
-/* ═══════════════════════════════════════════════════════════
+﻿/* ═══════════════════════════════════════════════════════════
    ssvnauka.com · Phase 1 · Animation + Widget Layer
    Подключается ко всем страницам через <link>
    ═══════════════════════════════════════════════════════════ */
@@ -177,12 +177,12 @@ html { scroll-behavior: smooth; }
   opacity: .85;
   font-weight: 500;
 }
-.p1-bar-text strong { color: #f59e0b; }
+.p1-bar-text strong { color: #c8a84b; }
 .p1-bar-btn {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  background: #0d9488;
+  background: #2d6a9f;
   color: #fff;
   font-weight: 700;
   font-size: .88rem;
@@ -195,7 +195,7 @@ html { scroll-behavior: smooth; }
   white-space: nowrap;
 }
 .p1-bar-btn:hover { background: #0f766e; transform: scale(1.03); }
-.p1-bar-btn.gold { background: #f59e0b; color: #1e293b; }
+.p1-bar-btn.gold { background: #c8a84b; color: #1e293b; }
 .p1-bar-btn.gold:hover { background: #d97706; }
 .p1-bar-close {
   margin-left: 8px;
@@ -230,7 +230,7 @@ body.p1-bar-active { padding-bottom: 56px; }
   top: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(90deg, #0d9488, #f59e0b);
+  background: linear-gradient(90deg, #2d6a9f, #c8a84b);
   z-index: 10001;
   width: 0%;
   transition: width 0.1s linear;
