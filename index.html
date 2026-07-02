@@ -58,6 +58,16 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Phase 1: scroll animations, Telegram widget, sticky bar, progress bar -->
   <link rel="stylesheet" href="shared/phase1.css">
+  <style>
+    /* Hero always visible — no scroll animation needed for above-fold content */
+    @keyframes heroFadeIn {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-fadein {
+      animation: heroFadeIn 0.8s ease forwards;
+    }
+  </style>
 </head>
 <body>
   <!-- Scroll progress bar (Phase 1) -->
@@ -126,15 +136,15 @@
 
     <!-- Section: Hero -->
     <section id="hero" class="bg-gradient" style="min-height: 100vh; display: flex; align-items: center; padding-top: 72px;">
-      <div class="container text-center">
-        <span class="pill pill-white p1-reveal" data-i18n="hero.badge">Профессорская хирургия в Харькове</span>
-        <h1 class="p1-reveal" style="color: #fff; margin-top: 20px;" data-i18n="hero.title">Профессорская хирургия, онкология и гинекология</h1>
-        <p class="p1-reveal" style="color: rgba(255,255,255,0.9); max-width: 700px; margin: 20px auto 0; font-size: 1.125rem;" data-i18n="hero.subtitle">Д-р мед. наук, профессор Сушков С.В. — 40+ лет опыта, 5000+ операций. Индивидуальный подход, современное оборудование, безопасные операции.</p>
-        <div class="p1-reveal" style="margin-top: 32px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+      <div class="container text-center hero-fadein">
+        <span class="pill pill-white" data-i18n="hero.badge">Профессорская хирургия в Харькове</span>
+        <h1 style="color: #fff; margin-top: 20px;" data-i18n="hero.title">Профессорская хирургия, онкология и гинекология</h1>
+        <p style="color: rgba(255,255,255,0.9); max-width: 700px; margin: 20px auto 0; font-size: 1.125rem;" data-i18n="hero.subtitle">Д-р мед. наук, профессор Сушков С.В. — 40+ лет опыта, 5000+ операций. Индивидуальный подход, современное оборудование, безопасные операции.</p>
+        <div style="margin-top: 32px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
           <a href="appointment/" class="btn btn-primary btn-large" data-i18n="hero.cta_primary">Записаться на консультацию</a>
           <a href="#about" class="btn btn-white btn-large" data-i18n="hero.cta_secondary">Узнать больше</a>
         </div>
-        <div class="p1-reveal" style="margin-top: 24px;">
+        <div style="margin-top: 24px;">
           <a href="tel:+380675707949" style="color: #fff; font-size: 1.125rem; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;" data-i18n="hero.phone">+380 67 570 79 49</a>
           <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin-top: 8px;" data-i18n="hero.trust_microcopy">Приём по предварительной записи · Консультация 2000 грн</p>
         </div>
