@@ -280,16 +280,23 @@
     <a class="btn btn-primary" href="/appointment/">📅 Записаться онлайн</a>
     <div class="chips">
       <a class="chip" href="tel:+380675707949">📞 +380 67 570 79 49</a>
-      <a class="chip" href="https://wa.me/380675707949">💬 WhatsApp</a>
-      <a class="chip" href="viber://chat?number=+380675707949">📱 Viber</a>
-      <a class="chip" href="https://t.me/SSVproff_medical_bot">✈️ Telegram</a>
+      <a class="chip" href="https://wa.me/380675707949" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+      <a class="chip" href="viber://chat?number=+380675707949" target="_blank" rel="noopener noreferrer" onclick="return handleViberClick(event)">📱 Viber</a>
+      <a class="chip" href="https://t.me/SSVproff_medical_bot" target="_blank" rel="noopener noreferrer">✈️ Telegram</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="footer-inner">
-    <div><span class="footer-logo">MARIA MEDICAL CENTER</span><p style="font-size:.88rem">Профессорская хирургия, онкология<br>и гинекология в Харькове.</p></div>
+    <div><span class="footer-logo">MARIA MEDICAL CENTER</span><p style="font-size:.88rem">Профессорская хирургия, онкология<br>и гинекология в Харькове.</p>
+      <div style="display:flex;gap:12px;margin-top:12px;">
+        <a href="tel:+380675707949" aria-label="Позвонить" style="color:#94a3b8;">📞</a>
+        <a href="https://t.me/SSVproff_medical_bot" target="_blank" rel="noopener noreferrer" aria-label="Telegram" style="color:#94a3b8;">✈️</a>
+        <a href="https://wa.me/380675707949" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style="color:#94a3b8;">💬</a>
+        <a href="viber://chat?number=+380675707949" target="_blank" rel="noopener noreferrer" aria-label="Viber" style="color:#94a3b8;" onclick="return handleViberClick(event)">📳</a>
+      </div>
+    </div>
     <div class="footer-col"><strong>Специализации</strong><div class="footer-links"><a href="/surgery/">Хирургия</a><a href="/oncosurgery/">Онкохирургия</a><a href="/gynecology/">Гинекология</a><a href="/myomectomy/">Миомэктомия</a><a href="/onco-diagnostics/">Онко-диагностика</a><a href="/checkup/">Профосмотр</a></div></div>
     <div class="footer-col"><strong>Центр</strong><div class="footer-links"><a href="/about/">О профессоре</a><a href="/articles/">Статьи</a><a href="/reviews/">Отзывы</a><a href="/appointment/">Запись на приём</a></div></div>
     <div class="footer-col"><strong>Контакты</strong><p style="font-size:.88rem">вул. Сірохінська, Харків<br>+380 67 570 79 49<br>ssvproff@gmail.com</p></div>
@@ -308,5 +315,28 @@
   });
 </script>
   <script src="../shared/phase1.js"></script>
+<div class="sticky-bar" id="sticky" style="position:fixed;bottom:0;left:0;right:0;z-index:999;background:linear-gradient(135deg,#0d9488,#0f766e);padding:12px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;box-shadow:0 -4px 20px rgba(0,0,0,.15);">
+  <div style="font-weight:700;color:#fff;font-size:1rem;">Проф. Сушков С.В.</div>
+  <div style="color:rgba(255,255,255,.85);font-size:.9rem;">Консультация 2000 грн</div>
+  <div style="display:flex;gap:8px;">
+    <a href="tel:+380675707949" style="background:#fff;color:#0d9488;padding:8px 16px;border-radius:8px;font-weight:600;font-size:.85rem;text-decoration:none;">📞 Позвонить</a>
+    <a href="https://wa.me/380675707949" style="background:#25d366;color:#fff;padding:8px 16px;border-radius:8px;font-weight:600;font-size:.85rem;text-decoration:none;" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+    <a href="viber://chat?number=+380675707949" style="background:#7360f2;color:#fff;padding:8px 16px;border-radius:8px;font-weight:600;font-size:.85rem;text-decoration:none;" target="_blank" rel="noopener noreferrer" onclick="return handleViberClick(event)">📳 Viber</a>
+  </div>
+</div>
+<script>
+  function handleViberClick(e) {
+    const ua = navigator.userAgent.toLowerCase();
+    const isDesktop = !/android|iphone|ipad|ipod|windows phone|mobile/i.test(ua);
+    if (isDesktop) {
+      e.preventDefault();
+      if (confirm('Viber открывается на мобильном устройстве. Скопировать номер +380 67 570 79 49?')) {
+        navigator.clipboard.writeText('+380 67 570 79 49').catch(()=>{});
+      }
+      return false;
+    }
+    return true;
+  }
+</script>
 </body>
 </html>
