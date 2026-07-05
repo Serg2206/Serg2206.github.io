@@ -347,6 +347,8 @@
     }
     .sticky-btn.call { background: var(--teal); color: #fff; }
     .sticky-btn.tg { background: #229ED9; color: #fff; }
+    .sticky-btn.wa { background: #25D366; color: #fff; }
+    .sticky-btn.vb { background: #665CAC; color: #fff; }
     @media(max-width: 400px) { .sticky-name { display: none; } }
 
     /* ── FOOTER ── */
@@ -358,145 +360,161 @@
       font-size: .85rem;
     }
     footer a { color: var(--teal); text-decoration: none; }
+    .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
+    .footer-social { display: flex; gap: 16px; justify-content: center; margin-bottom: 12px; }
+    .footer-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.1);
+      color: var(--white);
+      font-size: 1rem;
+      transition: background .2s;
+      text-decoration: none;
+    }
+    .footer-social a:hover { background: var(--teal); }
   </style>
 </head>
 <body>
 
 <nav>
-  <a href="https://serg2206.github.io/" class="nav-logo">MARIA MEDICAL CENTER</a>
+  <a href="/" class="nav-logo">MARIA MEDICAL CENTER</a>
   <ul class="nav-links">
-    <li><a href="https://serg2206.github.io/">&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;</a></li>
-    <li><a href="https://serg2206.github.io/about/">&#1054; &#1094;&#1077;&#1085;&#1090;&#1088;&#1077;</a></li>
-    <li><a href="https://serg2206.github.io/articles/">&#1057;&#1090;&#1072;&#1090;&#1100;&#1080;</a></li>
-    <li><a href="https://serg2206.github.io/appointment/" class="active">&#1047;&#1072;&#1087;&#1080;&#1089;&#1100;</a></li>
-    <li><a href="https://serg2206.github.io/reviews/">&#1054;&#1090;&#1079;&#1099;&#1074;&#1099;</a></li>
+    <li><a href="/">Главная</a></li>
+    <li><a href="/about/">О центре</a></li>
+    <li><a href="/articles/">Статьи</a></li>
+    <li><a href="/appointment/" class="active">Запись</a></li>
+    <li><a href="/reviews/">Отзывы</a></li>
   </ul>
-  <a href="tel:+380675707949" class="nav-cta">&#128222; &#1055;&#1086;&#1079;&#1074;&#1086;&#1085;&#1080;&#1090;&#1100;</a>
+  <a href="tel:+380675707949" class="nav-cta">📞 Позвонить</a>
 </nav>
 
 <div class="hero">
-  <div class="hero-badge">&#127973; &#1052;&#1062; MARIA &middot; &#1061;&#1072;&#1088;&#1100;&#1082;&#1086;&#1074;</div>
-  <h1>&#1047;&#1072;&#1087;&#1080;&#1089;&#1100; &#1085;&#1072; &#1082;&#1086;&#1085;&#1089;&#1091;&#1083;&#1100;&#1090;&#1072;&#1094;&#1080;&#1102;</h1>
-  <p>&#1055;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088; &#1057;&#1091;&#1096;&#1082;&#1086;&#1074; &#1057;.&#1042;. &mdash; &#1076;&#1086;&#1082;&#1090;&#1086;&#1088; &#1084;&#1077;&#1076;. &#1085;&#1072;&#1091;&#1082;, &#1093;&#1080;&#1088;&#1091;&#1088;&#1075;-&#1086;&#1085;&#1082;&#1086;&#1083;&#1086;&#1075;, 40+ &#1083;&#1077;&#1090; &#1086;&#1087;&#1099;&#1090;&#1072;</p>
-  <div class="price-badge">&#1050;&#1086;&#1085;&#1089;&#1091;&#1083;&#1100;&#1090;&#1072;&#1094;&#1080;&#1103; &mdash; 2000 &#1075;&#1088;&#1085;</div>
-  <div class="price-note">&#1055;&#1088;&#1080;&#1105;&#1084; &#1087;&#1086; &#1087;&#1088;&#1077;&#1076;&#1074;&#1072;&#1088;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1081; &#1079;&#1072;&#1087;&#1080;&#1089;&#1080;</div>
+  <div class="hero-badge">🏥 МЦ MARIA · Харьков</div>
+  <h1>Запись на консультацию</h1>
+  <p>Профессор Сушков С.В. — доктор мед. наук, хирург-онколог, 40+ лет опыта</p>
+  <div class="price-badge">Консультация — 2000 грн</div>
+  <div class="price-note">Приём по предварительной записи</div>
 </div>
 
 <div class="container">
 
   <!-- Quick contacts -->
   <section class="quick-section">
-    <div class="section-label">&#1041;&#1099;&#1089;&#1090;&#1088;&#1072;&#1103; &#1079;&#1072;&#1087;&#1080;&#1089;&#1100;</div>
-    <h2 class="section-title">&#1059;&#1076;&#1086;&#1073;&#1085;&#1099;&#1081; &#1089;&#1087;&#1086;&#1089;&#1086;&#1073; &#1089;&#1074;&#1103;&#1079;&#1080;</h2>
-    <p class="section-sub">&#1053;&#1072;&#1087;&#1080;&#1096;&#1080;&#1090;&#1077; &#1080;&#1083;&#1080; &#1087;&#1086;&#1079;&#1074;&#1086;&#1085;&#1080;&#1090;&#1077; &mdash; &#1086;&#1090;&#1074;&#1077;&#1090;&#1080;&#1084; &#1074; &#1090;&#1077;&#1095;&#1077;&#1085;&#1080;&#1077; &#1085;&#1077;&#1089;&#1082;&#1086;&#1083;&#1100;&#1082;&#1080;&#1093; &#1084;&#1080;&#1085;&#1091;&#1090;</p>
+    <div class="section-label">Быстрая запись</div>
+    <h2 class="section-title">Удобный способ связи</h2>
+    <p class="section-sub">Напишите или позвоните — ответим в течение нескольких минут</p>
 
     <div class="contact-grid">
       <a href="https://t.me/SSVproff_medical_bot" class="contact-card tg" target="_blank" rel="noopener">
-        <span class="contact-icon">&#9992;</span>
-        <div class="contact-label">Telegram-&#1073;&#1086;&#1090;</div>
+        <span class="contact-icon">✈️</span>
+        <div class="contact-label">Telegram-бот</div>
         <div class="contact-value">@SSVproff_medical_bot</div>
-        <div class="contact-hint">&#1054;&#1090;&#1074;&#1077;&#1095;&#1072;&#1077;&#1090; 24/7</div>
+        <div class="contact-hint">Отвечает 24/7</div>
       </a>
       <a href="https://wa.me/380675707949" class="contact-card wa" target="_blank" rel="noopener">
-        <span class="contact-icon">&#128172;</span>
+        <span class="contact-icon">💬</span>
         <div class="contact-label">WhatsApp</div>
         <div class="contact-value">+380 67 570 79 49</div>
-        <div class="contact-hint">&#1085;&#1072;&#1087;&#1080;&#1096;&#1080;&#1090;&#1077; &#1089;&#1077;&#1081;&#1095;&#1072;&#1089;</div>
+        <div class="contact-hint">напишите сейчас</div>
       </a>
       <a href="viber://chat?number=+380675707949" class="contact-card vb" target="_blank" rel="noopener noreferrer" onclick="return handleViberClick(event)">
-        <span class="contact-icon">&#128241;</span>
+        <span class="contact-icon">📳</span>
         <div class="contact-label">Viber</div>
         <div class="contact-value">+380 67 570 79 49</div>
-        <div class="contact-hint">&#1085;&#1072;&#1087;&#1080;&#1096;&#1080;&#1090;&#1077; &#1089;&#1077;&#1081;&#1095;&#1072;&#1089;</div>
+        <div class="contact-hint">напишите сейчас</div>
       </a>
       <a href="tel:+380675707949" class="contact-card ph">
-        <span class="contact-icon">&#128222;</span>
-        <div class="contact-label">&#1058;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;</div>
+        <span class="contact-icon">📞</span>
+        <div class="contact-label">Телефон</div>
         <div class="contact-value">+380 67 570 79 49</div>
-        <div class="contact-hint">&#1087;&#1085;&ndash;&#1087;&#1090; 09:00&ndash;17:00</div>
+        <div class="contact-hint">пн–пт 09:00–17:00</div>
       </a>
     </div>
 
-    <div class="or-divider"><span>&#1080;&#1083;&#1080; &#1086;&#1089;&#1090;&#1072;&#1074;&#1100;&#1090;&#1077; &#1079;&#1072;&#1103;&#1074;&#1082;&#1091;</span></div>
+    <div class="or-divider"><span>или оставьте заявку</span></div>
   </section>
 
   <!-- Form -->
   <div class="form-card">
     <div id="form-wrap">
-      <div class="form-title">&#1047;&#1072;&#1103;&#1074;&#1082;&#1072; &#1085;&#1072; &#1082;&#1086;&#1085;&#1089;&#1091;&#1083;&#1100;&#1090;&#1072;&#1094;&#1080;&#1102;</div>
-      <p class="form-desc">&#1052;&#1099; &#1089;&#1074;&#1103;&#1078;&#1077;&#1084;&#1089;&#1103; &#1089; &#1074;&#1072;&#1084;&#1080; &#1076;&#1083;&#1103; &#1087;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1103; &#1074;&#1088;&#1077;&#1084;&#1077;&#1085;&#1080; &#1087;&#1088;&#1080;&#1105;&#1084;&#1072;</p>
+      <div class="form-title">Заявка на консультацию</div>
+      <p class="form-desc">Мы свяжемся с вами для подтверждения времени приёма</p>
 
       <form id="appt-form" action="https://formsubmit.co/ssvproff@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="Запись на приём — МЦ MARIA" />
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://serg2206.github.io/appointment/?sent=1" />
+        <input type="hidden" name="_next" value="https://ssvnauka.com/appointment/?sent=1" />
         <input type="hidden" name="_template" value="table" />
 
         <div class="form-row">
           <div class="form-group">
-            <label>&#1048;&#1084;&#1103; &#1080; &#1092;&#1072;&#1084;&#1080;&#1083;&#1080;&#1103; <span>*</span></label>
-            <input type="text" name="name" placeholder="&#1048;&#1074;&#1072;&#1085;&#1086;&#1074;&#1072; &#1054;&#1083;&#1100;&#1075;&#1072;" required />
+            <label>Имя и фамилия <span>*</span></label>
+            <input type="text" name="name" placeholder="Иванова Ольга" required />
           </div>
           <div class="form-group">
-            <label>&#1058;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085; <span>*</span></label>
+            <label>Телефон <span>*</span></label>
             <input type="tel" name="phone" placeholder="+380 XX XXX XX XX" required />
           </div>
         </div>
 
         <div class="form-group">
-          <label>&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1103;</label>
+          <label>Специализация</label>
           <select name="specialty">
-            <option value="">— &#1074;&#1099;&#1073;&#1077;&#1088;&#1080;&#1090;&#1077; &#1085;&#1072;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077; —</option>
-            <option>&#1061;&#1080;&#1088;&#1091;&#1088;&#1075;&#1080;&#1103; (&#1072;&#1073;&#1076;&#1086;&#1084;&#1080;&#1085;&#1072;&#1083;&#1100;&#1085;&#1072;&#1103;, &#1083;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103;)</option>
-            <option>&#1054;&#1085;&#1082;&#1086;&#1093;&#1080;&#1088;&#1091;&#1088;&#1075;&#1080;&#1103;</option>
-            <option>&#1043;&#1080;&#1085;&#1077;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;</option>
-            <option>&#1052;&#1080;&#1086;&#1084;&#1101;&#1082;&#1090;&#1086;&#1084;&#1080;&#1103; (&#1091;&#1076;&#1072;&#1083;&#1077;&#1085;&#1080;&#1077; &#1084;&#1080;&#1086;&#1084;&#1099;)</option>
-            <option>&#1054;&#1085;&#1082;&#1086;-&#1076;&#1080;&#1072;&#1075;&#1085;&#1086;&#1089;&#1090;&#1080;&#1082;&#1072;</option>
-            <option>&#1055;&#1088;&#1086;&#1092;&#1080;&#1083;&#1072;&#1082;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1081; &#1086;&#1089;&#1084;&#1086;&#1090;&#1088;</option>
-            <option>&#1044;&#1088;&#1091;&#1075;&#1086;&#1077;</option>
+            <option value="">— выберите направление —</option>
+            <option>Хирургия (абдоминальная, лапароскопическая)</option>
+            <option>Онкохирургия</option>
+            <option>Гинекология</option>
+            <option>Миомэктомия (удаление миомы)</option>
+            <option>Онко-диагностика</option>
+            <option>Профилактический осмотр</option>
+            <option>Другое</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label>&#1046;&#1072;&#1083;&#1086;&#1073;&#1099; / &#1094;&#1077;&#1083;&#1100; &#1074;&#1080;&#1079;&#1080;&#1090;&#1072;</label>
-          <textarea name="complaint" placeholder="&#1054;&#1087;&#1080;&#1096;&#1080;&#1090;&#1077; &#1074;&#1072;&#1096;&#1091; &#1089;&#1080;&#1090;&#1091;&#1072;&#1094;&#1080;&#1102;, &#1076;&#1080;&#1072;&#1075;&#1085;&#1086;&#1079; &#1080;&#1083;&#1080; &#1074;&#1086;&#1087;&#1088;&#1086;&#1089;..."></textarea>
+          <label>Жалобы / цель визита</label>
+          <textarea name="complaint" placeholder="Опишите вашу ситуацию, диагноз или вопрос..."></textarea>
         </div>
 
         <div class="form-group">
-          <label>&#1059;&#1076;&#1086;&#1073;&#1085;&#1086;&#1077; &#1074;&#1088;&#1077;&#1084;&#1103; &#1079;&#1074;&#1086;&#1085;&#1082;&#1072;</label>
+          <label>Удобное время звонка</label>
           <select name="time">
-            <option>&#1083;&#1102;&#1073;&#1086;&#1077; &#1074;&#1088;&#1077;&#1084;&#1103;</option>
-            <option>09:00 &ndash; 11:00</option>
-            <option>11:00 &ndash; 13:00</option>
-            <option>13:00 &ndash; 15:00</option>
-            <option>15:00 &ndash; 17:00</option>
+            <option>любое время</option>
+            <option>09:00 – 11:00</option>
+            <option>11:00 – 13:00</option>
+            <option>13:00 – 15:00</option>
+            <option>15:00 – 17:00</option>
           </select>
         </div>
 
         <p class="form-privacy">
-          &#1054;&#1090;&#1087;&#1088;&#1072;&#1074;&#1083;&#1103;&#1103; &#1092;&#1086;&#1088;&#1084;&#1091;, &#1074;&#1099; &#1089;&#1086;&#1075;&#1083;&#1072;&#1096;&#1072;&#1077;&#1090;&#1077;&#1089;&#1100; &#1089; <a href="https://serg2206.github.io/privacy-policy.html">&#1087;&#1086;&#1083;&#1080;&#1090;&#1080;&#1082;&#1086;&#1081; &#1082;&#1086;&#1085;&#1092;&#1080;&#1076;&#1077;&#1085;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1080;</a>. &#1044;&#1072;&#1085;&#1085;&#1099;&#1077; &#1087;&#1077;&#1088;&#1077;&#1076;&#1072;&#1102;&#1090;&#1089;&#1103; &#1074;&#1088;&#1072;&#1095;&#1091; &#1080; &#1085;&#1077; &#1087;&#1077;&#1088;&#1077;&#1076;&#1072;&#1102;&#1090;&#1089;&#1103; &#1090;&#1088;&#1077;&#1090;&#1100;&#1080;&#1084; &#1083;&#1080;&#1094;&#1072;&#1084;.
+          Отправляя форму, вы соглашаетесь с <a href="/privacy-policy.html">политикой конфиденциальности</a>. Данные передаются врачу и не передаются третьим лицам.
         </p>
-        <button type="submit" class="btn-submit">&#128204; &#1054;&#1090;&#1087;&#1088;&#1072;&#1074;&#1080;&#1090;&#1100; &#1079;&#1072;&#1103;&#1074;&#1082;&#1091;</button>
+        <button type="submit" class="btn-submit">📝 Отправить заявку</button>
       </form>
     </div>
 
     <div class="form-success" id="form-success">
-      <div class="check">&#9989;</div>
-      <h3>&#1047;&#1072;&#1103;&#1074;&#1082;&#1072; &#1087;&#1086;&#1083;&#1091;&#1095;&#1077;&#1085;&#1072;!</h3>
-      <p>&#1052;&#1099; &#1087;&#1077;&#1088;&#1077;&#1079;&#1074;&#1086;&#1085;&#1080;&#1084; &#1074;&#1072;&#1084; &#1074; &#1073;&#1083;&#1080;&#1078;&#1072;&#1081;&#1096;&#1077;&#1077; &#1074;&#1088;&#1077;&#1084;&#1103; &#1076;&#1083;&#1103; &#1087;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1103; &#1074;&#1080;&#1079;&#1080;&#1090;&#1072;.</p>
+      <div class="check">✅</div>
+      <h3>Заявка получена!</h3>
+      <p>Мы перезвоним вам в ближайшее время для подтверждения визита.</p>
     </div>
   </div>
 
   <!-- Doctor strip -->
   <div class="doctor-strip">
-    <img src="https://serg2206.github.io/images/doctor-portrait.jpg" alt="&#1055;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088; &#1057;&#1091;&#1096;&#1082;&#1086;&#1074; &#1057;.&#1042;." />
+    <img src="/images/doctor-portrait.jpg" alt="Профессор Сушков С.В." />
     <div>
-      <h3>&#1055;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088; &#1057;&#1091;&#1096;&#1082;&#1086;&#1074; &#1057;&#1077;&#1088;&#1075;&#1077;&#1081; &#1042;&#1072;&#1083;&#1077;&#1085;&#1090;&#1080;&#1085;&#1086;&#1074;&#1080;&#1095;</h3>
-      <p>&#1076;.&#1084;&#1077;&#1076;.&#1085;., &#1087;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088; &middot; &#1093;&#1080;&#1088;&#1091;&#1088;&#1075;-&#1086;&#1085;&#1082;&#1086;&#1083;&#1086;&#1075; &middot; 40+ &#1083;&#1077;&#1090; &#1086;&#1087;&#1099;&#1090;&#1072; &middot; 5000+ &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1081;</p>
+      <h3>Профессор Сушков Сергей Валентинович</h3>
+      <p>д.мед.н., профессор · хирург-онколог · 40+ лет опыта · 5000+ операций</p>
       <div class="doctor-tags">
         <span>EAES</span>
-        <span>121 &#1087;&#1091;&#1073;&#1083;&#1080;&#1082;&#1072;&#1094;&#1080;&#1103;</span>
-        <span>18 &#1087;&#1072;&#1090;&#1077;&#1085;&#1090;&#1086;&#1074;</span>
+        <span>121 публикация</span>
+        <span>18 патентов</span>
         <span>h-index 6</span>
       </div>
     </div>
@@ -505,27 +523,27 @@
   <!-- Info cards -->
   <div class="info-grid">
     <div class="info-card">
-      <h3>&#128197; &#1055;&#1088;&#1080;&#1105;&#1084; &#1074;&#1077;&#1076;&#1105;&#1090;&#1089;&#1103;</h3>
+      <h3>📅 Приём ведётся</h3>
       <ul>
-        <li><span>&#1055;&#1086;&#1085;&#1077;&#1076;&#1077;&#1083;&#1100;&#1085;&#1080;&#1082;&ndash;&#1087;&#1103;&#1090;&#1085;&#1080;&#1094;&#1072;</span><strong>09:00&ndash;17:00</strong></li>
-        <li><span>&#1057;&#1091;&#1073;&#1073;&#1086;&#1090;&#1072;</span><strong>&#1087;&#1086; &#1079;&#1072;&#1087;&#1080;&#1089;&#1080;</strong></li>
-        <li><span>&#1042;&#1086;&#1089;&#1082;&#1088;&#1077;&#1089;&#1077;&#1085;&#1100;&#1077;</span><strong>&#1074;&#1099;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081;</strong></li>
+        <li><span>Понедельник–пятница</span><strong>09:00–17:00</strong></li>
+        <li><span>Суббота</span><strong>по записи</strong></li>
+        <li><span>Воскресенье</span><strong>выходной</strong></li>
       </ul>
     </div>
     <div class="info-card">
-      <h3>&#128176; &#1057;&#1090;&#1086;&#1080;&#1084;&#1086;&#1089;&#1090;&#1100;</h3>
+      <h3>💰 Стоимость</h3>
       <ul>
-        <li><span>&#1050;&#1086;&#1085;&#1089;&#1091;&#1083;&#1100;&#1090;&#1072;&#1094;&#1080;&#1103;</span><strong>2000 &#1075;&#1088;&#1085;</strong></li>
-        <li><span>&#1054;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1103;</span><strong>&#1080;&#1085;&#1076;&#1080;&#1074;&#1080;&#1076;&#1091;&#1072;&#1083;&#1100;&#1085;&#1086;</strong></li>
-        <li><span>&#1054;&#1087;&#1083;&#1072;&#1090;&#1072;</span><strong>&#1085;&#1072;&#1083;&#1080;&#1095;&#1085;&#1099;&#1077; / &#1082;&#1072;&#1088;&#1090;&#1072;</strong></li>
+        <li><span>Консультация</span><strong>2000 грн</strong></li>
+        <li><span>Операция</span><strong>индивидуально</strong></li>
+        <li><span>Оплата</span><strong>наличные / карта</strong></li>
       </ul>
     </div>
     <div class="info-card">
-      <h3>&#128205; &#1040;&#1076;&#1088;&#1077;&#1089;</h3>
+      <h3>📍 Адрес</h3>
       <ul>
-        <li><span>&#1043;&#1086;&#1088;&#1086;&#1076;</span><strong>&#1061;&#1072;&#1088;&#1100;&#1082;&#1086;&#1074;</strong></li>
-        <li><span>&#1059;&#1083;&#1080;&#1094;&#1072;</span><strong>&#1074;&#1091;&#1083;. &#1057;&#1110;&#1088;&#1086;&#1093;&#1110;&#1085;&#1089;&#1100;&#1082;&#1072;</strong></li>
-        <li><span>&#1047;&#1072;&#1087;&#1080;&#1089;&#1100;</span><strong>&#1086;&#1073;&#1103;&#1079;&#1072;&#1090;&#1077;&#1083;&#1100;&#1085;&#1072;</strong></li>
+        <li><span>Город</span><strong>Харьков</strong></li>
+        <li><span>Улица</span><strong>вул. Сірохінська</strong></li>
+        <li><span>Запись</span><strong>обязательна</strong></li>
       </ul>
     </div>
   </div>
@@ -535,21 +553,47 @@
 <!-- Sticky bar -->
 <div class="sticky-bar" id="sticky">
   <div>
-    <div class="sticky-name">&#1055;&#1088;&#1086;&#1092;. &#1057;&#1091;&#1096;&#1082;&#1086;&#1074; &#1057;.&#1042;.</div>
-    <div class="sticky-price">&#1050;&#1086;&#1085;&#1089;&#1091;&#1083;&#1100;&#1090;&#1072;&#1094;&#1080;&#1103; 2000 &#1075;&#1088;&#1085;</div>
+    <div class="sticky-name">Проф. Сушков С.В.</div>
+    <div class="sticky-price">Консультация 2000 грн</div>
   </div>
   <div class="sticky-actions">
-    <a href="tel:+380675707949" class="sticky-btn call">&#128222; &#1055;&#1086;&#1079;&#1074;&#1086;&#1085;&#1080;&#1090;&#1100;</a>
-    <a href="https://t.me/SSVproff_medical_bot" class="sticky-btn tg" target="_blank">&#9992; Telegram</a>
+    <a href="tel:+380675707949" class="sticky-btn call">📞 Позвонить</a>
+    <a href="https://wa.me/380675707949" class="sticky-btn wa" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+    <a href="viber://chat?number=+380675707949" class="sticky-btn vb" target="_blank" rel="noopener noreferrer" onclick="return handleViberClick(event)">📳 Viber</a>
   </div>
 </div>
 
 <footer>
-  &copy; 2026 MARIA Medical Center &middot;
-  <a href="https://serg2206.github.io/privacy-policy.html">&#1050;&#1086;&#1085;&#1092;&#1080;&#1076;&#1077;&#1085;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1100;</a>
+  <div class="footer-links">
+    <a href="/">Главная</a>
+    <a href="/about/">О центре</a>
+    <a href="/appointment/">Запись</a>
+    <a href="/reviews/">Отзывы</a>
+  </div>
+  <div class="footer-social">
+    <a href="tel:+380675707949" aria-label="Позвонить">📞</a>
+    <a href="https://t.me/SSVproff_medical_bot" target="_blank" rel="noopener noreferrer" aria-label="Telegram">✈️</a>
+    <a href="https://wa.me/380675707949" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
+    <a href="viber://chat?number=+380675707949" target="_blank" rel="noopener noreferrer" aria-label="Viber" onclick="return handleViberClick(event)">📳</a>
+  </div>
+  <div>&copy; 2026 MARIA Medical Center · <a href="/privacy-policy.html">Конфиденциальность</a></div>
 </footer>
 
 <script>
+  // Viber desktop-safe handler
+  function handleViberClick(e) {
+    const ua = navigator.userAgent.toLowerCase();
+    const isDesktop = !/android|iphone|ipad|ipod|windows phone|mobile/i.test(ua);
+    if (isDesktop) {
+      e.preventDefault();
+      if (confirm('Viber открывается на мобильном устройстве. Скопировать номер +380 67 570 79 49?')) {
+        navigator.clipboard.writeText('+380 67 570 79 49').catch(()=>{});
+      }
+      return false;
+    }
+    return true;
+  }
+
   // Sticky bar on scroll
   const sticky = document.getElementById('sticky');
   window.addEventListener('scroll', () => {
