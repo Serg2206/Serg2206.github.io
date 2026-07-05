@@ -435,6 +435,29 @@
   }
 
   /* -------------------------------
+     Viber click handler — desktop fallback
+     ------------------------------- */
+  function handleViberClick(e) {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (!isMobile) {
+      e.preventDefault();
+      if (confirm('Viber открывается только на мобильном устройстве с установленным приложением.\n\nСкопировать номер +380 67 570 79 49?')) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText('+380675707949').then(function() {
+            alert('Номер скопирован. Откройте Viber и вставьте его.');
+          }).catch(function() {
+            alert('Номер: +380 67 570 79 49');
+          });
+        } else {
+          alert('Номер: +380 67 570 79 49');
+        }
+      }
+      return false;
+    }
+    return true;
+  }
+
+  /* -------------------------------
      Expose utilities globally for page workers
      ------------------------------- */
   window.MARIA = {
