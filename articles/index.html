@@ -317,5 +317,19 @@
     });
   });
 </script>
+<script>
+function handleViberClick(e) {
+  const ua = navigator.userAgent.toLowerCase();
+  const isDesktop = !/android|iphone|ipad|ipod|windows phone|mobile/i.test(ua);
+  if (isDesktop) {
+    e.preventDefault();
+    if (confirm('Viber открывается на мобильном устройстве. Скопировать номер +380 67 570 79 49?')) {
+      navigator.clipboard.writeText('+380 67 570 79 49').catch(()=>{});
+    }
+    return false;
+  }
+  return true;
+}
+</script>
 </body>
 </html>
