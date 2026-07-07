@@ -33,9 +33,20 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
 
+  <!-- Google Analytics 4 — Replace G-XXXXXXXXXX with your actual Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.youtube.com">
+  <link rel="dns-prefetch" href="https://www.google.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <title data-i18n="meta.title">Профессор Сушков С.В. — Хирург-онколог | МЦ MARIA, Харьков</title>
@@ -853,6 +864,20 @@
         "workLocation": {"@type": "MedicalClinic", "@id": "https://ssvnauka.com/#medicalbusiness"},
         "telephone": "+380675707949",
         "email": "ssvnauka@gmail.com"
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://ssvnauka.com/#video-greeting",
+        "name": "Видеоприветствие профессора Сушкова С.В.",
+        "description": "Профессор Сушков С.В. — 40 лет хирургической практики, 5000+ операций, доктор медицинских наук. Хирург-онколог.",
+        "thumbnailUrl": "https://ssvnauka.com/images/doctor-portrait.jpg",
+        "embedUrl": "https://www.youtube.com/embed/F8pDVKMcyYY",
+        "uploadDate": "2024-01-15",
+        "duration": "PT3M30S",
+        "publisher": {
+          "@type": "MedicalClinic",
+          "@id": "https://ssvnauka.com/#medicalbusiness"
+        }
       },
       {
         "@type": "FAQPage",
