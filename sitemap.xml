@@ -78,6 +78,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ssvnauka.com/publications/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ssvnauka.com/guides/self-check-breast.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -93,6 +99,12 @@
   <!-- Вспомогательные -->
   <url>
     <loc>https://ssvnauka.com/privacy-policy.html</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ssvnauka.com/terms-of-use.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
