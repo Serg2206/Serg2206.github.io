@@ -33,6 +33,14 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
 
+  <!-- Priority 4: Preload critical resources -->
+  <link rel="preload" href="styles.css?v=33" as="style">
+  <link rel="preload" href="shared/phase1.css?v=33" as="style">
+  <link rel="preload" as="image" href="images/doctor-portrait.jpg" fetchpriority="high">
+  <link rel="prefetch" href="appointment/">
+  <link rel="prefetch" href="about/">
+  <link rel="prefetch" href="articles/">
+
   <!-- Google Analytics 4 — Replace G-XXXXXXXXXX with your actual Measurement ID -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
@@ -265,7 +273,7 @@
             </div>
           </div>
           <div class="p1-reveal">
-            <img src="images/doctor-portrait.jpg" alt="Профессор Сушков С.В." width="903" height="1128" loading="lazy" decoding="async" style="border-radius: 16px; box-shadow: var(--shadow-lg); width: 100%; max-width: 400px; height: auto; margin: 0 auto; display: block;">
+            <img src="images/doctor-portrait.jpg" alt="Профессор Сушков С.В." width="903" height="1128" loading="eager" fetchpriority="high" decoding="async" style="border-radius: 16px; box-shadow: var(--shadow-lg); width: 100%; max-width: 400px; height: auto; margin: 0 auto; display: block;">
           </div>
         </div>
       </div>
@@ -737,7 +745,7 @@
     <button class="cookie-banner__btn" aria-label="Accept cookies">Принять</button>
   </div>
 
-  <!-- Schema.org JSON-LD: MedicalClinic + Reviews + Physician + FAQPage -->
+  <!-- Schema.org JSON-LD: MedicalClinic + Reviews + Physician + FAQPage + VideoObject -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -929,8 +937,8 @@
     <button class="p1-sticky-bar__close" id="p1StickyClose" aria-label="Закрыть">×</button>
   </div>
 
-  <script src="scripts.js?v=33"></script>
+  <script defer src="scripts.js?v=33"></script>
   <!-- Phase 1: IntersectionObserver animations, counters, Telegram button -->
-  <script src="shared/phase1.js"></script>
+  <script defer src="shared/phase1.js"></script>
 </body>
 </html>
