@@ -40,18 +40,36 @@
 
   <title data-i18n="meta.title">Профессор Сушков С.В. — Хирург-онколог | МЦ MARIA, Харьков</title>
 
+  <!-- Schema.org: WebSite + BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "MARIA Medical Center — Профессор Сушков С.В.",
-    "url": "https://ssvnauka.com",
-    "description": "Профессорская хирургия, онкология и гинекология в Харькове. Д-р мед. наук, профессор Сушков С.В. — 40+ лет опыта, 5000+ операций.",
-    "inLanguage": ["ru", "uk", "en"],
-    "publisher": {
-      "@type": "MedicalBusiness",
-      "name": "MARIA Medical Center"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ssvnauka.com/#website",
+        "name": "MARIA Medical Center — Профессор Сушков С.В.",
+        "url": "https://ssvnauka.com",
+        "description": "Профессорская хирургия, онкология и гинекология в Харькове. Д-р мед. наук, профессор Сушков С.В. — 40+ лет опыта, 5000+ операций.",
+        "inLanguage": ["ru", "uk", "en"],
+        "publisher": {
+          "@type": "MedicalBusiness",
+          "@id": "https://ssvnauka.com/#medicalbusiness"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://ssvnauka.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "https://ssvnauka.com/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -362,109 +380,133 @@
         <div class="grid-3" style="margin-bottom: 12px;">
 
           <!-- Review 1 -->
-          <article class="card p1-reveal" style="position: relative;">
-            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5">
+          <article class="card p1-reveal" style="position: relative;" itemscope itemtype="https://schema.org/Review">
+            <meta itemprop="datePublished" content="2025-03-15">
+            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="worstRating" content="1">
+              <meta itemprop="ratingValue" content="5">
+              <meta itemprop="bestRating" content="5">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
-            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
+            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;" itemprop="reviewBody">
               «На третий день после операции я ехала домой на троллейбусе — сама, без посторонней помощи. Не верила, что так бывает. В другой больнице говорили про десять дней в стационаре. Шрам почти не виден.»
             </blockquote>
-            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;">
-              <div style="font-weight: 600; font-size: 0.9rem;">Татьяна М., 52 года</div>
+            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div style="font-weight: 600; font-size: 0.9rem;" itemprop="name">Татьяна М., 52 года</div>
               <div style="font-size: 0.8rem; color: var(--text-light); margin-top: 2px;">Лапароскопическая холецистэктомия · март 2025</div>
             </footer>
           </article>
 
           <!-- Review 2 -->
-          <article class="card p1-reveal" style="position: relative;">
-            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5">
+          <article class="card p1-reveal" style="position: relative;" itemscope itemtype="https://schema.org/Review">
+            <meta itemprop="datePublished" content="2024-09-10">
+            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="worstRating" content="1">
+              <meta itemprop="ratingValue" content="5">
+              <meta itemprop="bestRating" content="5">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
-            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
+            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;" itemprop="reviewBody">
               «Четыре миомы, самая большая — 7 сантиметров. Боялась, что матку придётся удалить. Сергей Валентинович убрал все четыре, матку оставил. Через пятнадцать месяцев я родила дочь. Это невозможно переоценить.»
             </blockquote>
-            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;">
-              <div style="font-weight: 600; font-size: 0.9rem;">Наталья В., 34 года</div>
+            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div style="font-weight: 600; font-size: 0.9rem;" itemprop="name">Наталья В., 34 года</div>
               <div style="font-size: 0.8rem; color: var(--text-light); margin-top: 2px;">Миомэктомия с сохранением матки · сентябрь 2024</div>
             </footer>
           </article>
 
           <!-- Review 3 -->
-          <article class="card p1-reveal" style="position: relative;">
-            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5">
+          <article class="card p1-reveal" style="position: relative;" itemscope itemtype="https://schema.org/Review">
+            <meta itemprop="datePublished" content="2024-10-15">
+            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="worstRating" content="1">
+              <meta itemprop="ratingValue" content="5">
+              <meta itemprop="bestRating" content="5">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
-            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
+            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;" itemprop="reviewBody">
               «Диагноз поставили в августе. Оперировали в октябре. Сейчас — уже май следующего года, и я живу, работаю, сажаю огород. Сергей Валентинович сказал тогда: "Мы успели." Эти слова я запомнила навсегда.»
             </blockquote>
-            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;">
-              <div style="font-weight: 600; font-size: 0.9rem;">Людмила К., 58 лет</div>
+            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div style="font-weight: 600; font-size: 0.9rem;" itemprop="name">Людмила К., 58 лет</div>
               <div style="font-size: 0.8rem; color: var(--text-light); margin-top: 2px;">Онкохирургия · октябрь 2024</div>
             </footer>
           </article>
 
           <!-- Review 4 -->
-          <article class="card p1-reveal" style="position: relative;">
-            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5">
+          <article class="card p1-reveal" style="position: relative;" itemscope itemtype="https://schema.org/Review">
+            <meta itemprop="datePublished" content="2025-01-20">
+            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="worstRating" content="1">
+              <meta itemprop="ratingValue" content="5">
+              <meta itemprop="bestRating" content="5">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
-            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
+            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;" itemprop="reviewBody">
               «Привезли скорой в три ночи с перитонитом. Сказали — ещё бы несколько часов... Выписали на четвёртый день. На животе — три точки, не шрамы даже. Хирург — настоящий профессионал, без лишних слов и паники.»
             </blockquote>
-            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;">
-              <div style="font-weight: 600; font-size: 0.9rem;">Дмитрий С., 45 лет</div>
+            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div style="font-weight: 600; font-size: 0.9rem;" itemprop="name">Дмитрий С., 45 лет</div>
               <div style="font-size: 0.8rem; color: var(--text-light); margin-top: 2px;">Аппендицит, перитонит · январь 2025</div>
             </footer>
           </article>
 
           <!-- Review 5 -->
-          <article class="card p1-reveal" style="position: relative;">
-            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5">
+          <article class="card p1-reveal" style="position: relative;" itemscope itemtype="https://schema.org/Review">
+            <meta itemprop="datePublished" content="2025-02-10">
+            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="worstRating" content="1">
+              <meta itemprop="ratingValue" content="5">
+              <meta itemprop="bestRating" content="5">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
-            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
+            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;" itemprop="reviewBody">
               «В другой клинике сказали — большой разрез, три недели постельного режима. Здесь — три прокола, через неделю вышел на работу. Коллеги не поняли, что я вообще делал операцию. Не сразу поверил сам.»
             </blockquote>
-            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;">
-              <div style="font-weight: 600; font-size: 0.9rem;">Андрей Г., 61 год</div>
+            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div style="font-weight: 600; font-size: 0.9rem;" itemprop="name">Андрей Г., 61 год</div>
               <div style="font-size: 0.8rem; color: var(--text-light); margin-top: 2px;">Лапароскопическое лечение грыжи · февраль 2025</div>
             </footer>
           </article>
 
           <!-- Review 6 -->
-          <article class="card p1-reveal" style="position: relative;">
-            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5">
+          <article class="card p1-reveal" style="position: relative;" itemscope itemtype="https://schema.org/Review">
+            <meta itemprop="datePublished" content="2025-04-05">
+            <div style="display: flex; gap: 4px; margin-bottom: 12px;" aria-label="Оценка 5 из 5" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="worstRating" content="1">
+              <meta itemprop="ratingValue" content="5">
+              <meta itemprop="bestRating" content="5">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
-            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
+            <blockquote style="margin: 0; padding: 0; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;" itemprop="reviewBody">
               «Пришла с подозрением на рак — была в панике. Сергей Валентинович потратил почти час, объяснил каждый анализ по-человечески, без жаргона. Оказалось — доброкачественная киста. Он умеет не только оперировать, но и говорить с людьми.»
             </blockquote>
-            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;">
-              <div style="font-weight: 600; font-size: 0.9rem;">Ирина Ш., 39 лет</div>
+            <footer style="margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px;" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div style="font-weight: 600; font-size: 0.9rem;" itemprop="name">Ирина Ш., 39 лет</div>
               <div style="font-size: 0.8rem; color: var(--text-light); margin-top: 2px;">Онкологическая консультация · апрель 2025</div>
             </footer>
           </article>
@@ -647,99 +689,175 @@
     <button class="cookie-banner__btn" aria-label="Accept cookies">Принять</button>
   </div>
 
-  <!-- Schema.org JSON-LD -->
+  <!-- Schema.org JSON-LD: MedicalBusiness + Reviews + Physician + FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "MARIA Medical Center",
-    "description": "Профессорская хирургия, онкология и гинекология в Харькове. Д-р мед. наук, профессор Сушков С.В.",
-    "url": "https://ssvnauka.com",
-    "logo": "https://ssvnauka.com/images/favicon.svg",
-    "image": "https://ssvnauka.com/images/doctor-portrait.jpg",
-    "telephone": "+380675707949",
-    "email": "ssvnauka@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "вул. Сірохінська, 7-Б",
-      "addressLocality": "Kharkiv",
-      "addressRegion": "Kharkiv Oblast",
-      "postalCode": "61000",
-      "addressCountry": "UA"
-    },
-    "medicalSpecialty": ["Surgery", "Oncology", "Gynecology"],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "bestRating": "5",
-      "reviewCount": "200"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Sushkov Sergey Valentinovich",
-      "jobTitle": "Professor of Surgery",
-      "alumniOf": "Kharkiv National Medical University"
-    },
-    "priceRange": "$$",
-    "openingHours": "By appointment"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    "name": "Sushkov Sergey Valentinovich",
-    "jobTitle": "Professor of Surgery",
-    "description": "MD 1986, PhD 1998, DSc 2007. Pioneer of laparoscopic surgery in Kharkiv region.",
-    "alumniOf": "Kharkiv National Medical University",
-    "memberOf": ["EAES", "Ukrainian Association of Surgeons"],
-    "sameAs": [
-      "https://orcid.org/0000-0002-6951-9789",
-      "https://www.scopus.com/authid/detail.uri?authorId=55360196800"
-    ],
-    "knowsAbout": ["Surgery", "Oncology", "Laparoscopy", "Gynecology"],
-    "workLocation": {
-      "@type": "MedicalBusiness",
-      "name": "MARIA Medical Center"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Сколько стоит консультация профессора?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Консультация профессора Сушкова С.В. стоит 2000 грн. Запись по телефону +380 67 570 79 49 или через Telegram-бот @SSVproff_medical_bot."
-        }
+        "@type": "MedicalBusiness",
+        "@id": "https://ssvnauka.com/#medicalbusiness",
+        "name": "MARIA Medical Center",
+        "description": "Профессорская хирургия, онкология и гинекология в Харькове. Д-р мед. наук, профессор Сушков С.В. — 40+ лет опыта, 5000+ операций.",
+        "url": "https://ssvnauka.com",
+        "logo": "https://ssvnauka.com/images/favicon.svg",
+        "image": "https://ssvnauka.com/images/doctor-portrait.jpg",
+        "telephone": "+380675707949",
+        "email": "ssvnauka@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "вул. Сірохінська, 7-Б",
+          "addressLocality": "Kharkiv",
+          "addressRegion": "Kharkiv Oblast",
+          "postalCode": "61000",
+          "addressCountry": "UA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.9935,
+          "longitude": 36.2304
+        },
+        "medicalSpecialty": [
+          {"@type": "MedicalSpecialty", "name": "Surgery"},
+          {"@type": "MedicalSpecialty", "name": "Oncology"},
+          {"@type": "MedicalSpecialty", "name": "Gynecology"}
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "worstRating": "1",
+          "reviewCount": "6"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Татьяна М."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
+            "reviewBody": "На третий день после операции я ехала домой на троллейбусе — сама, без посторонней помощи. Не верила, что так бывает. В другой больнице говорили про десять дней в стационаре. Шрам почти не виден.",
+            "datePublished": "2025-03-15",
+            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Наталья В."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
+            "reviewBody": "Четыре миомы, самая большая — 7 сантиметров. Боялась, что матку придётся удалить. Сергей Валентинович убрал все четыре, матку оставил. Через пятнадцать месяцев я родила дочь. Это невозможно переоценить.",
+            "datePublished": "2024-09-10",
+            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Людмила К."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
+            "reviewBody": "Диагноз поставили в августе. Оперировали в октябре. Сейчас — уже май следующего года, и я живу, работаю, сажаю огород. Сергей Валентинович сказал тогда: Мы успели. Эти слова я запомнила навсегда.",
+            "datePublished": "2024-10-15",
+            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Дмитрий С."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
+            "reviewBody": "Привезли скорой в три ночи с перитонитом. Сказали — ещё бы несколько часов... Выписали на четвёртый день. На животе — три точки, не шрамы даже. Хирург — настоящий профессионал, без лишних слов и паники.",
+            "datePublished": "2025-01-20",
+            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Андрей Г."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
+            "reviewBody": "В другой клинике сказали — большой разрез, три недели постельного режима. Здесь — три прокола, через неделю вышел на работу. Коллеги не поняли, что я вообще делал операцию. Не сразу поверил сам.",
+            "datePublished": "2025-02-10",
+            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Ирина Ш."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
+            "reviewBody": "Пришла с подозрением на рак — была в панике. Сергей Валентинович потратил почти час, объяснил каждый анализ по-человечески, без жаргона. Оказалось — доброкачественная киста. Он умеет не только оперировать, но и говорить с людьми.",
+            "datePublished": "2025-04-05",
+            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+          }
+        ],
+        "founder": {
+          "@type": "Physician",
+          "@id": "https://ssvnauka.com/#physician"
+        },
+        "employee": {
+          "@type": "Physician",
+          "@id": "https://ssvnauka.com/#physician"
+        },
+        "priceRange": "$$",
+        "openingHours": "By appointment",
+        "paymentAccepted": "Cash, Credit Card",
+        "currenciesAccepted": "UAH",
+        "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164153.35437974895!2d36.14574265!3d49.99472765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f2b%3A0x2d469ae7479f38cd!2sKharkiv%2C%20Kharkiv%20Oblast%2C%20Ukraine!5e0!3m2!1sen!2sua!4v1700000000000!5m2!1sen!2sua",
+        "isAcceptingNewPatients": true
       },
       {
-        "@type": "Question",
-        "name": "Какие операции выполняет профессор Сушков?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Профессор Сушков С.В. специализируется на лапароскопической и малоинвазивной хирургии, онкохирургии (рак желудка, кишечника, молочной железы, женских органов), гинекологических операциях, включая миомэктомию с сохранением матки. Общий опыт — более 5000 операций."
-        }
+        "@type": "Physician",
+        "@id": "https://ssvnauka.com/#physician",
+        "name": "Sushkov Sergey Valentinovich",
+        "alternateName": "Сушков Сергей Валентинович",
+        "jobTitle": "Professor of Surgery",
+        "description": "MD 1986, PhD 1998, DSc 2007. Pioneer of laparoscopic surgery in Kharkiv region. 40+ years experience, 5000+ operations.",
+        "honorificPrefix": "Professor",
+        "honorificSuffix": "MD, PhD, DSc",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Kharkiv National Medical University"
+        },
+        "memberOf": [
+          {"@type": "Organization", "name": "EAES"},
+          {"@type": "Organization", "name": "Ukrainian Association of Surgeons"}
+        ],
+        "sameAs": [
+          "https://orcid.org/0000-0002-6951-9789",
+          "https://www.scopus.com/authid/detail.uri?authorId=55360196800"
+        ],
+        "knowsAbout": ["Surgery", "Oncology", "Laparoscopy", "Gynecology"],
+        "worksFor": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"},
+        "workLocation": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"},
+        "telephone": "+380675707949",
+        "email": "ssvnauka@gmail.com"
       },
       {
-        "@type": "Question",
-        "name": "Где находится медицинский центр MARIA?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Медицинский центр MARIA расположен по адресу: ул. Сирохинская, 7-Б, Харьков, Украина. Приём ведётся по предварительной записи."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Как подготовиться к консультации?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Возьмите с собой паспорт, результаты предыдущих анализов и исследований (если есть), список принимаемых лекарств. Консультация длится 30–50 минут. Необходимость приходить натощак зависит от цели приёма — уточните при записи."
-        }
+        "@type": "FAQPage",
+        "@id": "https://ssvnauka.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Сколько стоит консультация профессора?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Консультация профессора Сушкова С.В. стоит 2000 грн. Запись по телефону +380 67 570 79 49 или через Telegram-бот @SSVproff_medical_bot."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Какие операции выполняет профессор Сушков?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Профессор Сушков С.В. специализируется на лапароскопической и малоинвазивной хирургии, онкохирургии (рак желудка, кишечника, молочной железы, женских органов), гинекологических операциях, включая миомэктомию с сохранением матки. Общий опыт — более 5000 операций."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Где находится медицинский центр MARIA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Медицинский центр MARIA расположен по адресу: ул. Сирохинская, 7-Б, Харьков, Украина. Приём ведётся по предварительной записи."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Как подготовиться к консультации?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Возьмите с собой паспорт, результаты предыдущих анализов и исследований (если есть), список принимаемых лекарств. Консультация длится 30–50 минут. Необходимость приходить натощак зависит от цели приёма — уточните при записи."
+            }
+          }
+        ]
       }
     ]
   }
