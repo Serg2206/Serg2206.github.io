@@ -53,7 +53,7 @@
         "description": "Профессорская хирургия, онкология и гинекология в Харькове. Д-р мед. наук, профессор Сушков С.В. — 40+ лет опыта, 5000+ операций.",
         "inLanguage": ["ru", "uk", "en"],
         "publisher": {
-          "@type": "MedicalBusiness",
+          "@type": "MedicalClinic",
           "@id": "https://ssvnauka.com/#medicalbusiness"
         }
       },
@@ -689,13 +689,13 @@
     <button class="cookie-banner__btn" aria-label="Accept cookies">Принять</button>
   </div>
 
-  <!-- Schema.org JSON-LD: MedicalBusiness + Reviews + Physician + FAQPage -->
+  <!-- Schema.org JSON-LD: MedicalClinic + Reviews + Physician + FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "MedicalBusiness",
+        "@type": "MedicalClinic",
         "@id": "https://ssvnauka.com/#medicalbusiness",
         "name": "MARIA Medical Center",
         "description": "Профессорская хирургия, онкология и гинекология в Харькове. Д-р мед. наук, профессор Сушков С.В. — 40+ лет опыта, 5000+ операций.",
@@ -707,8 +707,8 @@
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "вул. Сірохінська, 7-Б",
-          "addressLocality": "Kharkiv",
-          "addressRegion": "Kharkiv Oblast",
+          "addressLocality": "Харків",
+          "addressRegion": "Харківська область",
           "postalCode": "61000",
           "addressCountry": "UA"
         },
@@ -718,9 +718,9 @@
           "longitude": 36.2304
         },
         "medicalSpecialty": [
-          {"@type": "MedicalSpecialty", "name": "Surgery"},
-          {"@type": "MedicalSpecialty", "name": "Oncology"},
-          {"@type": "MedicalSpecialty", "name": "Gynecology"}
+          "https://schema.org/Surgery",
+          "https://schema.org/Oncology",
+          "https://schema.org/Gynecologic"
         ],
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -736,7 +736,7 @@
             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
             "reviewBody": "На третий день после операции я ехала домой на троллейбусе — сама, без посторонней помощи. Не верила, что так бывает. В другой больнице говорили про десять дней в стационаре. Шрам почти не виден.",
             "datePublished": "2025-03-15",
-            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+            "itemReviewed": {"@type": "MedicalClinic", "@id": "https://ssvnauka.com/#medicalbusiness"}
           },
           {
             "@type": "Review",
@@ -744,7 +744,7 @@
             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
             "reviewBody": "Четыре миомы, самая большая — 7 сантиметров. Боялась, что матку придётся удалить. Сергей Валентинович убрал все четыре, матку оставил. Через пятнадцать месяцев я родила дочь. Это невозможно переоценить.",
             "datePublished": "2024-09-10",
-            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+            "itemReviewed": {"@type": "MedicalClinic", "@id": "https://ssvnauka.com/#medicalbusiness"}
           },
           {
             "@type": "Review",
@@ -752,7 +752,7 @@
             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
             "reviewBody": "Диагноз поставили в августе. Оперировали в октябре. Сейчас — уже май следующего года, и я живу, работаю, сажаю огород. Сергей Валентинович сказал тогда: Мы успели. Эти слова я запомнила навсегда.",
             "datePublished": "2024-10-15",
-            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+            "itemReviewed": {"@type": "MedicalClinic", "@id": "https://ssvnauka.com/#medicalbusiness"}
           },
           {
             "@type": "Review",
@@ -760,7 +760,7 @@
             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
             "reviewBody": "Привезли скорой в три ночи с перитонитом. Сказали — ещё бы несколько часов... Выписали на четвёртый день. На животе — три точки, не шрамы даже. Хирург — настоящий профессионал, без лишних слов и паники.",
             "datePublished": "2025-01-20",
-            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+            "itemReviewed": {"@type": "MedicalClinic", "@id": "https://ssvnauka.com/#medicalbusiness"}
           },
           {
             "@type": "Review",
@@ -768,7 +768,7 @@
             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
             "reviewBody": "В другой клинике сказали — большой разрез, три недели постельного режима. Здесь — три прокола, через неделю вышел на работу. Коллеги не поняли, что я вообще делал операцию. Не сразу поверил сам.",
             "datePublished": "2025-02-10",
-            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+            "itemReviewed": {"@type": "MedicalClinic", "@id": "https://ssvnauka.com/#medicalbusiness"}
           },
           {
             "@type": "Review",
@@ -776,7 +776,7 @@
             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
             "reviewBody": "Пришла с подозрением на рак — была в панике. Сергей Валентинович потратил почти час, объяснил каждый анализ по-человечески, без жаргона. Оказалось — доброкачественная киста. Он умеет не только оперировать, но и говорить с людьми.",
             "datePublished": "2025-04-05",
-            "itemReviewed": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"}
+            "itemReviewed": {"@type": "MedicalClinic", "@id": "https://ssvnauka.com/#medicalbusiness"}
           }
         ],
         "founder": {
@@ -787,10 +787,6 @@
           "@type": "Physician",
           "@id": "https://ssvnauka.com/#physician"
         },
-        "priceRange": "$$",
-        "openingHours": "By appointment",
-        "paymentAccepted": "Cash, Credit Card",
-        "currenciesAccepted": "UAH",
         "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164153.35437974895!2d36.14574265!3d49.99472765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f2b%3A0x2d469ae7479f38cd!2sKharkiv%2C%20Kharkiv%20Oblast%2C%20Ukraine!5e0!3m2!1sen!2sua!4v1700000000000!5m2!1sen!2sua",
         "isAcceptingNewPatients": true
       },
@@ -816,8 +812,8 @@
           "https://www.scopus.com/authid/detail.uri?authorId=55360196800"
         ],
         "knowsAbout": ["Surgery", "Oncology", "Laparoscopy", "Gynecology"],
-        "worksFor": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"},
-        "workLocation": {"@type": "MedicalBusiness", "@id": "https://ssvnauka.com/#medicalbusiness"},
+        "worksFor": {"@type": "MedicalClinic", "@id": "https://ssvnauka.com/#medicalbusiness"},
+        "workLocation": {"@type": "MedicalClinic", "@id": "https://ssvnauka.com/#medicalbusiness"},
         "telephone": "+380675707949",
         "email": "ssvnauka@gmail.com"
       },
