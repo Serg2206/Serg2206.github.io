@@ -90,7 +90,10 @@
       translations = await res.json();
       if (serviceRes.ok) {
         const serviceTranslations = await serviceRes.json();
-        Object.assign(translations, serviceTranslations[lang] || {});
+        const selected = serviceTranslations[lang] || {};
+        Object.keys(selected).forEach(page => {
+          translations[page] = Object.assign({}, translations[page] || {}, selected[page]);
+        });
       }
     } catch (err) {
       console.warn('Failed to load translations:', err);
