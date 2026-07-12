@@ -234,7 +234,7 @@
     .p1-reveal-d4 { transition-delay: .4s; }
   </style>
 </head>
-<body>
+<body data-i18n-page="about_page">
 
 <!-- NAV -->
 <nav>
@@ -247,6 +247,7 @@
     <a href="/appointment/">Запись</a>
   </div>
   <a href="/appointment/" class="nav-cta">Записаться</a>
+  <div class="lang-switcher" style="display:flex;gap:4px"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 </nav>
 
 <!-- BREADCRUMB -->
@@ -259,8 +260,8 @@
   <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-badge">🏥 МЦ MARIA, Харьков</div>
-      <h1>Профессор Сушков<br>Сергей Валентинович</h1>
-      <p class="hero-sub">Д-р мед. наук, профессор · Хирург-онколог · Член EAES</p>
+      <h1 data-i18n="about_page.title">Профессор Сушков Сергей Валентинович</h1>
+      <p class="hero-sub" data-i18n="about_page.subtitle">Д-р мед. наук, профессор · Хирург-онколог · Член EAES · 40+ лет опыта</p>
       <div class="hero-tags">
         <span class="hero-tag">40+ лет опыта</span>
         <span class="hero-tag">5000+ операций</span>
@@ -657,5 +658,6 @@
   }
 </script>
 
+<script defer src="/scripts.js?v=34"></script>
 </body>
 </html>

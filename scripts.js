@@ -163,14 +163,21 @@
       if (value !== undefined) el.alt = value;
     });
 
-    // Translate meta description
+    const pageScope = document.body && document.body.dataset.i18nPage;
+    const pageTranslations = pageScope ? translations[pageScope] : null;
+
+    // Translate meta description when a page-specific description exists.
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && translations.meta && translations.meta.description) {
+    if (metaDesc && pageTranslations && pageTranslations.description) {
+      metaDesc.content = pageTranslations.description;
+    } else if (metaDesc && !pageScope && translations.meta && translations.meta.description) {
       metaDesc.content = translations.meta.description;
     }
 
-    // Translate title
-    if (translations.meta && translations.meta.title) {
+    // Keep page identity instead of replacing every title with the home-page title.
+    if (pageTranslations && pageTranslations.title) {
+      document.title = pageTranslations.title + ' | SSVproff';
+    } else if (!pageScope && translations.meta && translations.meta.title) {
       document.title = translations.meta.title;
     }
   }
@@ -323,7 +330,7 @@
     const appointmentForm = document.getElementById('appointmentForm');
     const reviewForm = document.getElementById('reviewForm');
 
-    if (appointmentForm) {
+    if (appointmentForm && !appointmentForm.action.includes('formsubmit.co')) {
       appointmentForm.addEventListener('submit', function (e) {
         e.preventDefault();
         // Basic validation
@@ -355,7 +362,7 @@
       });
     }
 
-    if (reviewForm) {
+    if (reviewForm && !reviewForm.action.includes('formsubmit.co')) {
       reviewForm.addEventListener('submit', function (e) {
         e.preventDefault();
         const name = reviewForm.querySelector('[name="name"]');

@@ -124,7 +124,7 @@
     footer a { color: var(--teal); text-decoration: none; }
   </style>
 </head>
-<body>
+<body data-i18n-page="reviews_page">
 
 <nav>
   <a href="https://ssvnauka.com/" class="nav-logo">MARIA MEDICAL CENTER</a>
@@ -136,10 +136,11 @@
     <li><a href="https://ssvnauka.com/reviews/" class="active">&#1054;&#1090;&#1079;&#1099;&#1074;&#1099;</a></li>
   </ul>
   <a href="https://ssvnauka.com/appointment/" class="nav-cta">&#128204; &#1047;&#1072;&#1087;&#1080;&#1089;&#1072;&#1090;&#1100;&#1089;&#1103;</a>
+  <div class="lang-switcher" style="display:flex;gap:4px"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 </nav>
 
 <div class="hero">
-  <h1>&#1054;&#1090;&#1079;&#1099;&#1074;&#1099; &#1087;&#1072;&#1094;&#1080;&#1077;&#1085;&#1090;&#1086;&#1074;</h1>
+  <h1 data-i18n="reviews_page.title">Что говорят пациенты</h1>
   <p>&#1056;&#1077;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1080;&#1089;&#1090;&#1086;&#1088;&#1080;&#1080; &#1074;&#1099;&#1079;&#1076;&#1086;&#1088;&#1086;&#1074;&#1083;&#1077;&#1085;&#1080;&#1103; &#1087;&#1072;&#1094;&#1080;&#1077;&#1085;&#1090;&#1086;&#1074; &#1087;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088;&#1072; &#1057;&#1091;&#1096;&#1082;&#1086;&#1074;&#1072; &#1057;.&#1042;.</p>
   <div class="rating-summary">
     <div>
@@ -281,7 +282,7 @@
   </div><!-- /reviews-grid -->
 
   <section style="background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:28px;margin:0 0 36px;">
-    <h2 style="margin:0 0 8px;">Оставить отзыв</h2>
+    <h2 style="margin:0 0 8px;" data-i18n="reviews_page.form_title">Оставить отзыв</h2>
     <p style="color:var(--gray);margin:0 0 20px;">Отзыв будет проверен перед публикацией. Не указывайте диагнозы и другие чувствительные медицинские данные.</p>
     <form id="reviewForm" action="https://formsubmit.co/ssvproff@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="Новый отзыв — ssvnauka.com">
@@ -294,7 +295,7 @@
       <label style="display:block;margin-top:16px;">Оценка<br><select name="rating" required style="width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px;"><option value="">Выберите оценку</option><option value="5">5 — отлично</option><option value="4">4 — хорошо</option><option value="3">3 — удовлетворительно</option><option value="2">2</option><option value="1">1</option></select></label>
       <label style="display:block;margin-top:16px;">Текст отзыва<br><textarea name="text" required rows="5" style="width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px;resize:vertical;"></textarea></label>
       <label style="display:flex;gap:8px;align-items:flex-start;margin-top:14px;font-size:.9rem;"><input type="checkbox" required style="margin-top:4px;"> Я согласен(на) на обработку данных согласно <a href="/privacy-policy.html">политике конфиденциальности</a>.</label>
-      <button type="submit" class="btn-teal" style="border:0;margin-top:18px;cursor:pointer;">Отправить отзыв</button>
+      <button type="submit" class="btn-teal" style="border:0;margin-top:18px;cursor:pointer;" data-i18n="reviews_page.submit_btn">Отправить отзыв</button>
     </form>
   </section>
 
@@ -356,5 +357,6 @@
     return true;
   }
 </script>
+<script defer src="/scripts.js?v=34"></script>
 </body>
 </html>
