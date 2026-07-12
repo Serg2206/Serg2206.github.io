@@ -192,6 +192,7 @@
   }
 
   function getNestedValue(obj, path) {
+    if (Object.prototype.hasOwnProperty.call(obj, path)) return obj[path];
     return path.split('.').reduce((acc, part) => (acc ? acc[part] : undefined), obj);
   }
 
