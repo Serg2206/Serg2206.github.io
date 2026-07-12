@@ -1,0 +1,21 @@
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box;min-width:0}
+.lang-switcher{display:flex;gap:4px;align-items:center}
+.lang-switcher__btn{appearance:none;border:1px solid #cbd5e1;background:#fff;color:#334155;border-radius:999px;padding:6px 9px;font:600 12px/1 system-ui;cursor:pointer}
+.lang-switcher__btn--active{background:#0d9488;color:#fff;border-color:#0d9488}
+@media(max-width:768px){
+ *,*::before,*::after{max-width:100%}
+ body{width:100vw}.header__nav,.nav-links{display:none!important}.header__inner,header,nav{width:100%;max-width:100%;padding-left:16px!important;padding-right:16px!important}.header__right>.btn,.nav-cta{display:none!important}
+ .hero,.page-hero,.expert-hub-hero{overflow:hidden;padding-left:24px!important;padding-right:24px!important}
+ .hero-inner{display:block!important}.hero>*,.page-hero>*,.expert-hub-hero>*{width:100%!important;max-width:100%!important;margin-left:auto!important;margin-right:auto!important;transform:none!important}
+ .hero-inner>*,.hero-content,.page-hero>div,.expert-hub-hero>div{width:100%!important;max-width:100%!important}
+ .hero h1,.page-hero h1,.expert-hub-hero h1{font-size:28px!important;line-height:1.15!important;overflow-wrap:anywhere!important;word-break:normal!important;white-space:normal!important}
+ .hero p,.page-hero p,.expert-hub-hero p,.hero-badge,.info-box,.feature-box{max-width:100%!important;overflow-wrap:anywhere;white-space:normal!important}
+ .hero-inner,.container,.content-section,.services-grid,.how-it-works{width:100%!important;max-width:100%!important}
+ .hero-stats,.stats-row,.contact-grid,.quick-grid,.services-grid,.steps{display:grid!important;grid-template-columns:1fr!important;gap:16px!important}
+ .hero-stat,.contact-card,.service-card,.step{width:100%!important;max-width:100%!important}.contact-card *,.service-card *{overflow-wrap:anywhere;word-break:break-word}
+ .hero-tags,.hero-btns,.cta-btns{max-width:100%;flex-wrap:wrap}.hero-btns .btn,.cta-btns .btn,.btn-submit{width:100%!important;text-align:center}
+ .form-card{margin-left:16px!important;margin-right:16px!important;padding:20px!important}.expert-hub-hero+.services-grid{padding-left:20px!important;padding-right:20px!important}
+ .feature-box,.info-box{display:block!important;width:100%!important}.feature-box>*{width:100%!important;margin:6px 0!important}
+ nav{position:relative}.lang-switcher{position:absolute!important;right:8px!important;top:18px!important;width:auto!important;flex-shrink:0}.header__right .lang-switcher{display:none!important}
+}

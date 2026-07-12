@@ -253,7 +253,7 @@
     bar.setAttribute('role', 'complementary');
     bar.setAttribute('aria-label', 'Запись к профессору');
     bar.innerHTML = `
-      <span class="p1-bar-text">🏥 МЦ MARIA · Проф. Сушков С.В. · <strong>Консультация 2000 грн</strong></span>
+      <span class="p1-bar-text">🏥 МЦ MARIA · Проф. Сушков С.В. · <strong>Запись на консультацию</strong></span>
       <a class="p1-bar-btn gold" href="tel:+380675707949">📞 Позвонить</a>
       <a class="p1-bar-btn" href="https://t.me/SSVproff_medical_bot" target="_blank" rel="noopener">✈️ Telegram</a>
       <a class="p1-bar-btn" href="mailto:ssvproff@gmail.com">📧 Email</a>

@@ -91,7 +91,10 @@
       if (bundleRes.ok) {
         const bundle = await bundleRes.json();
         Object.keys(bundle).forEach(section => {
-          translations[section] = Object.assign({}, translations[section] || {}, bundle[section]);
+          const value = bundle[section];
+          translations[section] = value && typeof value === 'object' && !Array.isArray(value)
+            ? Object.assign({}, translations[section] || {}, value)
+            : value;
         });
       }
     } catch (err) {
