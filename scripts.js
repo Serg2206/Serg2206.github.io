@@ -82,7 +82,7 @@
 
   async function loadTranslations(lang) {
     try {
-      const res = await fetch(`translations/${lang}.json`);
+      const res = await fetch(`/translations/${lang}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       translations = await res.json();
     } catch (err) {
@@ -91,12 +91,15 @@
     }
   }
 
-  function setLanguage(lang) {
+  async function setLanguage(lang) {
     if (!SUPPORTED_LANGS.includes(lang)) return;
     currentLang = lang;
     localStorage.setItem(STORAGE_KEYS.LANG, lang);
     updateLangSwitcherUI();
     updateHtmlLang();
+
+    // Load the newly selected dictionary before updating the document.
+    await loadTranslations(lang);
 
     // Fade out, swap, fade in
     const main = document.querySelector('main');

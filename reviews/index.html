@@ -280,6 +280,24 @@
 
   </div><!-- /reviews-grid -->
 
+  <section style="background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:28px;margin:0 0 36px;">
+    <h2 style="margin:0 0 8px;">Оставить отзыв</h2>
+    <p style="color:var(--gray);margin:0 0 20px;">Отзыв будет проверен перед публикацией. Не указывайте диагнозы и другие чувствительные медицинские данные.</p>
+    <form id="reviewForm" action="https://formsubmit.co/ssvproff@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Новый отзыв — ssvnauka.com">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://ssvnauka.com/thank-you.html">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+        <label>Имя<br><input name="name" required autocomplete="name" style="width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px;"></label>
+        <label>Email для обратной связи<br><input name="email" type="email" autocomplete="email" style="width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px;"></label>
+      </div>
+      <label style="display:block;margin-top:16px;">Оценка<br><select name="rating" required style="width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px;"><option value="">Выберите оценку</option><option value="5">5 — отлично</option><option value="4">4 — хорошо</option><option value="3">3 — удовлетворительно</option><option value="2">2</option><option value="1">1</option></select></label>
+      <label style="display:block;margin-top:16px;">Текст отзыва<br><textarea name="text" required rows="5" style="width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px;resize:vertical;"></textarea></label>
+      <label style="display:flex;gap:8px;align-items:flex-start;margin-top:14px;font-size:.9rem;"><input type="checkbox" required style="margin-top:4px;"> Я согласен(на) на обработку данных согласно <a href="/privacy-policy.html">политике конфиденциальности</a>.</label>
+      <button type="submit" class="btn-teal" style="border:0;margin-top:18px;cursor:pointer;">Отправить отзыв</button>
+    </form>
+  </section>
+
   <!-- CTA -->
   <div class="cta-block">
     <h2>&#1047;&#1072;&#1087;&#1080;&#1096;&#1080;&#1090;&#1077;&#1089;&#1100; &#1085;&#1072; &#1082;&#1086;&#1085;&#1089;&#1091;&#1083;&#1100;&#1090;&#1072;&#1094;&#1080;&#1102;</h2>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспертный хаб профессора Сушкова С.В. | ssvnauka.com</title>
+    <meta name="description" content="Экспертная диагностика, расшифровка КТ/МРТ, гистологии, второе мнение онкохирурга. Профессор Сушков С.В. - 40+ лет опыта, 5000+ операций.">
+    <style>
+        .expert-hub-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .expert-hub-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .expert-hub-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #1e3a8a;
+        }
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .service-card .btn {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .service-card .btn:hover {
+            background: #1e3a8a;
+        }
+        .how-it-works {
+            background: #f3f4f6;
+            padding: 60px 20px;
+        }
+        .how-it-works h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1e3a8a;
+        }
+        .steps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+        .cta-section {
+            background: #1e3a8a;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .cta-section .btn {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        .cta-section .btn:hover {
+            background: #059669;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section class="expert-hub-hero">
+    <h1>Экспертный хаб профессора Сушкова С.В.</h1>
+    <p>Онкохирургия. Диагностика. Второе мнение. Экспертная оценка сложных случаев от хирурга с 40-летним опытом и 5000+ операциями.</p>
+</section>
+
+<!-- SERVICES GRID -->
+<section class="services-grid">
+    
+    <!-- Услуга 1: Расшифровка КТ/МРТ -->
+    <div class="service-card">
+        <div class="service-icon">🔬</div>
+        <h3>Расшифровка КТ и МРТ</h3>
+        <p>Экспертный анализ снимков профессором-онкохирургом. PDF-заключение с рекомендациями + видео-разбор 15 минут.</p>
+        <a href="/diagnostika/rasshifrovka-kt-mrt" class="btn">Подробнее</a>
+    </div>
+
+    <!-- Услуга 2: Расшифровка гистологии -->
+    <div class="service-card">
+        <div class="service-icon">🧬</div>
+        <h3>Расшифровка гистологии</h3>
+        <p>Профессиональная интерпретация гистологических и гистохимических заключений. Простым языком о сложных терминах.</p>
+        <a href="/diagnostika/rasshifrovka-gistologii" class="btn">Подробнее</a>
+    </div>
+
+    <!-- Услуга 3: Второе мнение -->
+    <div class="service-card">
+        <div class="service-icon">💬</div>
+        <h3>Второе мнение</h3>
+        <p>Экспертная оценка диагноза и плана лечения. Онлайн или очная консультация с разбором всех обследований.</p>
+        <a href="/expert/" class="btn">Подробнее</a>
+    </div>
+
+    <!-- Услуга 4: План обследования -->
+    <div class="service-card">
+        <div class="service-icon">📋</div>
+        <h3>Индивидуальный план обследования</h3>
+        <p>Персонализированная программа диагностики с учётом вашего случая. PDF-документ + Zoom-консультация.</p>
+        <a href="/checkup/" class="btn">Подробнее</a>
+    </div>
+
+    <!-- Услуга 5: Видео-библиотека -->
+    <div class="service-card">
+        <div class="service-icon">📹</div>
+        <h3>Видео-библиотека</h3>
+        <p>Разборы операций, КТ/МРТ, гистологии. Обучающие материалы для пациентов и врачей.</p>
+        <a href="/publications/" class="btn">Смотреть</a>
+    </div>
+
+    <!-- Услуга 6: Для врачей -->
+    <div class="service-card">
+        <div class="service-icon">🎓</div>
+        <h3>Для врачей</h3>
+        <p>Образовательные программы, разборы сложных случаев, мастер-классы по лапароскопической хирургии.</p>
+        <a href="/publications/" class="btn">Подробнее</a>
+    </div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+    <h2>Как это работает</h2>
+    <div class="steps">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h4>Оставляете заявку</h4>
+            <p>Через Telegram-бот @SSVproff_bot или форму на сайте</p>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <h4>Загружаете материалы</h4>
+            <p>DICOM-файлы, гистологию, медицинские документы</p>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <h4>Получаете заключение</h4>
+            <p>Экспертный анализ в течение 48 часов</p>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <h4>Обсуждаете с профессором</h4>
+            <p>Видео-разбор, ответы на вопросы, рекомендации</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+    <h2>Нужна экспертная оценка?</h2>
+    <p>Оставьте заявку через Telegram-бот — администратор свяжется с вами в течение 2 часов</p>
+    <a href="https://t.me/SSVproff_bot" class="btn">Оставить заявку через Telegram</a>
+</section>
+
+</body>
+</html>
