@@ -82,12 +82,13 @@
 
   async function loadTranslations(lang) {
     try {
-      const [res, serviceRes, faqRes, surgeryFaqRes, expertRes] = await Promise.all([
+      const [res, serviceRes, faqRes, surgeryFaqRes, expertRes, articleRes] = await Promise.all([
         fetch(`/translations/${lang}.json`),
         fetch('/translations/service-pages.json'),
         fetch('/translations/faq-extra.json'),
         fetch('/translations/faq-surgery.json'),
-        fetch('/translations/expert-pages.json')
+        fetch('/translations/expert-pages.json'),
+        fetch('/translations/article-screening.json')
       ]);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       translations = await res.json();
@@ -118,6 +119,10 @@
         Object.keys(selectedExpert).forEach(page => {
           translations[page] = Object.assign({}, translations[page] || {}, selectedExpert[page]);
         });
+      }
+      if (articleRes.ok) {
+        const articleTranslations = await articleRes.json();
+        Object.assign(translations, articleTranslations[lang] || {});
       }
     } catch (err) {
       console.warn('Failed to load translations:', err);
