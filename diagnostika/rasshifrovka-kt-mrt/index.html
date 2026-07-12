@@ -119,18 +119,19 @@
         }
     </style>
 </head>
-<body>
+<body data-i18n-page="imaging_page">
+<div class="lang-switcher" style="position:absolute;right:16px;top:16px;z-index:10"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 
 <!-- HERO -->
 <section class="page-hero">
-    <h1>Расшифровка КТ и МРТ профессором-онкохирургом</h1>
-    <p class="lead">Получите экспертное заключение по вашим снимкам от хирурга с 40-летним опытом и 5000+ проведённых операций</p>
+    <h1 data-i18n="imaging_page.title">Экспертная оценка КТ и МРТ профессором-онкохирургом</h1>
+    <p class="lead" data-i18n="imaging_page.lead">Хирургический взгляд на результаты визуализации в дополнение к официальному заключению радиолога.</p>
 </section>
 
 <!-- CONTENT -->
 <section class="content-section">
 
-    <h2>Что вы получите</h2>
+    <h2 data-i18n="imaging_page.receive">Что вы получите</h2>
     <ul>
         <li>Детальный анализ снимков с хирургической точки зрения</li>
         <li>PDF-заключение с профессиональными рекомендациями</li>
@@ -139,7 +140,7 @@
         <li>При необходимости — план дальнейшего обследования</li>
     </ul>
 
-    <h2>Что анализирую</h2>
+    <h2 data-i18n="imaging_page.analyze">Что оценивается</h2>
     <ul>
         <li>Органы брюшной полости и забрюшинного пространства</li>
         <li>Органы грудной клетки</li>
@@ -155,7 +156,7 @@
         какие есть риски, что важно учесть при операции.
     </div>
 
-    <h2>Как это работает</h2>
+    <h2 data-i18n="imaging_page.how">Как это работает</h2>
     <ol>
         <li>
             <strong>Оставляете заявку</strong><br>
@@ -177,7 +178,7 @@
         </li>
     </ol>
 
-    <h2>Когда это нужно</h2>
+    <h2 data-i18n="imaging_page.when">Когда это может быть полезно</h2>
     <ul>
         <li>Вам сделали КТ/МРТ, но заключение непонятно</li>
         <li>Хотите получить второе мнение по снимкам</li>
@@ -192,7 +193,7 @@
         <a href="https://t.me/SSVproff_bot" class="btn">Оставить заявку через Telegram</a>
     </div>
 
-    <h2>Примеры разборов</h2>
+    <h2 data-i18n="imaging_page.examples">Примеры материалов</h2>
     <p>Посмотрите, как я разбираю реальные случаи (анонимно):</p>
     <ul>
         <li><a href="/articles/gastric-cancer-signs/">Рак желудка: диагностические признаки</a></li>
@@ -205,5 +206,7 @@
 
 </section>
 
+<div class="info-box"><strong>Важно:</strong> экспертная оценка хирурга не заменяет официальное заключение врача-рентгенолога, очную консультацию и постановку диагноза.</div>
+<script defer src="/scripts.js?v=36"></script>
 </body>
 </html>

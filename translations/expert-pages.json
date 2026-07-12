@@ -1,0 +1,17 @@
+{
+  "ru": {
+    "expert_hub_page":{"title":"Экспертный хаб профессора Сушкова С.В.","subtitle":"Онкохирургия, диагностика, второе мнение и экспертная оценка сложных случаев.","how":"Как это работает","cta":"Нужна экспертная оценка?"},
+    "imaging_page":{"title":"Экспертная оценка КТ и МРТ профессором-онкохирургом","lead":"Хирургический взгляд на результаты визуализации в дополнение к официальному заключению радиолога.","receive":"Что вы получите","analyze":"Что оценивается","how":"Как это работает","when":"Когда это может быть полезно","examples":"Примеры материалов"},
+    "histology_page":{"title":"Экспертная интерпретация гистологического заключения","lead":"Понятное объяснение терминов и их возможного значения для дальнейшей тактики.","analyze":"Что можно обсудить","receive":"Что вы получите","examples":"Примеры терминов","how":"Как это работает","when":"Когда это может быть полезно","cases":"Материалы по теме"}
+  },
+  "ua": {
+    "expert_hub_page":{"title":"Експертний хаб професора Сушкова С.В.","subtitle":"Онкохірургія, діагностика, друга думка та експертна оцінка складних випадків.","how":"Як це працює","cta":"Потрібна експертна оцінка?"},
+    "imaging_page":{"title":"Експертна оцінка КТ і МРТ професором-онкохірургом","lead":"Хірургічний погляд на результати візуалізації як доповнення до офіційного висновку радіолога.","receive":"Що ви отримаєте","analyze":"Що оцінюється","how":"Як це працює","when":"Коли це може бути корисно","examples":"Приклади матеріалів"},
+    "histology_page":{"title":"Експертна інтерпретація гістологічного висновку","lead":"Зрозуміле пояснення термінів та їх можливого значення для подальшої тактики.","analyze":"Що можна обговорити","receive":"Що ви отримаєте","examples":"Приклади термінів","how":"Як це працює","when":"Коли це може бути корисно","cases":"Матеріали за темою"}
+  },
+  "en": {
+    "expert_hub_page":{"title":"Professor Sushkov Expert Hub","subtitle":"Oncologic surgery, diagnostics, second opinions, and expert assessment of complex cases.","how":"How It Works","cta":"Need an Expert Assessment?"},
+    "imaging_page":{"title":"Expert CT and MRI Assessment by an Oncologic Surgeon","lead":"A surgical perspective on imaging results as a supplement to the official radiology report.","receive":"What You Receive","analyze":"What Is Assessed","how":"How It Works","when":"When It May Be Helpful","examples":"Example Materials"},
+    "histology_page":{"title":"Expert Interpretation of a Pathology Report","lead":"A clear explanation of terminology and its possible relevance to further management.","analyze":"What Can Be Discussed","receive":"What You Receive","examples":"Examples of Terms","how":"How It Works","when":"When It May Be Helpful","cases":"Related Materials"}
+  }
+}

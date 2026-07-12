@@ -145,18 +145,19 @@
         }
     </style>
 </head>
-<body>
+<body data-i18n-page="histology_page">
+<div class="lang-switcher" style="position:absolute;right:16px;top:16px;z-index:10"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 
 <!-- HERO -->
 <section class="page-hero">
-    <h1>Расшифровка гистологических заключений</h1>
-    <p class="lead">Простым языком о сложных терминах. Профессиональная интерпретация гистологии и гистохимии от профессора-онкохирурга</p>
+    <h1 data-i18n="histology_page.title">Экспертная интерпретация гистологического заключения</h1>
+    <p class="lead" data-i18n="histology_page.lead">Понятное объяснение терминов и их возможного значения для дальнейшей тактики.</p>
 </section>
 
 <!-- CONTENT -->
 <section class="content-section">
 
-    <h2>Что расшифровываю</h2>
+    <h2 data-i18n="histology_page.analyze">Что можно обсудить</h2>
     <ul>
         <li>Гистологические заключения после операций</li>
         <li>Биопсии (пункционные, инцизионные, эксцизионные)</li>
@@ -165,7 +166,7 @@
         <li>Цитологические исследования</li>
     </ul>
 
-    <h2>Что вы получите</h2>
+    <h2 data-i18n="histology_page.receive">Что вы получите</h2>
     <ul>
         <li>Объяснение всех терминов простым языком</li>
         <li>Стадию и степень злокачественности (если есть)</li>
@@ -181,7 +182,7 @@
         к неверной тактике. Я объясню, что значит каждый термин, и что с этим делать.
     </div>
 
-    <h2>Примеры расшифровок</h2>
+    <h2 data-i18n="histology_page.examples">Примеры терминов</h2>
     <div class="examples-grid">
         <div class="example-card">
             <h4>"Инвазивная протоковая карцинома G2"</h4>
@@ -201,7 +202,7 @@
         </div>
     </div>
 
-    <h2>Как это работает</h2>
+    <h2 data-i18n="histology_page.how">Как это работает</h2>
     <ol>
         <li>
             <strong>Оставляете заявку</strong><br>
@@ -221,7 +222,7 @@
         </li>
     </ol>
 
-    <h2>Когда это нужно</h2>
+    <h2 data-i18n="histology_page.when">Когда это может быть полезно</h2>
     <ul>
         <li>Получили гистологию после операции — непонятно, что написано</li>
         <li>Хотите понять, насколько серьёзен диагноз</li>
@@ -236,7 +237,7 @@
         <a href="https://t.me/SSVproff_bot" class="btn">Загрузить гистологию через Telegram</a>
     </div>
 
-    <h2>Реальные кейсы</h2>
+    <h2 data-i18n="histology_page.cases">Материалы по теме</h2>
     <p>Посмотрите примеры разборов из практики (анонимно):</p>
     <ul>
         <li><a href="/articles/oncology-screening.html">Онкологический скрининг и диагностика</a></li>
@@ -250,5 +251,7 @@
 
 </section>
 
+<div class="info-box"><strong>Важно:</strong> объяснение заключения не заменяет пересмотр стекол и блоков патоморфологом, клиническую консультацию и окончательный диагноз.</div>
+<script defer src="/scripts.js?v=36"></script>
 </body>
 </html>

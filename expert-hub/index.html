@@ -128,12 +128,13 @@
         }
     </style>
 </head>
-<body>
+<body data-i18n-page="expert_hub_page">
+<div class="lang-switcher" style="position:absolute;right:16px;top:16px;z-index:10"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 
 <!-- HERO SECTION -->
 <section class="expert-hub-hero">
-    <h1>Экспертный хаб профессора Сушкова С.В.</h1>
-    <p>Онкохирургия. Диагностика. Второе мнение. Экспертная оценка сложных случаев от хирурга с 40-летним опытом и 5000+ операциями.</p>
+    <h1 data-i18n="expert_hub_page.title">Экспертный хаб профессора Сушкова С.В.</h1>
+    <p data-i18n="expert_hub_page.subtitle">Онкохирургия, диагностика, второе мнение и экспертная оценка сложных случаев.</p>
 </section>
 
 <!-- SERVICES GRID -->
@@ -191,7 +192,7 @@
 
 <!-- HOW IT WORKS -->
 <section class="how-it-works">
-    <h2>Как это работает</h2>
+    <h2 data-i18n="expert_hub_page.how">Как это работает</h2>
     <div class="steps">
         <div class="step">
             <div class="step-number">1</div>
@@ -218,10 +219,11 @@
 
 <!-- CTA SECTION -->
 <section class="cta-section">
-    <h2>Нужна экспертная оценка?</h2>
+    <h2 data-i18n="expert_hub_page.cta">Нужна экспертная оценка?</h2>
     <p>Оставьте заявку через Telegram-бот — администратор свяжется с вами в течение 2 часов</p>
     <a href="https://t.me/SSVproff_bot" class="btn">Оставить заявку через Telegram</a>
 </section>
 
+<script defer src="/scripts.js?v=36"></script>
 </body>
 </html>
