@@ -82,14 +82,15 @@
 
   async function loadTranslations(lang) {
     try {
-      const [res, serviceRes, faqRes, surgeryFaqRes, expertRes, articleRes, choleRes] = await Promise.all([
+      const [res, serviceRes, faqRes, surgeryFaqRes, expertRes, articleRes, choleRes, ercpRes] = await Promise.all([
         fetch(`/translations/${lang}.json`),
         fetch('/translations/service-pages.json'),
         fetch('/translations/faq-extra.json'),
         fetch('/translations/faq-surgery.json'),
         fetch('/translations/expert-pages.json'),
         fetch('/translations/article-screening.json'),
-        fetch('/translations/article-cholecystectomy.json')
+        fetch('/translations/article-cholecystectomy.json'),
+        fetch('/translations/article-ercp.json')
       ]);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       translations = await res.json();
@@ -128,6 +129,10 @@
       if (choleRes.ok) {
         const choleTranslations = await choleRes.json();
         Object.assign(translations, choleTranslations[lang] || {});
+      }
+      if (ercpRes.ok) {
+        const ercpTranslations = await ercpRes.json();
+        Object.assign(translations, ercpTranslations[lang] || {});
       }
     } catch (err) {
       console.warn('Failed to load translations:', err);
