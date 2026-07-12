@@ -82,9 +82,10 @@
 
   async function loadTranslations(lang) {
     try {
-      const [res, serviceRes] = await Promise.all([
+      const [res, serviceRes, faqRes] = await Promise.all([
         fetch(`/translations/${lang}.json`),
-        fetch('/translations/service-pages.json')
+        fetch('/translations/service-pages.json'),
+        fetch('/translations/faq-extra.json')
       ]);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       translations = await res.json();
@@ -93,6 +94,13 @@
         const selected = serviceTranslations[lang] || {};
         Object.keys(selected).forEach(page => {
           translations[page] = Object.assign({}, translations[page] || {}, selected[page]);
+        });
+      }
+      if (faqRes.ok) {
+        const faqTranslations = await faqRes.json();
+        const selectedFaq = faqTranslations[lang] || {};
+        Object.keys(selectedFaq).forEach(page => {
+          translations[page] = Object.assign({}, translations[page] || {}, selectedFaq[page]);
         });
       }
     } catch (err) {

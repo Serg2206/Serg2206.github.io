@@ -1,0 +1,56 @@
+{
+  "ru": {
+    "gynecology_page": {
+      "q1":"Как подготовиться к приёму гинеколога?","a1":"Если ситуация не срочная, удобное время осмотра можно уточнить при записи. Возьмите результаты предыдущих УЗИ, анализов и список принимаемых лекарств.",
+      "q2":"Как часто нужно посещать гинеколога?","a2":"Частота профилактических осмотров зависит от возраста, анамнеза и факторов риска. Индивидуальный график определяет врач.",
+      "q3":"Принимает ли профессор Сушков без направления?","a3":"Да, направление не требуется. Запишитесь по телефону или через доступный мессенджер.",
+      "q4":"Выполняются ли гинекологические операции лапароскопически?","a4":"Многие гинекологические операции могут выполняться лапароскопически. Возможность малоинвазивного доступа определяется диагнозом, объёмом вмешательства и состоянием пациентки.",
+      "q5":"Можно ли сохранить матку при миоме?","a5":"Во многих случаях возможна миомэктомия с сохранением матки. Решение зависит от размера, количества и расположения узлов, симптомов и репродуктивных планов.",
+      "q6":"Какие симптомы требуют срочного обращения?","a6":"Срочно обратитесь за медицинской помощью при сильной боли, значительном кровотечении, обмороке, высокой температуре или резком ухудшении состояния."
+    },
+    "myomectomy_page": {
+      "q1":"Можно ли забеременеть после миомэктомии?","a1":"Беременность после миомэктомии возможна, но сроки планирования зависят от объёма операции и заживления матки. Их определяет лечащий врач.",
+      "q2":"Нужно ли удалять миому, если она не беспокоит?","a2":"Небольшие бессимптомные узлы часто можно наблюдать. Показания к операции зависят от роста, кровотечений, боли, анемии, давления на органы и репродуктивных планов.",
+      "q3":"Может ли миома появиться снова?","a3":"После удаления узлов возможно образование новых миом. Риск зависит от возраста, числа узлов и других факторов; после операции нужен контроль.",
+      "q4":"Что лучше — лапароскопия или открытая операция?","a4":"Метод выбирают индивидуально по размеру, количеству и расположению узлов, перенесённым операциям и планам беременности.",
+      "q5":"Можно ли рожать самостоятельно после миомэктомии?","a5":"Способ родоразрешения зависит от глубины разрезов на матке, расположения рубца и течения беременности. Решение принимает акушер-гинеколог.",
+      "q6":"Чем миомэктомия отличается от гистерэктомии?","a6":"Миомэктомия удаляет узлы и сохраняет матку. Гистерэктомия предполагает удаление матки. Выбор операции требует индивидуальной оценки."
+    }
+  },
+  "ua": {
+    "gynecology_page": {
+      "q1":"Як підготуватися до прийому гінеколога?","a1":"Якщо ситуація не термінова, зручний час огляду можна уточнити під час запису. Візьміть результати попередніх УЗД, аналізів і список ліків.",
+      "q2":"Як часто потрібно відвідувати гінеколога?","a2":"Частота профілактичних оглядів залежить від віку, анамнезу та факторів ризику. Індивідуальний графік визначає лікар.",
+      "q3":"Чи приймає професор Сушков без направлення?","a3":"Так, направлення не потрібне. Запишіться телефоном або через доступний месенджер.",
+      "q4":"Чи виконують гінекологічні операції лапароскопічно?","a4":"Багато гінекологічних операцій можна виконувати лапароскопічно. Можливість малоінвазивного доступу залежить від діагнозу, обсягу втручання та стану пацієнтки.",
+      "q5":"Чи можна зберегти матку при міомі?","a5":"У багатьох випадках можлива міомектомія зі збереженням матки. Рішення залежить від розміру, кількості й розташування вузлів, симптомів і репродуктивних планів.",
+      "q6":"Які симптоми потребують термінового звернення?","a6":"Терміново зверніться по медичну допомогу при сильному болю, значній кровотечі, непритомності, високій температурі або різкому погіршенні стану."
+    },
+    "myomectomy_page": {
+      "q1":"Чи можна завагітніти після міомектомії?","a1":"Вагітність після міомектомії можлива, але строки планування залежать від обсягу операції та загоєння матки. Їх визначає лікар.",
+      "q2":"Чи потрібно видаляти міому, якщо вона не турбує?","a2":"Невеликі безсимптомні вузли часто можна спостерігати. Показання до операції залежать від росту, кровотечі, болю, анемії, тиску на органи та репродуктивних планів.",
+      "q3":"Чи може міома з’явитися знову?","a3":"Після видалення вузлів можливе утворення нових міом. Ризик залежить від віку, кількості вузлів та інших факторів; після операції потрібен контроль.",
+      "q4":"Що краще — лапароскопія чи відкрита операція?","a4":"Метод обирають індивідуально за розміром, кількістю й розташуванням вузлів, перенесеними операціями та планами вагітності.",
+      "q5":"Чи можна народжувати самостійно після міомектомії?","a5":"Спосіб розродження залежить від глибини розрізів на матці, розташування рубця та перебігу вагітності. Рішення приймає акушер-гінеколог.",
+      "q6":"Чим міомектомія відрізняється від гістеректомії?","a6":"Міомектомія видаляє вузли та зберігає матку. Гістеректомія передбачає видалення матки. Вибір операції потребує індивідуальної оцінки."
+    }
+  },
+  "en": {
+    "gynecology_page": {
+      "q1":"How should I prepare for a gynecology appointment?","a1":"If the situation is not urgent, confirm the most suitable examination time when booking. Bring previous ultrasound reports, test results, and a medication list.",
+      "q2":"How often should I see a gynecologist?","a2":"The frequency of preventive visits depends on age, medical history, and risk factors. A physician should recommend an individual schedule.",
+      "q3":"Does Professor Sushkov see patients without a referral?","a3":"Yes. A referral is not required; book by phone or through an available messenger.",
+      "q4":"Can gynecologic surgery be performed laparoscopically?","a4":"Many gynecologic operations can be performed laparoscopically. Suitability depends on the diagnosis, extent of surgery, and the patient’s condition.",
+      "q5":"Can the uterus be preserved when treating fibroids?","a5":"In many cases, myomectomy can remove fibroids while preserving the uterus. The decision depends on fibroid size, number and location, symptoms, and reproductive plans.",
+      "q6":"Which symptoms require urgent medical attention?","a6":"Seek urgent medical care for severe pain, heavy bleeding, fainting, high fever, or sudden deterioration."
+    },
+    "myomectomy_page": {
+      "q1":"Can I become pregnant after myomectomy?","a1":"Pregnancy after myomectomy is possible, but timing depends on the extent of surgery and uterine healing. Your treating physician should advise you.",
+      "q2":"Should an asymptomatic fibroid be removed?","a2":"Small asymptomatic fibroids can often be monitored. Surgery depends on growth, bleeding, pain, anemia, pressure symptoms, and reproductive plans.",
+      "q3":"Can fibroids return after surgery?","a3":"New fibroids may develop after existing nodules are removed. Risk depends on age, number of nodules, and other factors; follow-up is recommended.",
+      "q4":"Which is better: laparoscopy or open surgery?","a4":"The method is selected individually according to fibroid size, number and location, previous surgery, and pregnancy plans.",
+      "q5":"Can I have a vaginal birth after myomectomy?","a5":"The mode of delivery depends on the depth of uterine incisions, scar location, and pregnancy course. The obstetrician should make this decision.",
+      "q6":"How does myomectomy differ from hysterectomy?","a6":"Myomectomy removes fibroids while preserving the uterus. Hysterectomy removes the uterus. Choosing the procedure requires individual assessment."
+    }
+  }
+}
