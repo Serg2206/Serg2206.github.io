@@ -1,15 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&#1057;&#1090;&#1072;&#1090;&#1100;&#1080; &#1087;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088;&#1072; &#1057;&#1091;&#1096;&#1082;&#1086;&#1074;&#1072; — &#1093;&#1080;&#1088;&#1091;&#1088;&#1075;&#1080;&#1103;, &#1086;&#1085;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;, &#1075;&#1080;&#1085;&#1077;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103; | &#1052;&#1062; MARIA</title>
+  <meta name="description" content="&#1052;&#1077;&#1076;&#1080;&#1094;&#1080;&#1085;&#1089;&#1082;&#1080;&#1077; &#1089;&#1090;&#1072;&#1090;&#1100;&#1080; &#1087;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088;&#1072; &#1057;&#1091;&#1096;&#1082;&#1086;&#1074;&#1072; &#1057;.&#1042;. &#1083;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1103;, &#1086;&#1085;&#1082;&#1086;&#1093;&#1080;&#1088;&#1091;&#1088;&#1075;&#1080;&#1103;, &#1084;&#1080;&#1086;&#1084;&#1072;, &#1093;&#1086;&#1083;&#1077;&#1094;&#1080;&#1089;&#1090;&#1080;&#1090;, &#1075;&#1077;&#1088;&#1085;&#1080;&#1103;. &#1055;&#1086;&#1083;&#1077;&#1079;&#1085;&#1072;&#1103; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1103; &#1076;&#1083;&#1103; &#1087;&#1072;&#1094;&#1080;&#1077;&#1085;&#1090;&#1086;&#1074;. &#1052;&#1062; MARIA &#1061;&#1072;&#1088;&#1100;&#1082;&#1086;&#1074;." />
+  <link rel="canonical" href="/articles/" />
+  <meta property="og:title" content="&#1057;&#1090;&#1072;&#1090;&#1100;&#1080; — &#1052;&#1062; MARIA &#1061;&#1072;&#1088;&#1100;&#1082;&#1086;&#1074;" />
+  <meta property="og:description" content="&#1055;&#1086;&#1083;&#1077;&#1079;&#1085;&#1099;&#1077; &#1084;&#1077;&#1076;&#1080;&#1094;&#1080;&#1085;&#1089;&#1082;&#1080;&#1077; &#1089;&#1090;&#1072;&#1090;&#1100;&#1080; &#1086;&#1090; &#1087;&#1088;&#1072;&#1082;&#1090;&#1080;&#1082;&#1091;&#1102;&#1097;&#1077;&#1075;&#1086; &#1093;&#1080;&#1088;&#1091;&#1088;&#1075;&#1072;-&#1086;&#1085;&#1082;&#1086;&#1083;&#1086;&#1075;&#1072; &#1089; 40-&#1083;&#1077;&#1090;&#1085;&#1080;&#1084; &#1086;&#1087;&#1099;&#1090;&#1086;&#1084;." />
+  <meta property="og:image" content="https://ssvnauka.com/images/doctor-portrait.jpg" />
+  <meta name="theme-color" content="#0d9488" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://ssvnauka.com/articles/#breadcrumb",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ssvnauka.com/"},
-          {"@type": "ListItem", "position": 2, "name": "Статьи", "item": "https://ssvnauka.com/articles/"}
-        ]
-      },
       {
         "@type": "CollectionPage",
         "@id": "https://ssvnauka.com/articles/",
@@ -49,3 +54,346 @@
     ]
   }
   </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --teal: #0d9488; --teal-dark: #0f766e; --gold: #f59e0b;
+      --dark: #1e293b; --gray: #64748b; --bg: #f8fafc; --white: #fff;
+      --radius: 16px; --shadow: 0 4px 24px rgba(0,0,0,.08);
+    }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--dark); line-height: 1.6; }
+
+    /* NAV */
+    nav { background: var(--white); border-bottom: 1px solid #e2e8f0; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 8px rgba(0,0,0,.06); }
+    .nav-logo { font-weight: 700; font-size: 1.1rem; color: var(--teal); text-decoration: none; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--gray); font-size: .9rem; transition: color .2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--teal); }
+    .nav-cta { background: var(--teal); color: #fff; padding: 8px 18px; border-radius: 8px; font-size: .9rem; text-decoration: none; font-weight: 600; }
+    @media(max-width:640px) { .nav-links { display: none; } }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 60%, #064e3b 100%); color: #fff; padding: 56px 24px 48px; text-align: center; }
+    .hero-badge { display: inline-block; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.3); padding: 6px 16px; border-radius: 20px; font-size: .8rem; margin-bottom: 18px; }
+    .hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 12px; }
+    .hero p { font-size: 1rem; opacity: .9; max-width: 520px; margin: 0 auto; }
+
+    /* CONTAINER */
+    .container { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+    /* FILTER */
+    .filter-wrap { padding: 36px 0 24px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .filter-btn { background: var(--white); border: 2px solid #e2e8f0; border-radius: 30px; padding: 8px 18px; font-size: .85rem; font-weight: 600; cursor: pointer; transition: all .2s; color: var(--gray); }
+    .filter-btn.active, .filter-btn:hover { border-color: var(--teal); background: var(--teal); color: #fff; }
+
+    /* ARTICLES GRID */
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-bottom: 48px; }
+
+    .article-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: transform .2s, box-shadow .2s;
+      text-decoration: none;
+      color: var(--dark);
+      display: flex;
+      flex-direction: column;
+    }
+    .article-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,.12); }
+    .article-card[data-hidden="true"] { display: none; }
+
+    .article-thumb {
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      padding: 28px 24px 20px;
+      position: relative;
+    }
+    .article-icon { font-size: 2.4rem; margin-bottom: 8px; display: block; }
+    .article-cat-badge {
+      display: inline-block;
+      background: rgba(255,255,255,.2);
+      border: 1px solid rgba(255,255,255,.3);
+      color: #fff;
+      font-size: .7rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 12px;
+      letter-spacing: .05em;
+    }
+    .article-body { padding: 20px 24px 24px; flex: 1; display: flex; flex-direction: column; }
+    .article-title { font-size: 1rem; font-weight: 700; margin-bottom: 8px; line-height: 1.4; color: var(--dark); }
+    .article-desc { font-size: .85rem; color: var(--gray); line-height: 1.6; flex: 1; margin-bottom: 16px; }
+    .article-meta { display: flex; align-items: center; justify-content: space-between; font-size: .75rem; color: var(--gray); }
+    .article-read { color: var(--teal); font-weight: 700; font-size: .8rem; }
+
+    /* AUTHOR BOX */
+    .author-box {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+    .author-box img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 3px solid var(--teal); flex-shrink: 0; }
+    .author-name { font-weight: 800; font-size: 1rem; margin-bottom: 4px; }
+    .author-desc { font-size: .85rem; color: var(--gray); }
+    @media(max-width:500px) { .author-box { flex-direction: column; text-align: center; } }
+
+    /* CTA */
+    .cta-block { background: linear-gradient(135deg, var(--dark), #0f172a); border-radius: var(--radius); padding: 40px; text-align: center; color: #fff; margin-bottom: 48px; }
+    .cta-block h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 10px; }
+    .cta-block p { opacity: .75; font-size: .95rem; margin-bottom: 24px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-teal { background: var(--teal); color: #fff; padding: 14px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+    .btn-outline { background: transparent; border: 2px solid rgba(255,255,255,.3); color: #fff; padding: 14px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+
+    /* STICKY */
+    .sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--dark); color: #fff; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; z-index: 200; transform: translateY(100%); transition: transform .3s; }
+    .sticky-bar.visible { transform: translateY(0); }
+    .sticky-price { color: var(--gold); font-weight: 700; font-size: .9rem; }
+    .sticky-actions { display: flex; gap: 8px; }
+    .sticky-btn { padding: 8px 16px; border-radius: 8px; font-size: .85rem; font-weight: 700; text-decoration: none; }
+    .sticky-btn.call { background: var(--teal); color: #fff; }
+    .sticky-btn.tg { background: #229ED9; color: #fff; }
+    .sticky-btn.wa { background: #25d366; color: #fff; }
+    .sticky-btn.vb { background: #7360f2; color: #fff; }
+
+    footer { background: var(--dark); color: rgba(255,255,255,.6); text-align: center; padding: 24px 20px 80px; font-size: .85rem; }
+    footer a { color: var(--teal); text-decoration: none; }
+  </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1428611006597338" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">MARIA MEDICAL CENTER</a>
+  <ul class="nav-links">
+    <li><a href="/">&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;</a></li>
+    <li><a href="/about/">&#1054; &#1094;&#1077;&#1085;&#1090;&#1088;&#1077;</a></li>
+    <li><a href="/articles/" class="active">&#1057;&#1090;&#1072;&#1090;&#1100;&#1080;</a></li>
+    <li><a href="/appointment/">&#1047;&#1072;&#1087;&#1080;&#1089;&#1100;</a></li>
+    <li><a href="/reviews/">&#1054;&#1090;&#1079;&#1099;&#1074;&#1099;</a></li>
+  </ul>
+  <a href="/appointment/" class="nav-cta">&#128204; &#1047;&#1072;&#1087;&#1080;&#1089;&#1072;&#1090;&#1100;&#1089;&#1103;</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge">&#128218; &#1052;&#1077;&#1076;&#1080;&#1094;&#1080;&#1085;&#1089;&#1082;&#1080;&#1077; &#1089;&#1090;&#1072;&#1090;&#1100;&#1080;</div>
+  <h1>&#1055;&#1086;&#1083;&#1077;&#1079;&#1085;&#1072;&#1103; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1103;</h1>
+  <p>&#1057;&#1090;&#1072;&#1090;&#1100;&#1080; &#1087;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088;&#1072; &#1057;&#1091;&#1096;&#1082;&#1086;&#1074;&#1072; &#1057;.&#1042;. &#8212; &#1087;&#1088;&#1072;&#1082;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1103; &#1076;&#1083;&#1103; &#1087;&#1072;&#1094;&#1080;&#1077;&#1085;&#1090;&#1086;&#1074; &#1086; &#1093;&#1080;&#1088;&#1091;&#1088;&#1075;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093; &#1079;&#1072;&#1073;&#1086;&#1083;&#1077;&#1074;&#1072;&#1085;&#1080;&#1103;&#1093; &#1080; &#1084;&#1077;&#1090;&#1086;&#1076;&#1072;&#1093; &#1083;&#1077;&#1095;&#1077;&#1085;&#1080;&#1103;</p>
+</div>
+
+<div class="container">
+
+  <!-- Author -->
+  <div class="author-box" style="margin-top:36px">
+    <img src="https://ssvnauka.com/images/doctor-portrait.jpg" alt="&#1055;&#1088;&#1086;&#1092;. &#1057;&#1091;&#1096;&#1082;&#1086;&#1074;" />
+    <div>
+      <div class="author-name">&#1055;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088; &#1057;&#1091;&#1096;&#1082;&#1086;&#1074; &#1057;&#1077;&#1088;&#1075;&#1077;&#1081; &#1042;&#1072;&#1083;&#1077;&#1085;&#1090;&#1080;&#1085;&#1086;&#1074;&#1080;&#1095;</div>
+      <div class="author-desc">&#1076;.&#1084;&#1077;&#1076;.&#1085;., &#1087;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088; &middot; &#1093;&#1080;&#1088;&#1091;&#1088;&#1075;-&#1086;&#1085;&#1082;&#1086;&#1083;&#1086;&#1075; &middot; 40+ &#1083;&#1077;&#1090; &#1086;&#1087;&#1099;&#1090;&#1072; &middot; 121 &#1087;&#1091;&#1073;&#1083;&#1080;&#1082;&#1072;&#1094;&#1080;&#1103; &middot; &#1095;&#1083;&#1077;&#1085; EAES</div>
+    </div>
+  </div>
+
+  <!-- Filter -->
+  <div class="filter-wrap">
+    <button class="filter-btn active" data-filter="all">&#1042;&#1089;&#1077; &#1089;&#1090;&#1072;&#1090;&#1100;&#1080;</button>
+    <button class="filter-btn" data-filter="surgery">&#1061;&#1080;&#1088;&#1091;&#1088;&#1075;&#1080;&#1103;</button>
+    <button class="filter-btn" data-filter="onco">&#1054;&#1085;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;</button>
+    <button class="filter-btn" data-filter="gynecology">&#1043;&#1080;&#1085;&#1077;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;</button>
+    <button class="filter-btn" data-filter="laparoscopy">&#1051;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1103;</button>
+  </div>
+
+  <!-- Articles -->
+  <div class="articles-grid" id="grid">
+
+    <a href="https://ssvnauka.com/articles/laparoscopic-cholecystectomy/" class="article-card" data-cat="surgery laparoscopy">
+      <div class="article-thumb">
+        <span class="article-icon">&#129455;</span>
+        <span class="article-cat-badge">&#1061;&#1080;&#1088;&#1091;&#1088;&#1075;&#1080;&#1103;</span>
+      </div>
+      <div class="article-body">
+        <div class="article-title">&#1051;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1093;&#1086;&#1083;&#1077;&#1094;&#1080;&#1089;&#1090;&#1101;&#1082;&#1090;&#1086;&#1084;&#1080;&#1103;: &#1095;&#1090;&#1086; &#1085;&#1091;&#1078;&#1085;&#1086; &#1079;&#1085;&#1072;&#1090;&#1100;</div>
+        <div class="article-desc">&#1050;&#1072;&#1084;&#1085;&#1080; &#1074; &#1078;&#1077;&#1083;&#1095;&#1085;&#1086;&#1084; &#1087;&#1091;&#1079;&#1099;&#1088;&#1077; &#8212; &#1086;&#1076;&#1085;&#1072; &#1080;&#1079; &#1085;&#1072;&#1080;&#1073;&#1086;&#1083;&#1077;&#1077; &#1095;&#1072;&#1089;&#1090;&#1099;&#1093; &#1087;&#1088;&#1086;&#1073;&#1083;&#1077;&#1084;. &#1050;&#1072;&#1082; &#1087;&#1088;&#1086;&#1093;&#1086;&#1076;&#1080;&#1090; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1103;, &#1074;&#1086;&#1089;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077; &#1080; &#1095;&#1077;&#1075;&#1086; &#1086;&#1078;&#1080;&#1076;&#1072;&#1090;&#1100;.</div>
+        <div class="article-meta"><span>5 &#1084;&#1080;&#1085; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span><span class="article-read">&#1063;&#1080;&#1090;&#1072;&#1090;&#1100; &rarr;</span></div>
+      </div>
+    </a>
+
+    <a href="https://ssvnauka.com/articles/myoma-uterus-treatment/" class="article-card" data-cat="gynecology">
+      <div class="article-thumb">
+        <span class="article-icon">&#9792;&#65039;</span>
+        <span class="article-cat-badge">&#1043;&#1080;&#1085;&#1077;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;</span>
+      </div>
+      <div class="article-body">
+        <div class="article-title">&#1052;&#1080;&#1086;&#1084;&#1072; &#1084;&#1072;&#1090;&#1082;&#1080;: &#1083;&#1077;&#1095;&#1077;&#1085;&#1080;&#1077; &#1073;&#1077;&#1079; &#1091;&#1076;&#1072;&#1083;&#1077;&#1085;&#1080;&#1103; &#1086;&#1088;&#1075;&#1072;&#1085;&#1072;</div>
+        <div class="article-desc">&#1052;&#1080;&#1086;&#1084;&#1101;&#1082;&#1090;&#1086;&#1084;&#1080;&#1103; &#8212; &#1089;&#1086;&#1074;&#1088;&#1077;&#1084;&#1077;&#1085;&#1085;&#1099;&#1081; &#1087;&#1086;&#1076;&#1093;&#1086;&#1076; &#1082; &#1091;&#1076;&#1072;&#1083;&#1077;&#1085;&#1080;&#1102; &#1091;&#1079;&#1083;&#1086;&#1074; &#1089; &#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1077;&#1085;&#1080;&#1077;&#1084; &#1084;&#1072;&#1090;&#1082;&#1080;. &#1055;&#1086;&#1082;&#1072;&#1079;&#1072;&#1085;&#1080;&#1103;, &#1087;&#1086;&#1076;&#1075;&#1086;&#1090;&#1086;&#1074;&#1082;&#1072; &#1080; &#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1099;.</div>
+        <div class="article-meta"><span>7 &#1084;&#1080;&#1085; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span><span class="article-read">&#1063;&#1080;&#1090;&#1072;&#1090;&#1100; &rarr;</span></div>
+      </div>
+    </a>
+
+    <a href="https://ssvnauka.com/articles/colon-cancer-surgery/" class="article-card" data-cat="onco">
+      <div class="article-thumb" style="background:linear-gradient(135deg,#7c3aed,#4c1d95)">
+        <span class="article-icon">&#128203;</span>
+        <span class="article-cat-badge">&#1054;&#1085;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;</span>
+      </div>
+      <div class="article-body">
+        <div class="article-title">&#1056;&#1072;&#1082; &#1090;&#1086;&#1083;&#1089;&#1090;&#1086;&#1081; &#1082;&#1080;&#1096;&#1082;&#1080;: &#1089;&#1080;&#1084;&#1087;&#1090;&#1086;&#1084;&#1099; &#1080; &#1093;&#1080;&#1088;&#1091;&#1088;&#1075;&#1080;&#1095;&#1077;&#1089;&#1082;&#1086;&#1077; &#1083;&#1077;&#1095;&#1077;&#1085;&#1080;&#1077;</div>
+        <div class="article-desc">&#1050;&#1086;&#1075;&#1076;&#1072; &#1085;&#1072;&#1079;&#1085;&#1072;&#1095;&#1072;&#1077;&#1090;&#1089;&#1103; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1103;, &#1082;&#1072;&#1082;&#1080;&#1077; &#1089;&#1091;&#1097;&#1077;&#1089;&#1090;&#1074;&#1091;&#1102;&#1090; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099;, &#1074;&#1086;&#1089;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077; &#1087;&#1086;&#1089;&#1083;&#1077; &#1088;&#1077;&#1079;&#1077;&#1082;&#1094;&#1080;&#1080;. &#1054;&#1087;&#1099;&#1090; 5000+ &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1081;.</div>
+        <div class="article-meta"><span>8 &#1084;&#1080;&#1085; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span><span class="article-read">&#1063;&#1080;&#1090;&#1072;&#1090;&#1100; &rarr;</span></div>
+      </div>
+    </a>
+
+    <a href="https://ssvnauka.com/articles/hernia-laparoscopy/" class="article-card" data-cat="surgery laparoscopy">
+      <div class="article-thumb">
+        <span class="article-icon">&#129338;</span>
+        <span class="article-cat-badge">&#1051;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1103;</span>
+      </div>
+      <div class="article-body">
+        <div class="article-title">&#1043;&#1088;&#1099;&#1078;&#1072; &#8212; &#1083;&#1077;&#1095;&#1077;&#1085;&#1080;&#1077; &#1073;&#1077;&#1079; &#1073;&#1086;&#1083;&#1100;&#1096;&#1086;&#1075;&#1086; &#1088;&#1072;&#1079;&#1088;&#1077;&#1079;&#1072;</div>
+        <div class="article-desc">&#1051;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1075;&#1077;&#1088;&#1085;&#1080;&#1086;&#1087;&#1083;&#1072;&#1089;&#1090;&#1080;&#1082;&#1072; &#8212; &#1089;&#1086;&#1074;&#1088;&#1077;&#1084;&#1077;&#1085;&#1085;&#1099;&#1081; &#1089;&#1090;&#1072;&#1085;&#1076;&#1072;&#1088;&#1090;. &#1063;&#1090;&#1086; &#1090;&#1072;&#1082;&#1086;&#1077; &#1084;&#1077;&#1096;&#1086;&#1082;, &#1082;&#1072;&#1082; &#1074;&#1099;&#1073;&#1088;&#1072;&#1090;&#1100; &#1084;&#1077;&#1090;&#1086;&#1076; &#1080; &#1082;&#1086;&#1075;&#1076;&#1072; &#1086;&#1073;&#1088;&#1072;&#1097;&#1072;&#1090;&#1100;&#1089;&#1103; &#1082; &#1093;&#1080;&#1088;&#1091;&#1088;&#1075;&#1091;.</div>
+        <div class="article-meta"><span>6 &#1084;&#1080;&#1085; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span><span class="article-read">&#1063;&#1080;&#1090;&#1072;&#1090;&#1100; &rarr;</span></div>
+      </div>
+    </a>
+
+    <a href="https://ssvnauka.com/articles/gastric-cancer-signs/" class="article-card" data-cat="onco">
+      <div class="article-thumb" style="background:linear-gradient(135deg,#dc2626,#7f1d1d)">
+        <span class="article-icon">&#128266;</span>
+        <span class="article-cat-badge">&#1054;&#1085;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;</span>
+      </div>
+      <div class="article-body">
+        <div class="article-title">&#1056;&#1072;&#1085;&#1085;&#1080;&#1077; &#1087;&#1088;&#1080;&#1079;&#1085;&#1072;&#1082;&#1080; &#1088;&#1072;&#1082;&#1072; &#1078;&#1077;&#1083;&#1091;&#1076;&#1082;&#1072;</div>
+        <div class="article-desc">&#1044;&#1080;&#1072;&#1075;&#1085;&#1086;&#1089;&#1090;&#1080;&#1082;&#1072; &#1085;&#1072; &#1088;&#1072;&#1085;&#1085;&#1077;&#1081; &#1089;&#1090;&#1072;&#1076;&#1080;&#1080; &#1088;&#1077;&#1096;&#1072;&#1077;&#1090; &#1080;&#1089;&#1093;&#1086;&#1076;. &#1059;&#1079;&#1085;&#1072;&#1081;&#1090;&#1077;, &#1082;&#1072;&#1082;&#1080;&#1077; &#1089;&#1080;&#1084;&#1087;&#1090;&#1086;&#1084;&#1099; &#1085;&#1077;&#1083;&#1100;&#1079;&#1103; &#1080;&#1075;&#1085;&#1086;&#1088;&#1080;&#1088;&#1086;&#1074;&#1072;&#1090;&#1100; &#1080; &#1082;&#1086;&#1075;&#1076;&#1072; &#1085;&#1091;&#1078;&#1085;&#1086; &#1089;&#1088;&#1086;&#1095;&#1085;&#1086; &#1086;&#1073;&#1088;&#1072;&#1090;&#1080;&#1090;&#1100;&#1089;&#1103; &#1082; &#1074;&#1088;&#1072;&#1095;&#1091;.</div>
+        <div class="article-meta"><span>6 &#1084;&#1080;&#1085; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span><span class="article-read">&#1063;&#1080;&#1090;&#1072;&#1090;&#1100; &rarr;</span></div>
+      </div>
+    </a>
+
+    <a href="https://ssvnauka.com/articles/stomach-cancer-prevention-treatment/" class="article-card" data-cat="onco laparoscopy">
+      <div class="article-thumb" style="background:linear-gradient(135deg,#7e22ce,#581c87)">
+        <span class="article-icon">&#128137;</span>
+        <span class="article-cat-badge">&#1054;&#1085;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;</span>
+      </div>
+      <div class="article-body">
+        <div class="article-title">&#1055;&#1088;&#1086;&#1092;&#1080;&#1083;&#1072;&#1082;&#1090;&#1080;&#1082;&#1072; &#1080; &#1083;&#1077;&#1095;&#1077;&#1085;&#1080;&#1077; &#1088;&#1072;&#1082;&#1072; &#1078;&#1077;&#1083;&#1091;&#1076;&#1082;&#1072;</div>
+        <div class="article-desc">&#1069;&#1088;&#1072;&#1076;&#1080;&#1082;&#1072;&#1094;&#1080;&#1103; H. pylori, &#1083;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1075;&#1072;&#1089;&#1090;&#1088;&#1101;&#1082;&#1090;&#1086;&#1084;&#1080;&#1103;, &#1087;&#1077;&#1088;&#1080;&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1086;&#1085;&#1085;&#1072;&#1103; &#1093;&#1080;&#1084;&#1080;&#1086;&#1090;&#1077;&#1088;&#1072;&#1087;&#1080;&#1103; &#1080; &#1087;&#1086;&#1089;&#1083;&#1077;&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1086;&#1085;&#1085;&#1072;&#1103; &#1088;&#1077;&#1072;&#1073;&#1080;&#1083;&#1080;&#1090;&#1072;&#1094;&#1080;&#1103;. &#1057;&#1086;&#1074;&#1088;&#1077;&#1084;&#1077;&#1085;&#1085;&#1099;&#1081; &#1087;&#1086;&#1076;&#1093;&#1086;&#1076;.</div>
+        <div class="article-meta"><span>14 &#1084;&#1080;&#1085; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span><span class="article-read">&#1063;&#1080;&#1090;&#1072;&#1090;&#1100; &rarr;</span></div>
+      </div>
+    </a>
+
+    <a href="https://ssvnauka.com/articles/endometriosis-treatment/" class="article-card" data-cat="gynecology">
+      <div class="article-thumb" style="background:linear-gradient(135deg,#db2777,#831843)">
+        <span class="article-icon">&#127774;</span>
+        <span class="article-cat-badge">&#1043;&#1080;&#1085;&#1077;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;</span>
+      </div>
+      <div class="article-body">
+        <div class="article-title">&#1069;&#1085;&#1076;&#1086;&#1084;&#1077;&#1090;&#1088;&#1080;&#1086;&#1079;: &#1083;&#1077;&#1095;&#1077;&#1085;&#1080;&#1077; &#1083;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1077;&#1081;</div>
+        <div class="article-desc">&#1063;&#1090;&#1086; &#1090;&#1072;&#1082;&#1086;&#1077; &#1101;&#1085;&#1076;&#1086;&#1084;&#1077;&#1090;&#1088;&#1080;&#1086;&#1079;, &#1087;&#1086;&#1095;&#1077;&#1084;&#1091; &#1086;&#1085; &#1074;&#1099;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090; &#1073;&#1086;&#1083;&#1100; &#1080; &#1073;&#1077;&#1089;&#1087;&#1083;&#1086;&#1076;&#1080;&#1077;, &#1080; &#1082;&#1072;&#1082; &#1083;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1103; &#1087;&#1086;&#1084;&#1086;&#1075;&#1072;&#1077;&#1090; &#1074;&#1086;&#1089;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1080;&#1090;&#1100; &#1095;&#1077;&#1083;&#1086;&#1074;&#1077;&#1082;&#1072;.</div>
+        <div class="article-meta"><span>7 &#1084;&#1080;&#1085; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span><span class="article-read">&#1063;&#1080;&#1090;&#1072;&#1090;&#1100; &rarr;</span></div>
+      </div>
+    </a>
+
+    <a href="https://ssvnauka.com/articles/appendicitis-symptoms/" class="article-card" data-cat="surgery">
+      <div class="article-thumb" style="background:linear-gradient(135deg,#d97706,#78350f)">
+        <span class="article-icon">&#9888;&#65039;</span>
+        <span class="article-cat-badge">&#1061;&#1080;&#1088;&#1091;&#1088;&#1075;&#1080;&#1103;</span>
+      </div>
+      <div class="article-body">
+        <div class="article-title">&#1040;&#1087;&#1087;&#1077;&#1085;&#1076;&#1080;&#1094;&#1080;&#1090;: &#1089;&#1080;&#1084;&#1087;&#1090;&#1086;&#1084;&#1099;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1077; &#1085;&#1077;&#1083;&#1100;&#1079;&#1103; &#1080;&#1075;&#1085;&#1086;&#1088;&#1080;&#1088;&#1086;&#1074;&#1072;&#1090;&#1100;</div>
+        <div class="article-desc">&#1050;&#1072;&#1082; &#1086;&#1090;&#1083;&#1080;&#1095;&#1080;&#1090;&#1100; &#1072;&#1087;&#1087;&#1077;&#1085;&#1076;&#1080;&#1094;&#1080;&#1090; &#1086;&#1090; &#1086;&#1073;&#1099;&#1095;&#1085;&#1086;&#1081; &#1073;&#1086;&#1083;&#1080; &#1074; &#1078;&#1080;&#1074;&#1086;&#1090;&#1077;, &#1082;&#1086;&#1075;&#1076;&#1072; &#1074;&#1099;&#1079;&#1099;&#1074;&#1072;&#1090;&#1100; &#1089;&#1082;&#1086;&#1088;&#1091;&#1102; &#1080; &#1095;&#1077;&#1075;&#1086; &#1086;&#1078;&#1080;&#1076;&#1072;&#1090;&#1100; &#1086;&#1090; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;.</div>
+        <div class="article-meta"><span>4 &#1084;&#1080;&#1085; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span><span class="article-read">&#1063;&#1080;&#1090;&#1072;&#1090;&#1100; &rarr;</span></div>
+      </div>
+    </a>
+
+    <a href="https://ssvnauka.com/articles/breast-cancer-surgery/" class="article-card" data-cat="onco">
+      <div class="article-thumb" style="background:linear-gradient(135deg,#0891b2,#0c4a6e)">
+        <span class="article-icon">&#128140;</span>
+        <span class="article-cat-badge">&#1054;&#1085;&#1082;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;</span>
+      </div>
+      <div class="article-body">
+        <div class="article-title">&#1061;&#1080;&#1088;&#1091;&#1088;&#1075;&#1080;&#1095;&#1077;&#1089;&#1082;&#1086;&#1077; &#1083;&#1077;&#1095;&#1077;&#1085;&#1080;&#1077; &#1088;&#1072;&#1082;&#1072; &#1084;&#1086;&#1083;&#1086;&#1095;&#1085;&#1086;&#1081; &#1078;&#1077;&#1083;&#1077;&#1079;&#1099;</div>
+        <div class="article-desc">&#1054;&#1088;&#1075;&#1072;&#1085;&#1086;&#1089;&#1086;&#1093;&#1088;&#1072;&#1085;&#1103;&#1102;&#1097;&#1080;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;, &#1084;&#1072;&#1089;&#1090;&#1101;&#1082;&#1090;&#1086;&#1084;&#1080;&#1103;, &#1089;&#1077;&#1085;&#1090;&#1080;&#1085;&#1077;&#1083;&#1100;&#1085;&#1072;&#1103; &#1073;&#1080;&#1086;&#1087;&#1089;&#1080;&#1103; &#1083;&#1080;&#1084;&#1092;&#1091;&#1079;&#1083;&#1072;. &#1050;&#1072;&#1082; &#1074;&#1099;&#1073;&#1088;&#1072;&#1090;&#1100; &#1090;&#1072;&#1082;&#1090;&#1080;&#1082;&#1091;.</div>
+        <div class="article-meta"><span>9 &#1084;&#1080;&#1085; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span><span class="article-read">&#1063;&#1080;&#1090;&#1072;&#1090;&#1100; &rarr;</span></div>
+      </div>
+    </a>
+
+    <a href="https://ssvnauka.com/articles/laparoscopy-recovery/" class="article-card" data-cat="laparoscopy">
+      <div class="article-thumb">
+        <span class="article-icon">&#127973;</span>
+        <span class="article-cat-badge">&#1051;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1103;</span>
+      </div>
+      <div class="article-body">
+        <div class="article-title">&#1042;&#1086;&#1089;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077; &#1087;&#1086;&#1089;&#1083;&#1077; &#1083;&#1072;&#1087;&#1072;&#1088;&#1086;&#1089;&#1082;&#1086;&#1087;&#1080;&#1080;</div>
+        <div class="article-desc">&#1057;&#1082;&#1086;&#1083;&#1100;&#1082;&#1086; &#1083;&#1077;&#1078;&#1072;&#1090;&#1100; &#1074; &#1073;&#1086;&#1083;&#1100;&#1085;&#1080;&#1094;&#1077;, &#1089;&#1088;&#1086;&#1082;&#1080; &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;&#1072; &#1082; &#1088;&#1072;&#1073;&#1086;&#1090;&#1077;, &#1087;&#1080;&#1090;&#1072;&#1085;&#1080;&#1077; &#1080; &#1092;&#1080;&#1079;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1089;&#1090;&#1100;. &#1055;&#1086;&#1083;&#1085;&#1099;&#1081; &#1075;&#1072;&#1081;&#1076; &#1086;&#1090; &#1087;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088;&#1072;.</div>
+        <div class="article-meta"><span>6 &#1084;&#1080;&#1085; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span><span class="article-read">&#1063;&#1080;&#1090;&#1072;&#1090;&#1100; &rarr;</span></div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <h2>&#1045;&#1089;&#1090;&#1100; &#1074;&#1086;&#1087;&#1088;&#1086;&#1089;&#1099;?</h2>
+    <p>&#1047;&#1072;&#1087;&#1080;&#1096;&#1080;&#1090;&#1077;&#1089;&#1100; &#1085;&#1072; &#1082;&#1086;&#1085;&#1089;&#1091;&#1083;&#1100;&#1090;&#1072;&#1094;&#1080;&#1102; &#1082; &#1087;&#1088;&#1086;&#1092;&#1077;&#1089;&#1089;&#1086;&#1088;&#1091; &#1057;&#1091;&#1096;&#1082;&#1086;&#1074;&#1091; &#8212; &#1087;&#1086;&#1083;&#1091;&#1095;&#1080;&#1090;&#1077; &#1090;&#1086;&#1095;&#1085;&#1099;&#1081; &#1086;&#1090;&#1074;&#1077;&#1090; &#1087;&#1086; &#1074;&#1072;&#1096;&#1077;&#1081; &#1089;&#1080;&#1090;&#1091;&#1072;&#1094;&#1080;&#1080;</p>
+    <div class="cta-btns">
+      <a href="/appointment/" class="btn-teal">&#128204; &#1047;&#1072;&#1087;&#1080;&#1089;&#1072;&#1090;&#1100;&#1089;&#1103;</a>
+      <a href="tel:+380675707949" class="btn-outline">&#128222; +380 67 570 79 49</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="sticky-bar" id="sticky">
+  <div>
+    <div style="font-size:.85rem;font-weight:600">&#1055;&#1088;&#1086;&#1092;. &#1057;&#1091;&#1096;&#1082;&#1086;&#1074; &#1057;.&#1042;.</div>
+    <div class="sticky-price">&#1050;&#1086;&#1085;&#1089;&#1091;&#1083;&#1100;&#1090;&#1072;&#1094;&#1080;&#1103; 2000 &#1075;&#1088;&#1085;</div>
+  </div>
+  <div class="sticky-actions">
+    <a href="tel:+380675707949" class="sticky-btn call">&#128222; &#1055;&#1086;&#1079;&#1074;&#1086;&#1085;&#1080;&#1090;&#1100;</a>
+    <a href="https://wa.me/380675707949" class="sticky-btn wa" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp</a>
+    <a href="viber://chat?number=+380675707949" class="sticky-btn vb" target="_blank" rel="noopener noreferrer" onclick="return handleViberClick(event)">&#128241; Viber</a>
+  </div>
+</div>
+
+<footer>
+  <div style="display:flex;gap:10px;justify-content:center;align-items:center;margin-bottom:12px">
+    <a href="https://t.me/SSVproff_medical_bot" target="_blank" rel="noopener noreferrer" aria-label="Telegram" style="font-size:1.3rem;text-decoration:none">✈️</a>
+    <a href="https://wa.me/380675707949" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style="font-size:1.3rem;text-decoration:none">💬</a>
+    <a href="viber://chat?number=+380675707949" target="_blank" rel="noopener noreferrer" aria-label="Viber" onclick="return handleViberClick(event)" style="font-size:1.3rem;text-decoration:none">📳</a>
+  </div>
+  <div>&copy; 2026 MARIA Medical Center &middot; <a href="/privacy-policy.html">&#1050;&#1086;&#1085;&#1092;&#1080;&#1076;&#1077;&#1085;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1100;</a></div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () =>
+    document.getElementById('sticky').classList.toggle('visible', scrollY > 300));
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.article-card').forEach(card => {
+        const cats = card.dataset.cat || '';
+        card.dataset.hidden = (f !== 'all' && !cats.includes(f)) ? 'true' : 'false';
+      });
+    });
+  });
+</script>
+<script>
+function handleViberClick(e) {
+  const ua = navigator.userAgent.toLowerCase();
+  const isDesktop = !/android|iphone|ipad|ipod|windows phone|mobile/i.test(ua);
+  if (isDesktop) {
+    e.preventDefault();
+    if (confirm('Viber открывается на мобильном устройстве. Скопировать номер +380 67 570 79 49?')) {
+      navigator.clipboard.writeText('+380 67 570 79 49').catch(()=>{});
+    }
+    return false;
+  }
+  return true;
+}
+</script>
+</body>
+</html>
