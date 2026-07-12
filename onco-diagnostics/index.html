@@ -147,7 +147,7 @@
   </style>
   <link rel="stylesheet" href="../shared/phase1.css">
 </head>
-<body>
+<body data-i18n-page="diagnostics_page">
 
 <nav>
   <a class="nav-logo" href="/">🏥 MARIA MEDICAL CENTER</a>
@@ -160,6 +160,7 @@
     <a href="/appointment/">Запись</a>
   </div>
   <a class="nav-cta" href="/appointment/">Записаться</a>
+  <div class="lang-switcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 </nav>
 
 <div class="breadcrumb">
@@ -170,7 +171,7 @@
 
 <section class="hero">
   <div class="hero-badge">🔬 Ранняя диагностика рака</div>
-  <h1>Онкологический скрининг<br>в Харькове</h1>
+  <h1 data-i18n="diagnostics_page.title">Онкологический скрининг в Харькове</h1>
   <p>Рак, выявленный на I стадии, излечим в 90% случаев. Ежегодный скрининг под руководством профессора-онкохирурга — ваша защита и спокойствие.</p>
   <div class="hero-btns">
     <a class="btn btn-primary" href="/appointment/">📅 Записаться на скрининг</a>
@@ -187,7 +188,7 @@
 <section>
   <div class="container">
     <div class="section-label">Почему важно</div>
-    <h2 class="section-title">Ранняя диагностика — это жизнь</h2>
+    <h2 class="section-title" data-i18n="diagnostics_page.intro">Ранняя диагностика — это жизнь</h2>
     <p>Большинство онкологических заболеваний на ранних стадиях протекают бессимптомно. К моменту появления жалоб опухоль нередко достигает III–IV стадии. Плановый скрининг позволяет выявить рак до появления симптомов — когда лечение наиболее эффективно.</p>
     <div class="highlight">💡 Профессор Сушков С.В. не просто назначает и выполняет исследования — он лично интерпретирует результаты в контексте вашей клинической картины. Это принципиально отличает профессорскую онко-диагностику от стандартного обследования.</div>
   </div>
@@ -305,7 +306,7 @@
 
 <section class="cta-section">
   <div class="container">
-    <h2>Не откладывайте скрининг</h2>
+    <h2 data-i18n="diagnostics_page.cta">Не откладывайте скрининг</h2>
     <p>Ранняя диагностика — это разница между операцией и надеждой на выздоровление. Запишитесь сегодня.</p>
     <a class="btn btn-primary" href="/appointment/">📅 Записаться онлайн</a>
     <div class="chips">
@@ -368,5 +369,6 @@
     return true;
   }
 </script>
+<script defer src="/scripts.js?v=35"></script>
 </body>
 </html>

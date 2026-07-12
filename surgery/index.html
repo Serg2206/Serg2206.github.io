@@ -309,7 +309,7 @@
   </style>
   <link rel="stylesheet" href="../shared/phase1.css">
 </head>
-<body>
+<body data-i18n-page="surgery_page">
 
 <!-- NAV -->
 <nav>
@@ -323,6 +323,7 @@
     <a href="/appointment/">Запись</a>
   </div>
   <a class="nav-cta" href="/appointment/">Записаться</a>
+  <div class="lang-switcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 </nav>
 
 <!-- BREADCRUMB -->
@@ -335,7 +336,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-badge">🇩🇪 Оборудование Karl Storz, Германия</div>
-  <h1>Экспертная хирургия<br>в Харькове</h1>
+  <h1 data-i18n="surgery_page.title">Экспертная хирургия в Харькове</h1>
   <div class="hero-storz">
     <span>🔬</span>
     Лапароскопическая стойка <strong>Karl Storz</strong> — мировой стандарт эндоскопической хирургии
@@ -357,7 +358,7 @@
 <section>
   <div class="container">
     <div class="section-label">Оборудование</div>
-    <h2 class="section-title">Лапароскопическая стойка Karl Storz</h2>
+    <h2 class="section-title" data-i18n="surgery_page.equipment">Лапароскопическая стойка Karl Storz</h2>
     <p class="section-sub">МЦ MARIA оснащён профессиональной лапароскопической стойкой Karl Storz (Германия) — эталоном мировой эндоскопической хирургии.</p>
 
     <div class="storz-block">
@@ -769,7 +770,7 @@
 <!-- CTA -->
 <section class="cta-section">
   <div class="container">
-    <h2>Запишитесь на консультацию профессора</h2>
+    <h2 data-i18n="surgery_page.cta">Запишитесь на консультацию профессора</h2>
     <p>Экспертная хирургия на оборудовании Karl Storz. 40 лет опыта. Консультация — 2000 грн.</p>
     <a class="btn btn-primary" href="/appointment/">📅 Записаться онлайн</a>
     <div class="chips">
@@ -852,5 +853,6 @@
   });
 </script>
 
+<script defer src="/scripts.js?v=35"></script>
 </body>
 </html>

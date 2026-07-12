@@ -82,9 +82,16 @@
 
   async function loadTranslations(lang) {
     try {
-      const res = await fetch(`/translations/${lang}.json`);
+      const [res, serviceRes] = await Promise.all([
+        fetch(`/translations/${lang}.json`),
+        fetch('/translations/service-pages.json')
+      ]);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       translations = await res.json();
+      if (serviceRes.ok) {
+        const serviceTranslations = await serviceRes.json();
+        Object.assign(translations, serviceTranslations[lang] || {});
+      }
     } catch (err) {
       console.warn('Failed to load translations:', err);
       translations = {};

@@ -212,7 +212,7 @@
   </style>
   <link rel="stylesheet" href="../shared/phase1.css">
 </head>
-<body>
+<body data-i18n-page="oncosurgery_page">
 
 <nav>
   <a class="nav-logo" href="/">🏥 MARIA MEDICAL CENTER</a>
@@ -225,6 +225,7 @@
     <a href="/appointment/">Запись</a>
   </div>
   <a class="nav-cta" href="/appointment/">Записаться</a>
+  <div class="lang-switcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 </nav>
 
 <div class="breadcrumb">
@@ -235,7 +236,7 @@
 
 <section class="hero">
   <div class="hero-badge">🎗️ Хирургическая онкология</div>
-  <h1>Онкохирургия<br>в Харькове</h1>
+  <h1 data-i18n="oncosurgery_page.title">Онкохирургия в Харькове</h1>
   <p>Профессор Сушков С.В. — хирург-онколог с 40-летним опытом. Хирургическое лечение рака на современном уровне, индивидуальный подход, минимальные риски.</p>
   <div class="hero-btns">
     <a class="btn btn-primary" href="/appointment/">📅 Записаться на консультацию</a>
@@ -254,7 +255,7 @@
     <div class="grid-2">
       <div>
         <div class="section-label">О специализации</div>
-        <h2 class="section-title">Профессорская онкохирургия</h2>
+        <h2 class="section-title" data-i18n="oncosurgery_page.intro">Профессорская онкохирургия</h2>
         <p>Профессор Сушков С.В. — заместитель директора по научной работе Института общей и неотложной хирургии НАМН Украины на протяжении 22 лет. Специализируется на хирургическом лечении онкологических заболеваний органов брюшной полости и женской репродуктивной системы.</p>
         <div class="creds">
           <span class="cred-badge">🎓 Доктор медицинских наук</span>
@@ -421,7 +422,7 @@
 
 <section class="cta-section">
   <div class="container">
-    <h2>Не откладывайте консультацию</h2>
+    <h2 data-i18n="oncosurgery_page.cta">Не откладывайте консультацию</h2>
     <p>При подозрении на онкологию — каждый день имеет значение. Запишитесь к профессору Сушкову. Консультация 2000 грн.</p>
     <a class="btn btn-primary" href="/appointment/">📅 Записаться онлайн</a>
     <div class="chips">
@@ -503,5 +504,6 @@
   });
 </script>
 
+<script defer src="/scripts.js?v=35"></script>
 </body>
 </html>

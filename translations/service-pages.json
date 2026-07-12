@@ -1,0 +1,26 @@
+{
+  "ru": {
+    "surgery_page": {"title":"Экспертная хирургия в Харькове","equipment":"Лапароскопическая стойка Karl Storz","diagnostics":"Экспертная диагностическая лапароскопия","operations":"Операции через 3–4 прокола","hernia":"Экспертная герниопластика","minor":"Косметическая и малая хирургия","path":"От консультации до выписки","faq":"Вопросы и ответы","cta":"Запишитесь на консультацию профессора"},
+    "oncosurgery_page": {"title":"Онкохирургия в Харькове","intro":"Профессорская онкохирургия","conditions":"Онкологические заболевания, которые мы лечим","path":"Как строится онкологическое лечение","faq":"Вопросы об онкохирургии","cta":"Не откладывайте консультацию"},
+    "gynecology_page": {"title":"Гинекология в Харькове","intro":"Профессорская гинекология","conditions":"Что мы лечим и диагностируем","symptoms":"Симптомы, требующие консультации","faq":"Вопросы и ответы","cta":"Запишитесь к профессору-гинекологу"},
+    "myomectomy_page": {"title":"Миомэктомия: матка остаётся","intro":"Удалить миому и сохранить матку","comparison":"Миомэктомия или гистерэктомия","indications":"Когда нужна миомэктомия","process":"Как проходит миомэктомия","faq":"Всё о миомэктомии","cta":"Сохраните матку — запишитесь к профессору"},
+    "checkup_page": {"title":"Профосмотр и медицинские справки в Харькове","services":"Что мы предоставляем","visit":"Осмотр без очередей — за одно посещение","faq":"Вопросы и ответы","cta":"Запишитесь на профосмотр"},
+    "diagnostics_page": {"title":"Онкологический скрининг в Харькове","intro":"Ранняя диагностика — это жизнь","includes":"Что входит в онкодиагностику","age":"Рекомендуемые обследования по возрасту","faq":"Вопросы об онкодиагностике","cta":"Не откладывайте скрининг"}
+  },
+  "ua": {
+    "surgery_page": {"title":"Експертна хірургія в Харкові","equipment":"Лапароскопічна стійка Karl Storz","diagnostics":"Експертна діагностична лапароскопія","operations":"Операції через 3–4 проколи","hernia":"Експертна герніопластика","minor":"Косметична та мала хірургія","path":"Від консультації до виписки","faq":"Запитання та відповіді","cta":"Запишіться на консультацію професора"},
+    "oncosurgery_page": {"title":"Онкохірургія в Харкові","intro":"Професорська онкохірургія","conditions":"Онкологічні захворювання, які ми лікуємо","path":"Як будується онкологічне лікування","faq":"Запитання про онкохірургію","cta":"Не відкладайте консультацію"},
+    "gynecology_page": {"title":"Гінекологія в Харкові","intro":"Професорська гінекологія","conditions":"Що ми лікуємо та діагностуємо","symptoms":"Симптоми, що потребують консультації","faq":"Запитання та відповіді","cta":"Запишіться до професора-гінеколога"},
+    "myomectomy_page": {"title":"Міомектомія: матка зберігається","intro":"Видалити міому та зберегти матку","comparison":"Міомектомія чи гістеректомія","indications":"Коли потрібна міомектомія","process":"Як проходить міомектомія","faq":"Усе про міомектомію","cta":"Збережіть матку — запишіться до професора"},
+    "checkup_page": {"title":"Профогляд і медичні довідки в Харкові","services":"Що ми надаємо","visit":"Огляд без черг — за одне відвідування","faq":"Запитання та відповіді","cta":"Запишіться на профогляд"},
+    "diagnostics_page": {"title":"Онкологічний скринінг у Харкові","intro":"Рання діагностика — це життя","includes":"Що входить до онкодіагностики","age":"Рекомендовані обстеження за віком","faq":"Запитання про онкодіагностику","cta":"Не відкладайте скринінг"}
+  },
+  "en": {
+    "surgery_page": {"title":"Expert Surgery in Kharkiv","equipment":"Karl Storz Laparoscopic System","diagnostics":"Expert Diagnostic Laparoscopy","operations":"Surgery Through 3–4 Small Incisions","hernia":"Expert Hernia Repair","minor":"Cosmetic and Minor Surgery","path":"From Consultation to Discharge","faq":"Questions and Answers","cta":"Book a Consultation with the Professor"},
+    "oncosurgery_page": {"title":"Oncologic Surgery in Kharkiv","intro":"Professor-Led Oncologic Surgery","conditions":"Cancers We Treat","path":"How Cancer Treatment Is Planned","faq":"Questions About Oncologic Surgery","cta":"Do Not Delay Your Consultation"},
+    "gynecology_page": {"title":"Gynecology in Kharkiv","intro":"Professor-Led Gynecology","conditions":"Conditions We Diagnose and Treat","symptoms":"Symptoms Requiring Consultation","faq":"Questions and Answers","cta":"Book a Gynecology Consultation"},
+    "myomectomy_page": {"title":"Myomectomy: Preserving the Uterus","intro":"Remove Fibroids and Preserve the Uterus","comparison":"Myomectomy or Hysterectomy","indications":"When Myomectomy Is Needed","process":"How Myomectomy Is Performed","faq":"About Myomectomy","cta":"Preserve the Uterus — Book a Consultation"},
+    "checkup_page": {"title":"Medical Checkups and Certificates in Kharkiv","services":"What We Provide","visit":"A Queue-Free Checkup in One Visit","faq":"Questions and Answers","cta":"Book a Medical Checkup"},
+    "diagnostics_page": {"title":"Cancer Screening in Kharkiv","intro":"Early Diagnosis Saves Lives","includes":"What Cancer Diagnostics Include","age":"Recommended Examinations by Age","faq":"Questions About Cancer Diagnostics","cta":"Do Not Delay Screening"}
+  }
+}

@@ -217,7 +217,7 @@
   </style>
   <link rel="stylesheet" href="../shared/phase1.css">
 </head>
-<body>
+<body data-i18n-page="myomectomy_page">
 
 <nav>
   <a class="nav-logo" href="/">🏥 MARIA MEDICAL CENTER</a>
@@ -230,6 +230,7 @@
     <a href="/appointment/">Запись</a>
   </div>
   <a class="nav-cta" href="/appointment/">Записаться</a>
+  <div class="lang-switcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 </nav>
 
 <div class="breadcrumb">
@@ -242,7 +243,7 @@
 
 <section class="hero">
   <div class="hero-badge">💜 Органосохраняющая операция</div>
-  <h1>Миомэктомия:<br>матка остаётся</h1>
+  <h1 data-i18n="myomectomy_page.title">Миомэктомия: матка остаётся</h1>
   <p>Удаление миоматозных узлов с полным сохранением матки и репродуктивной функции. Лапароскопически или открыто — выбирает профессор, исходя из вашей ситуации.</p>
   <div class="hero-btns">
     <a class="btn btn-primary" href="/appointment/">📅 Записаться на консультацию</a>
@@ -261,7 +262,7 @@
     <div class="grid-2">
       <div>
         <div class="section-label">Что такое миомэктомия</div>
-        <h2 class="section-title">Удалить миому и сохранить матку</h2>
+        <h2 class="section-title" data-i18n="myomectomy_page.intro">Удалить миому и сохранить матку</h2>
         <p>Миомэктомия — операция по удалению миоматозных узлов (лейомиом) при сохранении матки. Это принципиальное отличие от гистерэктомии, при которой матка удаляется полностью.</p>
         <div class="highlight">💡 Ключевое преимущество миомэктомии: женщина сохраняет возможность беременности и рожать детей. Для многих пациенток это главное условие при выборе метода лечения.</div>
         <p>Профессор Сушков С.В. специализируется на органосохраняющих операциях. Лапароскопическая миомэктомия выполняется через 3–4 прокола, открытая (лапаротомная) — при крупных или множественных узлах, когда это даёт лучший результат.</p>
@@ -414,7 +415,7 @@
 
 <section class="cta-section">
   <div class="container">
-    <h2>Сохраните матку — запишитесь к профессору</h2>
+    <h2 data-i18n="myomectomy_page.cta">Сохраните матку — запишитесь к профессору</h2>
     <p>Индивидуальный план лечения, органосохраняющий подход. Консультация — 2000 грн.</p>
     <a class="btn btn-primary" href="/appointment/">📅 Записаться онлайн</a>
     <div class="chips">
@@ -496,5 +497,6 @@
   });
 </script>
 
+<script defer src="/scripts.js?v=35"></script>
 </body>
 </html>

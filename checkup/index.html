@@ -128,7 +128,7 @@
   </style>
   <link rel="stylesheet" href="../shared/phase1.css">
 </head>
-<body>
+<body data-i18n-page="checkup_page">
 
 <nav>
   <a class="nav-logo" href="/">🏥 MARIA MEDICAL CENTER</a>
@@ -141,6 +141,7 @@
     <a href="/appointment/">Запись</a>
   </div>
   <a class="nav-cta" href="/appointment/">Записаться</a>
+  <div class="lang-switcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 </nav>
 
 <div class="breadcrumb">
@@ -149,7 +150,7 @@
 
 <section class="hero">
   <div class="hero-badge">📋 Медицинские осмотры</div>
-  <h1>Профосмотр и медицинские<br>справки в Харькове</h1>
+  <h1 data-i18n="checkup_page.title">Профосмотр и медицинские справки в Харькове</h1>
   <p>Медицинские осмотры, справки и комплексное обследование. По предварительной записи, без очередей. МЦ MARIA — профессорский уровень диагностики.</p>
   <div class="hero-btns">
     <a class="btn btn-primary" href="/appointment/">📅 Записаться на осмотр</a>
@@ -160,7 +161,7 @@
 <section>
   <div class="container">
     <div class="section-label">Виды осмотров</div>
-    <h2 class="section-title">Что мы предоставляем</h2>
+    <h2 class="section-title" data-i18n="checkup_page.services">Что мы предоставляем</h2>
     <p class="section-sub">Полный спектр медицинских осмотров и справок. Работаем по предварительной записи — без очередей и лишнего ожидания.</p>
     <div class="cards-grid">
       <div class="card"><div class="card-icon">🏢</div><h3>Периодический профосмотр</h3><p>Ежегодный осмотр работников согласно требованиям законодательства. Для предприятий и организаций — корпоративный формат.</p></div>
@@ -255,7 +256,7 @@
 
 <section class="cta-section">
   <div class="container">
-    <h2>Запишитесь на профосмотр</h2>
+    <h2 data-i18n="checkup_page.cta">Запишитесь на профосмотр</h2>
     <p>Без очередей, в удобное время. МЦ MARIA — профессорский уровень медицины.</p>
     <a class="btn btn-primary" href="/appointment/">📅 Записаться онлайн</a>
     <div class="chips">
@@ -318,5 +319,6 @@
     return true;
   }
 </script>
+<script defer src="/scripts.js?v=35"></script>
 </body>
 </html>

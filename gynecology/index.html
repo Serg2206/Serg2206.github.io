@@ -190,7 +190,7 @@
   </style>
   <link rel="stylesheet" href="../shared/phase1.css">
 </head>
-<body>
+<body data-i18n-page="gynecology_page">
 
 <nav>
   <a class="nav-logo" href="/">🏥 MARIA MEDICAL CENTER</a>
@@ -203,6 +203,7 @@
     <a href="/appointment/">Запись</a>
   </div>
   <a class="nav-cta" href="/appointment/">Записаться</a>
+  <div class="lang-switcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru">RU</button><button class="lang-switcher__btn" data-lang="ua">UA</button><button class="lang-switcher__btn" data-lang="en">EN</button></div>
 </nav>
 
 <div class="breadcrumb">
@@ -213,7 +214,7 @@
 
 <section class="hero">
   <div class="hero-badge">🌸 Женское здоровье</div>
-  <h1>Гинекология<br>в Харькове</h1>
+  <h1 data-i18n="gynecology_page.title">Гинекология в Харькове</h1>
   <p>Профессорская консультация, диагностика и хирургическое лечение гинекологических заболеваний. Деликатный подход, современное оборудование, опыт 40+ лет.</p>
   <div class="hero-btns">
     <a class="btn btn-primary" href="/appointment/">📅 Записаться на консультацию</a>
@@ -221,7 +222,7 @@
   </div>
   <div class="hero-stats">
     <div class="hero-stat"><strong>40+</strong><span>лет клинической практики</span></div>
-    <div class="hero-stat"><strong>2000</strong><span>грн консультация</span></div>
+    <div class="hero-stat"><strong>✓</strong><span>приём по записи</span></div>
     <div class="hero-stat"><strong>5000+</strong><span>выполненных операций</span></div>
     <div class="hero-stat"><strong>98%</strong><span>удовлетворённых пациенток</span></div>
   </div>
@@ -232,7 +233,7 @@
     <div class="grid-2">
       <div>
         <div class="section-label">Наш подход</div>
-        <h2 class="section-title">Профессорская гинекология</h2>
+        <h2 class="section-title" data-i18n="gynecology_page.intro">Профессорская гинекология</h2>
         <p>Профессор Сушков С.В. — хирург-гинеколог с широкой специализацией: от профилактических осмотров до сложных хирургических вмешательств. Особый опыт — органосохраняющие операции, в том числе миомэктомия с сохранением матки.</p>
         <div class="highlight">💡 Каждая пациентка — индивидуальный случай. Профессор лично проводит консультацию, осмотр и составляет план лечения. Без очередей, без спешки.</div>
         <p>Современная гинекология МЦ MARIA: диагностика на оборудовании экспертного класса, малоинвазивные методы, сохранение репродуктивной функции там, где это возможно.</p>
@@ -334,7 +335,7 @@
 
 <section class="cta-section">
   <div class="container">
-    <h2>Запишитесь к профессору-гинекологу</h2>
+    <h2 data-i18n="gynecology_page.cta">Запишитесь к профессору-гинекологу</h2>
     <p>Бережный подход, точная диагностика, опыт 40+ лет. Консультация — 2000 грн.</p>
     <a class="btn btn-primary" href="/appointment/">📅 Записаться онлайн</a>
     <div class="chips">
@@ -416,5 +417,6 @@
   });
 </script>
 
+<script defer src="/scripts.js?v=35"></script>
 </body>
 </html>
