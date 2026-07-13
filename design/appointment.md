@@ -107,7 +107,7 @@
 |------|----------|-------|
 | MapPin | Адрес | вул. Сірохінська, Харків, Харківська область, 61000 |
 | Phone | Телефон | +380 67 570 79 49 (also +380 96 501 52 28) |
-| Mail | Email | ssvnauka@gmail.com |
+| Mail | Email | ssvproff@gmail.com |
 | Clock | Часы приёма | Уточняйте по телефону / Уточнюйте за телефоном / Please call for hours |
 | Info | Важно | Приём ведётся по предварительной записи. Пожалуйста, запишитесь заранее. / Прийом проводиться за попереднім записом. Будь ласка, запишіться заздалегідь. / By appointment only. Please book in advance. |
 
@@ -189,7 +189,7 @@ Standard footer.
   "@type": "MedicalBusiness",
   "name": "MARIA Medical Center",
   "telephone": "+380965015228",
-  "email": "ssvnauka@gmail.com",
+  "email": "ssvproff@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "вул. Сірохінська",

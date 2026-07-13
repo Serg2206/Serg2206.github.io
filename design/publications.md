@@ -187,7 +187,7 @@ const patents = [
   "description": "92 publications and 11 patents",
   "about": {
     "@type": "Person",
-    "name": "Sushkov Sergey Valentinovich"
+    "name": "Sergiy Valentinovich Sushkov"
   }
 }
 ```

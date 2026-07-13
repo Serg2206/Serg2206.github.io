@@ -2,7 +2,7 @@
 
 ## Site Concept
 
-Professional multilingual medical website for Prof. Sergey V. Sushkov and the MARIA Medical Center in Kharkiv, Ukraine.
+Professional multilingual medical website for Prof. Sergiy V. Sushkov and the MARIA Medical Center in Kharkiv, Ukraine.
 
 **Target users:**
 - Patients seeking surgical/oncological/gynecological consultation in Kharkiv

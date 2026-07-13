@@ -283,7 +283,7 @@ See `design.md` → Shared Components → Footer.
   "logo": "...",
   "image": "...",
   "telephone": "+380965015228",
-  "email": "ssvnauka@gmail.com",
+  "email": "ssvproff@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "...",
@@ -293,7 +293,7 @@ See `design.md` → Shared Components → Footer.
   "medicalSpecialty": ["Surgery", "Oncology", "Gynecology"],
   "founder": {
     "@type": "Person",
-    "name": "Sushkov Sergey Valentinovich",
+    "name": "Sergiy Valentinovich Sushkov",
     "jobTitle": "Professor of Surgery",
     "alumniOf": "Kharkiv National Medical University"
   }

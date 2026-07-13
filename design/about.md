@@ -17,7 +17,7 @@
 - **H1:** 
   - RU: `Профессор Сушков Сергей Валентинович`
   - UA: `Професор Сушков Сергій Валентинович`
-  - EN: `Professor Sushkov Sergey Valentinovich`
+  - EN: `Professor Sergiy Valentinovich Sushkov`
 - **Subtitle:**
   - RU: `Д-р мед. наук, профессор | Хирург-онколог | Член EAES | 40+ лет опыта`
   - UA: `Д-р мед. наук, професор | Хірург-онколог | Член EAES | 40+ років досвіду`
@@ -215,8 +215,8 @@ Each: icon + short text.
 |----------|-----|------------|
 | ORCID | https://orcid.org/0000-0002-6951-9789 | Green circle with "iD" text |
 | Scopus | https://www.scopus.com/authid/detail.uri?authorId=55360196800 | Orange abstract icon |
-| Google Scholar | Search: Sergey Sushkov | Scholar cap icon |
-| ResearchGate | Search: Sergey Sushkov | RG logo icon |
+| Google Scholar | Search: Sergiy Sushkov | Scholar cap icon |
+| ResearchGate | Search: Sergiy Sushkov | RG logo icon |
 
 **Card style:**
 - White bg, rounded-xl, shadow, padding 24px
@@ -237,7 +237,7 @@ Same CTA as home (Section 7) + standard footer.
 {
   "@context": "https://schema.org",
   "@type": "Physician",
-  "name": "Sushkov Sergey Valentinovich",
+  "name": "Sergiy Valentinovich Sushkov",
   "jobTitle": "Professor of Surgery",
   "description": "MD 1986, PhD 1998, DSc 2007. Pioneer of laparoscopic surgery in Kharkiv region.",
   "alumniOf": "Kharkiv National Medical University",

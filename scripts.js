@@ -367,7 +367,7 @@
                      'Тип приёма: ' + (appointmentForm.querySelector('[name="type"]')?.value || '') + '\n' +
                      'Дата: ' + (appointmentForm.querySelector('[name="date"]')?.value || '') + '\n' +
                      'Сообщение: ' + (appointmentForm.querySelector('[name="message"]')?.value || '');
-        window.location.href = 'mailto:ssvnauka@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        window.location.href = 'mailto:ssvproff@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
         // Redirect to thank-you after short delay
         setTimeout(function () {
           window.location.href = '../thank-you.html';
@@ -396,7 +396,7 @@
                      'Оценка: ' + (reviewForm.querySelector('[name="rating"]:checked')?.value || '') + '\n' +
                      'Услуга: ' + (reviewForm.querySelector('[name="service"]')?.value || '') + '\n' +
                      'Отзыв: ' + (text.value || '');
-        window.location.href = 'mailto:ssvnauka@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        window.location.href = 'mailto:ssvproff@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
         setTimeout(function () {
           window.location.href = '../thank-you.html';
         }, 1500);
