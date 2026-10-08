@@ -38,7 +38,7 @@
         body { font-family: "Segoe UI", Arial, sans-serif; line-height: 1.7; color: #333; background: #f5f7fa; }
         .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; text-align: center; }
         .header a { color: white; text-decoration: none; }
-        .header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .header .site-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; }
         .container { max-width: 800px; margin: 0 auto; padding: 2rem; background: white; }
         .article-meta { color: #888; font-size: 0.9rem; margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; }
         .article-meta a { color: #667eea; text-decoration: none; }
@@ -96,7 +96,7 @@
         .self-check ol { margin-left: 1.5rem; }
         .self-check li { margin-bottom: 0.75rem; }
         @media (max-width: 768px) { 
-            .header h1 { font-size: 1.4rem; }
+            .header .site-title { font-size: 1.4rem; }
             .container { padding: 1rem; }
             .author-box { flex-direction: column; text-align: center; }
             .lead-magnet form { flex-direction: column; }
@@ -113,7 +113,7 @@
 <body>
     <header class="header">
         <a href="/">
-            <h1>🏥 Медицинский Центр MARIA</h1>
+            <div class="site-title">🏥 Медицинский Центр MARIA</div>
             <p>Хирургия, онкология, профессорская консультация в Харькове</p>
         </a>
     </header>

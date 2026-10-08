@@ -2,6 +2,25 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": true,
   "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true }
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/laparoscopic-cholecystectomy.html",
+      "destination": "/articles/laparoscopic-cholecystectomy/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/laparoscopy-preparation.html",
+      "destination": "/guides/laparoscopy-preparation.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/myomectomy.html",
+      "destination": "/myomectomy/",
+      "permanent": true
+    }
   ]
 }
