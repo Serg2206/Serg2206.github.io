@@ -15,11 +15,11 @@
   const SUPPORTED_LANGS = ['ru', 'ua', 'en'];
 
   /* -------------------------------
-     Analytics Config (replace with real IDs)
+     Analytics Config
      ------------------------------- */
-  const GA_ID = 'G-XXXXXXXXXX';          // Google Analytics 4 Measurement ID
+  const GA_ID = 'G-849M3X6NTX';          // Google Analytics 4 Measurement ID
   const YM_ID = '12345678';              // Yandex.Metrika counter ID
-  const GA_ENABLED = false;             // Set true after configuring GA_ID
+  const GA_ENABLED = true;              // Set true after configuring GA_ID
   const YM_ENABLED = false;             // Set true after configuring YM_ID
 
   /* -------------------------------
@@ -467,17 +467,19 @@
      ------------------------------- */
   function initAnalytics() {
     // Google Analytics 4
-    if (GA_ENABLED && GA_ID !== 'G-XXXXXXXXXX') {
-      const gaScript = document.createElement('script');
-      gaScript.async = true;
-      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
-      document.head.appendChild(gaScript);
+    if (GA_ENABLED && GA_ID && GA_ID !== 'G-XXXXXXXXXX') {
+      if (!window.gtag && !document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+        const gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(gaScript);
 
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { window.dataLayer.push(arguments); }
-      window.gtag = gtag;
-      gtag('js', new Date());
-      gtag('config', GA_ID, { anonymize_ip: true });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', GA_ID, { anonymize_ip: true });
+      }
     }
 
     // Yandex.Metrika
